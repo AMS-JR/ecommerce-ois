@@ -10,6 +10,17 @@ CREATE DATABASE grimauflorentois
 
 BEGIN;
 
+CREATE TABLE delivery_status_description (
+    delivery_status character varying(128) NOT NULL,
+    decription text NOT NULL
+);
+
+CREATE TABLE delivery_services_types (
+    delivery_kind character varying(128) NOT NULL,
+    price double precision NOT NULL,
+    delivery_duration integer NOT NULL
+);
+
 CREATE TABLE IF NOT EXISTS Warehouse(
     ID              SERIAL PRIMARY KEY,
     name            CHAR(50) NOT NULL,
@@ -38,35 +49,26 @@ CREATE TABLE IF NOT EXISTS DeliveryTrip(
     arrival_time        TIMESTAMP,
 
     truck               INTEGER NOT NULL,
-    package             INTEGER
+    order               INTEGER NOT NULL,
+    starting_warehouse  INTEGER NOT NULL
 );
 
 ALTER TABLE DeliveryTrip ADD FOREIGN KEY(truck) REFERENCES TransportVehicle(ID) ON DELETE CASCADE;
+ALTER TABLE DeliveryTrip ADD FOREIGN KEY(starting_warehouse) REFERENCES Warehouse(ID) ON DELETE CASCADE;
 
 
 CREATE TABLE IF NOT EXISTS Orders(
     ID                  SERIAL PRIMARY KEY,
-    premium             BOOLEAN DEFAULT false,
-    address             CHAR(50)
+    email               CHAR(100),
+    date                DATETIME NOT NULL,
+    delivery_type       character varying(128) NOT NULL,
+    address             CHAR(50),
+    status              character varying(128) NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS Package(
-    ID                  SERIAL PRIMARY KEY,
-    status              CHAR(16),
-    size                CHAR(16),
-    weight              INTEGER,
-
-    pkg_order           INTEGER NOT NULL,
-    warehouse           INTEGER NOT NULL,
-    trip                INTEGER
-);
-
-
-ALTER TABLE Package ADD FOREIGN KEY(pkg_order) REFERENCES Orders(ID) ON DELETE CASCADE;
-ALTER TABLE Package ADD FOREIGN KEY(warehouse) REFERENCES Warehouse(ID) ON DELETE CASCADE;
-
-ALTER TABLE Package ADD FOREIGN KEY(trip) REFERENCES DeliveryTrip(ID) ON DELETE CASCADE;
-ALTER TABLE DeliveryTrip ADD FOREIGN KEY(package) REFERENCES Package(ID) ON DELETE CASCADE;
+ALTER TABLE DeliveryTrip ADD FOREIGN KEY(order) REFERENCES Order(ID) ON DELETE CASCADE;
+ALTER TABLE Orders ADD FOREIGN KEY(delivery_type) REFERENCES delivery_services_types(delivery_kind) ON DELETE CASCADE;
+ALTER TABLE Orders ADD FOREIGN KEY(status) REFERENCES delivery_status_description(delivery_status) ON DELETE CASCADE;
 
 COMMIT;
 
