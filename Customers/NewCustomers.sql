@@ -5,7 +5,7 @@
 -- Dumped from database version 14.0
 -- Dumped by pg_dump version 14.1
 
--- Started on 2021-12-01 14:28:43 CET
+-- Started on 2021-12-11 11:20:03 CET
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -86,17 +86,17 @@ ALTER TABLE public.customers_information OWNER TO postgres;
 
 --
 -- TOC entry 210 (class 1259 OID 16409)
--- Name: delivery_servies_types; Type: TABLE; Schema: public; Owner: postgres
+-- Name: delivery_services_type; Type: TABLE; Schema: public; Owner: postgres
 --
 
-CREATE TABLE public.delivery_servies_types (
+CREATE TABLE public.delivery_services_type (
     delivery_kind character varying(128) NOT NULL,
     price double precision NOT NULL,
     delivery_duration integer NOT NULL
 );
 
 
-ALTER TABLE public.delivery_servies_types OWNER TO postgres;
+ALTER TABLE public.delivery_services_type OWNER TO postgres;
 
 --
 -- TOC entry 214 (class 1259 OID 16429)
@@ -204,10 +204,10 @@ Ted	Mosby	1978-01-24	Fast	ted.mosby@gmail.com	+1637873456
 --
 -- TOC entry 3621 (class 0 OID 16409)
 -- Dependencies: 210
--- Data for Name: delivery_servies_types; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: delivery_services_type; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.delivery_servies_types (delivery_kind, price, delivery_duration) FROM stdin;
+COPY public.delivery_services_type (delivery_kind, price, delivery_duration) FROM stdin;
 Super fast	30	25
 Fast	25	35
 Ordinary	20	45
@@ -296,10 +296,10 @@ ALTER TABLE ONLY public.customers_information
 
 --
 -- TOC entry 3460 (class 2606 OID 16413)
--- Name: delivery_servies_types delivery_servies_types_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: delivery_services_type delivery_servies_types_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public.delivery_servies_types
+ALTER TABLE ONLY public.delivery_services_type
     ADD CONSTRAINT delivery_servies_types_pkey PRIMARY KEY (delivery_kind);
 
 
@@ -345,7 +345,7 @@ ALTER TABLE ONLY public."PaymentCard"
 --
 
 ALTER TABLE ONLY public.customers_information
-    ADD CONSTRAINT delivery_kind FOREIGN KEY (delivery_kind) REFERENCES public.delivery_servies_types(delivery_kind) ON UPDATE CASCADE ON DELETE SET NULL NOT VALID;
+    ADD CONSTRAINT delivery_kind FOREIGN KEY (delivery_kind) REFERENCES public.delivery_services_type(delivery_kind) ON UPDATE CASCADE ON DELETE SET NULL NOT VALID;
 
 
 --
@@ -402,8 +402,9 @@ ALTER TABLE ONLY public.goods_in_receipt
     ADD CONSTRAINT receipt_id FOREIGN KEY (receipt_id) REFERENCES public.receipt_information(receipt_id) ON UPDATE CASCADE ON DELETE CASCADE NOT VALID;
 
 
--- Completed on 2021-12-01 14:28:44 CET
+-- Completed on 2021-12-11 11:20:04 CET
 
 --
 -- PostgreSQL database dump complete
 --
+
