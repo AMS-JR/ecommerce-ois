@@ -5,7 +5,7 @@
 -- Dumped from database version 13.4
 -- Dumped by pg_dump version 13.4
 
--- Started on 2021-11-26 20:10:08
+-- Started on 2021-12-12 18:02:09
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -74,6 +74,21 @@ CREATE TABLE public."Image" (
 ALTER TABLE public."Image" OWNER TO postgres;
 
 --
+-- TOC entry 223 (class 1259 OID 65942)
+-- Name: Inventory; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public."Inventory" (
+    supplyid_fk integer NOT NULL,
+    productsku character varying(30) NOT NULL,
+    product character varying(100) NOT NULL,
+    quantity numeric(5,0) NOT NULL
+);
+
+
+ALTER TABLE public."Inventory" OWNER TO postgres;
+
+--
 -- TOC entry 204 (class 1259 OID 57724)
 -- Name: Order; Type: TABLE; Schema: public; Owner: postgres
 --
@@ -84,8 +99,8 @@ CREATE TABLE public."Order" (
     "orderDate" timestamp without time zone NOT NULL,
     "customerEmail" character varying(30) NOT NULL,
     "customerAddress" character varying(512) NOT NULL,
-    "deliveryService" uuid NOT NULL,
-    "orderAmount" numeric(10,2) NOT NULL
+    "orderAmount" numeric(10,2) NOT NULL,
+    "deliveryService" character varying(50) NOT NULL
 );
 
 
@@ -106,6 +121,23 @@ CREATE TABLE public."OrderDescription" (
 ALTER TABLE public."OrderDescription" OWNER TO postgres;
 
 --
+-- TOC entry 214 (class 1259 OID 65900)
+-- Name: PaymentCard; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public."PaymentCard" (
+    "cardType" character varying(10) NOT NULL,
+    "cardNumber" character varying(17) NOT NULL,
+    "cardHolderName" character varying(100) NOT NULL,
+    "cardExpiryDate" date NOT NULL,
+    customer character varying(100) NOT NULL,
+    "customerEmail" character varying(256) NOT NULL
+);
+
+
+ALTER TABLE public."PaymentCard" OWNER TO postgres;
+
+--
 -- TOC entry 200 (class 1259 OID 57701)
 -- Name: Product; Type: TABLE; Schema: public; Owner: postgres
 --
@@ -124,7 +156,7 @@ CREATE TABLE public."Product" (
     "adminSeller" character varying(30),
     "supplierSeller" character varying(30),
     price numeric(10,2) NOT NULL,
-    model character(50)
+    model character varying
 );
 
 
@@ -193,13 +225,137 @@ CREATE SEQUENCE public."SuppliesStock_supply_seq"
 ALTER TABLE public."SuppliesStock_supply_seq" OWNER TO postgres;
 
 --
--- TOC entry 3060 (class 0 OID 0)
+-- TOC entry 3115 (class 0 OID 0)
 -- Dependencies: 212
 -- Name: SuppliesStock_supply_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
 ALTER SEQUENCE public."SuppliesStock_supply_seq" OWNED BY public."SuppliesStock".supply;
 
+
+--
+-- TOC entry 222 (class 1259 OID 65936)
+-- Name: Warehouse; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public."Warehouse" (
+    "warehouseCode" character varying(10) NOT NULL,
+    "companyName" character varying(128) NOT NULL,
+    email character varying(256) NOT NULL,
+    telephone character varying(20) NOT NULL,
+    "addressCountry" character varying(3) NOT NULL,
+    "addressCity" character varying(50) NOT NULL,
+    "addressLocality" character varying(50) NOT NULL,
+    "postalCode" character varying(25) NOT NULL,
+    "streetAddress" character varying(256) NOT NULL
+);
+
+
+ALTER TABLE public."Warehouse" OWNER TO postgres;
+
+--
+-- TOC entry 215 (class 1259 OID 65903)
+-- Name: customer_receipt_connector; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.customer_receipt_connector (
+    email character varying(256) NOT NULL,
+    receipt_id character varying(64) NOT NULL
+);
+
+
+ALTER TABLE public.customer_receipt_connector OWNER TO postgres;
+
+--
+-- TOC entry 216 (class 1259 OID 65906)
+-- Name: customers_addresses; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.customers_addresses (
+    email character varying(256) NOT NULL,
+    country character varying(128) NOT NULL,
+    city character varying(128) NOT NULL,
+    address character varying(512) NOT NULL
+);
+
+
+ALTER TABLE public.customers_addresses OWNER TO postgres;
+
+--
+-- TOC entry 217 (class 1259 OID 65912)
+-- Name: customers_information; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.customers_information (
+    first_name character varying(128) NOT NULL,
+    last_name character varying(128) NOT NULL,
+    birth_date date,
+    delivery_kind character varying(128) NOT NULL,
+    email character varying(256) NOT NULL,
+    phone_number character varying(20)
+);
+
+
+ALTER TABLE public.customers_information OWNER TO postgres;
+
+--
+-- TOC entry 218 (class 1259 OID 65918)
+-- Name: delivery_services_type; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.delivery_services_type (
+    delivery_kind character varying(128) NOT NULL,
+    price double precision NOT NULL,
+    delivery_duration integer NOT NULL
+);
+
+
+ALTER TABLE public.delivery_services_type OWNER TO postgres;
+
+--
+-- TOC entry 219 (class 1259 OID 65921)
+-- Name: delivery_status_description; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.delivery_status_description (
+    delivery_status character varying(128) NOT NULL,
+    decription text NOT NULL
+);
+
+
+ALTER TABLE public.delivery_status_description OWNER TO postgres;
+
+--
+-- TOC entry 220 (class 1259 OID 65927)
+-- Name: goods_in_receipt; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.goods_in_receipt (
+    receipt_id character varying(64) NOT NULL,
+    good_id character varying(64) NOT NULL,
+    numberof integer NOT NULL
+);
+
+
+ALTER TABLE public.goods_in_receipt OWNER TO postgres;
+
+--
+-- TOC entry 221 (class 1259 OID 65930)
+-- Name: receipt_information; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.receipt_information (
+    receipt_id character varying(64) NOT NULL,
+    date date NOT NULL,
+    delivery_status character varying(128) NOT NULL,
+    delivery_type character varying(128) NOT NULL,
+    email character varying(256),
+    "orderAmount" integer,
+    address text
+);
+
+
+ALTER TABLE public.receipt_information OWNER TO postgres;
 
 --
 -- TOC entry 209 (class 1259 OID 57748)
@@ -258,7 +414,7 @@ CREATE SEQUENCE public."supplies_suppliesID_seq"
 ALTER TABLE public."supplies_suppliesID_seq" OWNER TO postgres;
 
 --
--- TOC entry 3061 (class 0 OID 0)
+-- TOC entry 3116 (class 0 OID 0)
 -- Dependencies: 210
 -- Name: supplies_suppliesID_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -267,7 +423,7 @@ ALTER SEQUENCE public."supplies_suppliesID_seq" OWNED BY public.supplies."suppli
 
 
 --
--- TOC entry 2906 (class 2604 OID 57770)
+-- TOC entry 2951 (class 2604 OID 57770)
 -- Name: SuppliesStock supply; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -275,7 +431,7 @@ ALTER TABLE ONLY public."SuppliesStock" ALTER COLUMN supply SET DEFAULT nextval(
 
 
 --
--- TOC entry 2902 (class 2604 OID 57761)
+-- TOC entry 2947 (class 2604 OID 57761)
 -- Name: supplies suppliesID; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -283,7 +439,7 @@ ALTER TABLE ONLY public.supplies ALTER COLUMN "suppliesID" SET DEFAULT nextval('
 
 
 --
--- TOC entry 3042 (class 0 OID 57709)
+-- TOC entry 3087 (class 0 OID 57709)
 -- Dependencies: 201
 -- Data for Name: Brand; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -293,7 +449,7 @@ COPY public."Brand" (name) FROM stdin;
 
 
 --
--- TOC entry 3049 (class 0 OID 57745)
+-- TOC entry 3094 (class 0 OID 57745)
 -- Dependencies: 208
 -- Data for Name: Cart; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -303,7 +459,7 @@ COPY public."Cart" (customer, product, "dateAdded") FROM stdin;
 
 
 --
--- TOC entry 3043 (class 0 OID 57712)
+-- TOC entry 3088 (class 0 OID 57712)
 -- Dependencies: 202
 -- Data for Name: Category; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -313,7 +469,7 @@ COPY public."Category" (name, description) FROM stdin;
 
 
 --
--- TOC entry 3044 (class 0 OID 57718)
+-- TOC entry 3089 (class 0 OID 57718)
 -- Dependencies: 203
 -- Data for Name: Image; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -323,17 +479,27 @@ COPY public."Image" (url) FROM stdin;
 
 
 --
--- TOC entry 3045 (class 0 OID 57724)
--- Dependencies: 204
--- Data for Name: Order; Type: TABLE DATA; Schema: public; Owner: postgres
+-- TOC entry 3109 (class 0 OID 65942)
+-- Dependencies: 223
+-- Data for Name: Inventory; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public."Order" ("orderID", "orderStatus", "orderDate", "customerEmail", "customerAddress", "deliveryService", "orderAmount") FROM stdin;
+COPY public."Inventory" (supplyid_fk, productsku, product, quantity) FROM stdin;
 \.
 
 
 --
--- TOC entry 3046 (class 0 OID 57730)
+-- TOC entry 3090 (class 0 OID 57724)
+-- Dependencies: 204
+-- Data for Name: Order; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public."Order" ("orderID", "orderStatus", "orderDate", "customerEmail", "customerAddress", "orderAmount", "deliveryService") FROM stdin;
+\.
+
+
+--
+-- TOC entry 3091 (class 0 OID 57730)
 -- Dependencies: 205
 -- Data for Name: OrderDescription; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -343,7 +509,17 @@ COPY public."OrderDescription" ("order", product, quantity) FROM stdin;
 
 
 --
--- TOC entry 3041 (class 0 OID 57701)
+-- TOC entry 3100 (class 0 OID 65900)
+-- Dependencies: 214
+-- Data for Name: PaymentCard; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public."PaymentCard" ("cardType", "cardNumber", "cardHolderName", "cardExpiryDate", customer, "customerEmail") FROM stdin;
+\.
+
+
+--
+-- TOC entry 3086 (class 0 OID 57701)
 -- Dependencies: 200
 -- Data for Name: Product; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -353,7 +529,7 @@ COPY public."Product" (sku, name, color, "itemCondition", description, "stockQua
 
 
 --
--- TOC entry 3047 (class 0 OID 57733)
+-- TOC entry 3092 (class 0 OID 57733)
 -- Dependencies: 206
 -- Data for Name: ProductImages ; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -363,7 +539,7 @@ COPY public."ProductImages " (product, "imageUrl") FROM stdin;
 
 
 --
--- TOC entry 3048 (class 0 OID 57739)
+-- TOC entry 3093 (class 0 OID 57739)
 -- Dependencies: 207
 -- Data for Name: Reviews; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -373,7 +549,7 @@ COPY public."Reviews" (author, about, "reviewBody", "reviewRatingValue", "dateCr
 
 
 --
--- TOC entry 3054 (class 0 OID 57767)
+-- TOC entry 3099 (class 0 OID 57767)
 -- Dependencies: 213
 -- Data for Name: SuppliesStock; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -383,7 +559,87 @@ COPY public."SuppliesStock" (supply, sku, name, quantity, price) FROM stdin;
 
 
 --
--- TOC entry 3050 (class 0 OID 57748)
+-- TOC entry 3108 (class 0 OID 65936)
+-- Dependencies: 222
+-- Data for Name: Warehouse; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public."Warehouse" ("warehouseCode", "companyName", email, telephone, "addressCountry", "addressCity", "addressLocality", "postalCode", "streetAddress") FROM stdin;
+\.
+
+
+--
+-- TOC entry 3101 (class 0 OID 65903)
+-- Dependencies: 215
+-- Data for Name: customer_receipt_connector; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.customer_receipt_connector (email, receipt_id) FROM stdin;
+\.
+
+
+--
+-- TOC entry 3102 (class 0 OID 65906)
+-- Dependencies: 216
+-- Data for Name: customers_addresses; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.customers_addresses (email, country, city, address) FROM stdin;
+\.
+
+
+--
+-- TOC entry 3103 (class 0 OID 65912)
+-- Dependencies: 217
+-- Data for Name: customers_information; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.customers_information (first_name, last_name, birth_date, delivery_kind, email, phone_number) FROM stdin;
+\.
+
+
+--
+-- TOC entry 3104 (class 0 OID 65918)
+-- Dependencies: 218
+-- Data for Name: delivery_services_type; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.delivery_services_type (delivery_kind, price, delivery_duration) FROM stdin;
+\.
+
+
+--
+-- TOC entry 3105 (class 0 OID 65921)
+-- Dependencies: 219
+-- Data for Name: delivery_status_description; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.delivery_status_description (delivery_status, decription) FROM stdin;
+\.
+
+
+--
+-- TOC entry 3106 (class 0 OID 65927)
+-- Dependencies: 220
+-- Data for Name: goods_in_receipt; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.goods_in_receipt (receipt_id, good_id, numberof) FROM stdin;
+\.
+
+
+--
+-- TOC entry 3107 (class 0 OID 65930)
+-- Dependencies: 221
+-- Data for Name: receipt_information; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.receipt_information (receipt_id, date, delivery_status, delivery_type, email, "orderAmount", address) FROM stdin;
+\.
+
+
+--
+-- TOC entry 3095 (class 0 OID 57748)
 -- Dependencies: 209
 -- Data for Name: supplier; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -393,7 +649,7 @@ COPY public.supplier (bce, "companyName", email, telephone, url, "addressCountry
 
 
 --
--- TOC entry 3052 (class 0 OID 57758)
+-- TOC entry 3097 (class 0 OID 57758)
 -- Dependencies: 211
 -- Data for Name: supplies; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -403,7 +659,7 @@ COPY public.supplies ("suppliesID", "supplierBce", "warehouseCode", sku, "arriva
 
 
 --
--- TOC entry 3062 (class 0 OID 0)
+-- TOC entry 3117 (class 0 OID 0)
 -- Dependencies: 212
 -- Name: SuppliesStock_supply_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -412,7 +668,7 @@ SELECT pg_catalog.setval('public."SuppliesStock_supply_seq"', 1, false);
 
 
 --
--- TOC entry 3063 (class 0 OID 0)
+-- TOC entry 3118 (class 0 OID 0)
 -- Dependencies: 210
 -- Name: supplies_suppliesID_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -421,7 +677,7 @@ SELECT pg_catalog.setval('public."supplies_suppliesID_seq"', 1, false);
 
 
 --
--- TOC entry 2908 (class 2606 OID 57708)
+-- TOC entry 2953 (class 2606 OID 57708)
 -- Name: Product Product_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -430,7 +686,7 @@ ALTER TABLE ONLY public."Product"
 
 
 --
--- TOC entry 2910 (class 2606 OID 57755)
+-- TOC entry 2955 (class 2606 OID 57755)
 -- Name: supplier supplier_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -438,7 +694,7 @@ ALTER TABLE ONLY public.supplier
     ADD CONSTRAINT supplier_pk PRIMARY KEY (bce);
 
 
--- Completed on 2021-11-26 20:10:11
+-- Completed on 2021-12-12 18:02:11
 
 --
 -- PostgreSQL database dump complete
