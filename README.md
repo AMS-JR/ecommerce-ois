@@ -1,5 +1,5 @@
 # ecommerce-ois
-### A large scale ecommerce platform
+## A large scale ecommerce platform
 ### This is a group project By Ardavan Khalij, Amadou Sarjo Jallow, Brenda Ordoñez Lujan, Florent Nicolas J Grimau, and Milan Pavle Ilic.
 #### This project is under the supervision of Dr. Bas Ketsman, Mr. Tim Baccaert, and Mr. Samuel Ngugi Ndung'u for the course, Open Information Systems at Vrije Universiteit Brussel.
 The goal of this project is to design and implement an information system using techniques seen during the lectures. First, you will individually develop one aspect of a larger system. Subse- quently, all students are brought together in groups of 4 or 5 students to develop a single system based on the smaller systems. However, this should involve minimal or no changes to each stu- dent’s system. This mimics the fact that real-world information systems are sometimes wildly heterogeneous while having the need to inter-operate effectively, without the ability to change much about the original systems.<br>
