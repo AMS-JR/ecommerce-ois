@@ -14,6 +14,65 @@
         <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is an ontology for a large scale ecommerce platform</rdfs:comment>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Brand -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Brand"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Cart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Cart"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Category -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Category"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Order -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Order"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#OrderDescription -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#OrderDescription"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#ProductImages -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#ProductImages"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Reviews -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Reviews"/>
 </rdf:RDF>
 
 
