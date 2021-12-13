@@ -28,8 +28,7 @@ CREATE TABLE IF NOT EXISTS Warehouse(
 );
 
 CREATE TABLE IF NOT EXISTS TransportCompany(
-    ID              character varying(255) NOT NULL PRIMARY KEY,
-    name            CHAR(50) NOT NULL,
+    name            CHAR(50) NOT NULL UNIQUE PRIMARY KEY,
     price_per_km    DOUBLE DEFAULT 0,
     api_key         CHAR(50) DEFAULT 'missing'
 );
@@ -38,10 +37,10 @@ CREATE TABLE IF NOT EXISTS TransportVehicle(
     ID              character varying(255) NOT NULL PRIMARY KEY,
     position        CHAR(50),
 
-    company         character varying(255) NOT NULL
+    company         CHAR(50) NOT NULL
 );
 
-ALTER TABLE TransportVehicle ADD FOREIGN KEY(company) REFERENCES TransportCompany(ID) ON DELETE CASCADE;
+ALTER TABLE TransportVehicle ADD FOREIGN KEY(company) REFERENCES TransportCompany(name) ON DELETE CASCADE;
 
 CREATE TABLE IF NOT EXISTS DeliveryTrip(
     ID                  character varying(255) NOT NULL PRIMARY KEY,
