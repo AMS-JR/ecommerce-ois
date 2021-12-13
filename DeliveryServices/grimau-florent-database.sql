@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS Warehouse(
 CREATE TABLE IF NOT EXISTS TransportCompany(
     ID              character varying(255) NOT NULL PRIMARY KEY,
     name            CHAR(50) NOT NULL,
-    price_per_km    INTEGER DEFAULT 0,
+    price_per_km    DOUBLE DEFAULT 0,
     api_key         CHAR(50) DEFAULT 'missing'
 );
 
