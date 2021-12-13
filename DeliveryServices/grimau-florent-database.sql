@@ -22,51 +22,51 @@ CREATE TABLE delivery_services_types (
 );
 
 CREATE TABLE IF NOT EXISTS Warehouse(
-    ID              SERIAL PRIMARY KEY,
+    ID              character varying(255) NOT NULL PRIMARY KEY,
     name            CHAR(50) NOT NULL,
     location        CHAR(50)
 );
 
 CREATE TABLE IF NOT EXISTS TransportCompany(
-    ID              SERIAL PRIMARY KEY,
+    ID              character varying(255) NOT NULL PRIMARY KEY,
     name            CHAR(50) NOT NULL,
     price_per_km    INTEGER DEFAULT 0,
     api_key         CHAR(50) DEFAULT 'missing'
 );
 
 CREATE TABLE IF NOT EXISTS TransportVehicle(
-    ID              SERIAL PRIMARY KEY,
+    ID              character varying(255) NOT NULL PRIMARY KEY,
     position        CHAR(50),
 
-    company         INTEGER NOT NULL
+    company         character varying(255) NOT NULL
 );
 
 ALTER TABLE TransportVehicle ADD FOREIGN KEY(company) REFERENCES TransportCompany(ID) ON DELETE CASCADE;
 
 CREATE TABLE IF NOT EXISTS DeliveryTrip(
-    ID                  SERIAL PRIMARY KEY,
+    ID                  character varying(255) NOT NULL PRIMARY KEY,
     departure_time      TIMESTAMP,
     arrival_time        TIMESTAMP,
 
-    truck               INTEGER NOT NULL,
-    order               INTEGER NOT NULL,
-    starting_warehouse  INTEGER NOT NULL
+    truck               character varying(255) NOT NULL,
+    starting_warehouse  character varying(255) NOT NULL
 );
 
 ALTER TABLE DeliveryTrip ADD FOREIGN KEY(truck) REFERENCES TransportVehicle(ID) ON DELETE CASCADE;
 ALTER TABLE DeliveryTrip ADD FOREIGN KEY(starting_warehouse) REFERENCES Warehouse(ID) ON DELETE CASCADE;
 
-
 CREATE TABLE IF NOT EXISTS Orders(
-    ID                  SERIAL PRIMARY KEY,
+    ID                  character varying(255) NOT NULL PRIMARY KEY,
     email               CHAR(100),
     date                DATETIME NOT NULL,
-    delivery_type       character varying(128) NOT NULL,
     address             CHAR(50),
-    status              character varying(128) NOT NULL
+
+    status              character varying(128) NOT NULL,
+    delivery_type       character varying(128) NOT NULL,
+    trip                character varying(255),
 );
 
-ALTER TABLE DeliveryTrip ADD FOREIGN KEY(order) REFERENCES Order(ID) ON DELETE CASCADE;
+ALTER TABLE Orders ADD FOREIGN KEY(trip) REFERENCES DeliveryTrip(ID) ON DELETE CASCADE;
 ALTER TABLE Orders ADD FOREIGN KEY(delivery_type) REFERENCES delivery_services_types(delivery_kind) ON DELETE CASCADE;
 ALTER TABLE Orders ADD FOREIGN KEY(status) REFERENCES delivery_status_description(delivery_status) ON DELETE CASCADE;
 
