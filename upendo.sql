@@ -5,7 +5,7 @@
 -- Dumped from database version 13.4
 -- Dumped by pg_dump version 13.4
 
--- Started on 2021-12-13 20:01:02
+-- Started on 2021-12-14 22:40:02
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -225,7 +225,7 @@ CREATE SEQUENCE public."SuppliesStock_supply_seq"
 ALTER TABLE public."SuppliesStock_supply_seq" OWNER TO postgres;
 
 --
--- TOC entry 3211 (class 0 OID 0)
+-- TOC entry 3210 (class 0 OID 0)
 -- Dependencies: 211
 -- Name: SuppliesStock_supply_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -417,10 +417,7 @@ CREATE TABLE public.supplies (
     "suppliesID" integer NOT NULL,
     "supplierBce" character varying(10) NOT NULL,
     "warehouseCode" character varying(10) NOT NULL,
-    sku character varying(30) NOT NULL,
     "arrivalDate" timestamp without time zone DEFAULT now() NOT NULL,
-    quantity numeric(5,0) NOT NULL,
-    price numeric(8,2) DEFAULT 0.00 NOT NULL,
     "supplyState" character(1) DEFAULT 'A'::bpchar NOT NULL
 );
 
@@ -444,7 +441,7 @@ CREATE SEQUENCE public."supplies_suppliesID_seq"
 ALTER TABLE public."supplies_suppliesID_seq" OWNER TO postgres;
 
 --
--- TOC entry 3212 (class 0 OID 0)
+-- TOC entry 3211 (class 0 OID 0)
 -- Dependencies: 209
 -- Name: supplies_suppliesID_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -467,7 +464,7 @@ CREATE TABLE public.transportvehicle (
 ALTER TABLE public.transportvehicle OWNER TO postgres;
 
 --
--- TOC entry 2965 (class 2604 OID 57770)
+-- TOC entry 2964 (class 2604 OID 57770)
 -- Name: SuppliesStock supply; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -483,7 +480,7 @@ ALTER TABLE ONLY public.supplies ALTER COLUMN "suppliesID" SET DEFAULT nextval('
 
 
 --
--- TOC entry 3201 (class 0 OID 65945)
+-- TOC entry 3200 (class 0 OID 65945)
 -- Dependencies: 222
 -- Data for Name: Admin; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -493,7 +490,7 @@ COPY public."Admin" (name, telephone, email) FROM stdin;
 
 
 --
--- TOC entry 3180 (class 0 OID 57709)
+-- TOC entry 3179 (class 0 OID 57709)
 -- Dependencies: 201
 -- Data for Name: Brand; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -503,7 +500,7 @@ COPY public."Brand" (name) FROM stdin;
 
 
 --
--- TOC entry 3186 (class 0 OID 57745)
+-- TOC entry 3185 (class 0 OID 57745)
 -- Dependencies: 207
 -- Data for Name: Cart; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -513,7 +510,7 @@ COPY public."Cart" (customer, product, "dateAdded") FROM stdin;
 
 
 --
--- TOC entry 3181 (class 0 OID 57712)
+-- TOC entry 3180 (class 0 OID 57712)
 -- Dependencies: 202
 -- Data for Name: Category; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -523,7 +520,7 @@ COPY public."Category" (name, description) FROM stdin;
 
 
 --
--- TOC entry 3205 (class 0 OID 66067)
+-- TOC entry 3204 (class 0 OID 66067)
 -- Dependencies: 226
 -- Data for Name: Inventory; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -533,7 +530,7 @@ COPY public."Inventory" (productsku_fk, quantity, warehousecode_fk) FROM stdin;
 
 
 --
--- TOC entry 3182 (class 0 OID 57724)
+-- TOC entry 3181 (class 0 OID 57724)
 -- Dependencies: 203
 -- Data for Name: Order; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -543,7 +540,7 @@ COPY public."Order" ("orderID", "orderStatus", "orderDate", "customerEmail", "cu
 
 
 --
--- TOC entry 3183 (class 0 OID 57730)
+-- TOC entry 3182 (class 0 OID 57730)
 -- Dependencies: 204
 -- Data for Name: OrderDescription; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -553,7 +550,7 @@ COPY public."OrderDescription" ("order", product, quantity) FROM stdin;
 
 
 --
--- TOC entry 3192 (class 0 OID 65900)
+-- TOC entry 3191 (class 0 OID 65900)
 -- Dependencies: 213
 -- Data for Name: PaymentCard; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -563,7 +560,7 @@ COPY public."PaymentCard" ("cardType", "cardNumber", "cardHolderName", "cardExpi
 
 
 --
--- TOC entry 3179 (class 0 OID 57701)
+-- TOC entry 3178 (class 0 OID 57701)
 -- Dependencies: 200
 -- Data for Name: Product; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -573,7 +570,7 @@ COPY public."Product" (sku, name, color, "itemCondition", description, "stockQua
 
 
 --
--- TOC entry 3184 (class 0 OID 57733)
+-- TOC entry 3183 (class 0 OID 57733)
 -- Dependencies: 205
 -- Data for Name: ProductImages ; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -583,7 +580,7 @@ COPY public."ProductImages " (product, "imageUrl") FROM stdin;
 
 
 --
--- TOC entry 3185 (class 0 OID 57739)
+-- TOC entry 3184 (class 0 OID 57739)
 -- Dependencies: 206
 -- Data for Name: Reviews; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -593,7 +590,7 @@ COPY public."Reviews" (author, about, "reviewBody", "reviewRatingValue", "dateCr
 
 
 --
--- TOC entry 3191 (class 0 OID 57767)
+-- TOC entry 3190 (class 0 OID 57767)
 -- Dependencies: 212
 -- Data for Name: SuppliesStock; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -603,7 +600,7 @@ COPY public."SuppliesStock" (supply, sku, name, quantity, price) FROM stdin;
 
 
 --
--- TOC entry 3204 (class 0 OID 65968)
+-- TOC entry 3203 (class 0 OID 65968)
 -- Dependencies: 225
 -- Data for Name: TransportCompany; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -613,7 +610,7 @@ COPY public."TransportCompany" (name, price_per_km, api_key) FROM stdin;
 
 
 --
--- TOC entry 3200 (class 0 OID 65936)
+-- TOC entry 3199 (class 0 OID 65936)
 -- Dependencies: 221
 -- Data for Name: Warehouse; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -623,7 +620,7 @@ COPY public."Warehouse" ("warehouseCode", "companyName", email, telephone, "addr
 
 
 --
--- TOC entry 3193 (class 0 OID 65903)
+-- TOC entry 3192 (class 0 OID 65903)
 -- Dependencies: 214
 -- Data for Name: customer_receipt_connector; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -633,7 +630,7 @@ COPY public.customer_receipt_connector (email, receipt_id) FROM stdin;
 
 
 --
--- TOC entry 3194 (class 0 OID 65906)
+-- TOC entry 3193 (class 0 OID 65906)
 -- Dependencies: 215
 -- Data for Name: customers_addresses; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -643,7 +640,7 @@ COPY public.customers_addresses (email, country, city, address) FROM stdin;
 
 
 --
--- TOC entry 3195 (class 0 OID 65912)
+-- TOC entry 3194 (class 0 OID 65912)
 -- Dependencies: 216
 -- Data for Name: customers_information; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -653,7 +650,7 @@ COPY public.customers_information (first_name, last_name, birth_date, delivery_k
 
 
 --
--- TOC entry 3196 (class 0 OID 65918)
+-- TOC entry 3195 (class 0 OID 65918)
 -- Dependencies: 217
 -- Data for Name: delivery_services_type; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -663,7 +660,7 @@ COPY public.delivery_services_type (delivery_kind, price, delivery_duration) FRO
 
 
 --
--- TOC entry 3197 (class 0 OID 65921)
+-- TOC entry 3196 (class 0 OID 65921)
 -- Dependencies: 218
 -- Data for Name: delivery_status_description; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -673,7 +670,7 @@ COPY public.delivery_status_description (delivery_status, decription) FROM stdin
 
 
 --
--- TOC entry 3203 (class 0 OID 65956)
+-- TOC entry 3202 (class 0 OID 65956)
 -- Dependencies: 224
 -- Data for Name: deliverytrip; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -683,7 +680,7 @@ COPY public.deliverytrip (id, departure_time, arrival_time, truck, starting_ware
 
 
 --
--- TOC entry 3198 (class 0 OID 65927)
+-- TOC entry 3197 (class 0 OID 65927)
 -- Dependencies: 219
 -- Data for Name: goods_in_receipt; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -693,7 +690,7 @@ COPY public.goods_in_receipt (receipt_id, good_id, numberof) FROM stdin;
 
 
 --
--- TOC entry 3199 (class 0 OID 65930)
+-- TOC entry 3198 (class 0 OID 65930)
 -- Dependencies: 220
 -- Data for Name: receipt_information; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -703,7 +700,7 @@ COPY public.receipt_information (receipt_id, date, delivery_status, delivery_typ
 
 
 --
--- TOC entry 3187 (class 0 OID 57748)
+-- TOC entry 3186 (class 0 OID 57748)
 -- Dependencies: 208
 -- Data for Name: supplier; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -713,17 +710,17 @@ COPY public.supplier (bce, "companyName", email, telephone, url, "addressCountry
 
 
 --
--- TOC entry 3189 (class 0 OID 57758)
+-- TOC entry 3188 (class 0 OID 57758)
 -- Dependencies: 210
 -- Data for Name: supplies; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.supplies ("suppliesID", "supplierBce", "warehouseCode", sku, "arrivalDate", quantity, price, "supplyState") FROM stdin;
+COPY public.supplies ("suppliesID", "supplierBce", "warehouseCode", "arrivalDate", "supplyState") FROM stdin;
 \.
 
 
 --
--- TOC entry 3202 (class 0 OID 65948)
+-- TOC entry 3201 (class 0 OID 65948)
 -- Dependencies: 223
 -- Data for Name: transportvehicle; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -733,7 +730,7 @@ COPY public.transportvehicle (id, "position", company) FROM stdin;
 
 
 --
--- TOC entry 3213 (class 0 OID 0)
+-- TOC entry 3212 (class 0 OID 0)
 -- Dependencies: 211
 -- Name: SuppliesStock_supply_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -742,7 +739,7 @@ SELECT pg_catalog.setval('public."SuppliesStock_supply_seq"', 1, false);
 
 
 --
--- TOC entry 3214 (class 0 OID 0)
+-- TOC entry 3213 (class 0 OID 0)
 -- Dependencies: 209
 -- Name: supplies_suppliesID_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -751,7 +748,7 @@ SELECT pg_catalog.setval('public."supplies_suppliesID_seq"', 1, false);
 
 
 --
--- TOC entry 3009 (class 2606 OID 65976)
+-- TOC entry 3008 (class 2606 OID 65976)
 -- Name: Admin Admin_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -760,7 +757,7 @@ ALTER TABLE ONLY public."Admin"
 
 
 --
--- TOC entry 2971 (class 2606 OID 65996)
+-- TOC entry 2970 (class 2606 OID 65996)
 -- Name: Brand Brand_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -769,7 +766,7 @@ ALTER TABLE ONLY public."Brand"
 
 
 --
--- TOC entry 2983 (class 2606 OID 66035)
+-- TOC entry 2982 (class 2606 OID 66035)
 -- Name: Cart Cart_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -778,7 +775,7 @@ ALTER TABLE ONLY public."Cart"
 
 
 --
--- TOC entry 2973 (class 2606 OID 66003)
+-- TOC entry 2972 (class 2606 OID 66003)
 -- Name: Category Category_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -787,7 +784,7 @@ ALTER TABLE ONLY public."Category"
 
 
 --
--- TOC entry 3017 (class 2606 OID 66071)
+-- TOC entry 3016 (class 2606 OID 66071)
 -- Name: Inventory Inventory_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -796,7 +793,7 @@ ALTER TABLE ONLY public."Inventory"
 
 
 --
--- TOC entry 2977 (class 2606 OID 66090)
+-- TOC entry 2976 (class 2606 OID 66090)
 -- Name: OrderDescription OrderDescription_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -805,7 +802,7 @@ ALTER TABLE ONLY public."OrderDescription"
 
 
 --
--- TOC entry 2975 (class 2606 OID 66083)
+-- TOC entry 2974 (class 2606 OID 66083)
 -- Name: Order Order_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -814,7 +811,7 @@ ALTER TABLE ONLY public."Order"
 
 
 --
--- TOC entry 2991 (class 2606 OID 66102)
+-- TOC entry 2990 (class 2606 OID 66102)
 -- Name: PaymentCard PaymentCard_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -823,7 +820,7 @@ ALTER TABLE ONLY public."PaymentCard"
 
 
 --
--- TOC entry 2979 (class 2606 OID 66010)
+-- TOC entry 2978 (class 2606 OID 66010)
 -- Name: ProductImages  ProductImages _pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -832,7 +829,7 @@ ALTER TABLE ONLY public."ProductImages "
 
 
 --
--- TOC entry 2969 (class 2606 OID 57708)
+-- TOC entry 2968 (class 2606 OID 57708)
 -- Name: Product Product_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -841,7 +838,7 @@ ALTER TABLE ONLY public."Product"
 
 
 --
--- TOC entry 2981 (class 2606 OID 66021)
+-- TOC entry 2980 (class 2606 OID 66021)
 -- Name: Reviews Reviews_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -850,7 +847,7 @@ ALTER TABLE ONLY public."Reviews"
 
 
 --
--- TOC entry 2989 (class 2606 OID 66061)
+-- TOC entry 2988 (class 2606 OID 66061)
 -- Name: SuppliesStock SuppliesStock_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -859,7 +856,7 @@ ALTER TABLE ONLY public."SuppliesStock"
 
 
 --
--- TOC entry 3015 (class 2606 OID 66171)
+-- TOC entry 3014 (class 2606 OID 66171)
 -- Name: TransportCompany TransportCompany_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -868,7 +865,7 @@ ALTER TABLE ONLY public."TransportCompany"
 
 
 --
--- TOC entry 3007 (class 2606 OID 66047)
+-- TOC entry 3006 (class 2606 OID 66047)
 -- Name: Warehouse Warehouse_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -877,7 +874,7 @@ ALTER TABLE ONLY public."Warehouse"
 
 
 --
--- TOC entry 2993 (class 2606 OID 66111)
+-- TOC entry 2992 (class 2606 OID 66111)
 -- Name: customer_receipt_connector customer_receipt_connector_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -886,7 +883,7 @@ ALTER TABLE ONLY public.customer_receipt_connector
 
 
 --
--- TOC entry 2995 (class 2606 OID 66113)
+-- TOC entry 2994 (class 2606 OID 66113)
 -- Name: customers_addresses customers_addresses_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -895,7 +892,7 @@ ALTER TABLE ONLY public.customers_addresses
 
 
 --
--- TOC entry 2997 (class 2606 OID 66019)
+-- TOC entry 2996 (class 2606 OID 66019)
 -- Name: customers_information customers_information_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -904,7 +901,7 @@ ALTER TABLE ONLY public.customers_information
 
 
 --
--- TOC entry 2999 (class 2606 OID 66115)
+-- TOC entry 2998 (class 2606 OID 66115)
 -- Name: delivery_services_type delivery_services_type_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -913,7 +910,7 @@ ALTER TABLE ONLY public.delivery_services_type
 
 
 --
--- TOC entry 3001 (class 2606 OID 66117)
+-- TOC entry 3000 (class 2606 OID 66117)
 -- Name: delivery_status_description delivery_status_description_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -922,7 +919,7 @@ ALTER TABLE ONLY public.delivery_status_description
 
 
 --
--- TOC entry 3013 (class 2606 OID 65963)
+-- TOC entry 3012 (class 2606 OID 65963)
 -- Name: deliverytrip deliverytrip_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -931,7 +928,7 @@ ALTER TABLE ONLY public.deliverytrip
 
 
 --
--- TOC entry 3003 (class 2606 OID 66119)
+-- TOC entry 3002 (class 2606 OID 66119)
 -- Name: goods_in_receipt goods_in_receipt_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -940,7 +937,7 @@ ALTER TABLE ONLY public.goods_in_receipt
 
 
 --
--- TOC entry 3005 (class 2606 OID 66109)
+-- TOC entry 3004 (class 2606 OID 66109)
 -- Name: receipt_information receipt_information_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -949,7 +946,7 @@ ALTER TABLE ONLY public.receipt_information
 
 
 --
--- TOC entry 2985 (class 2606 OID 57755)
+-- TOC entry 2984 (class 2606 OID 57755)
 -- Name: supplier supplier_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -958,7 +955,7 @@ ALTER TABLE ONLY public.supplier
 
 
 --
--- TOC entry 2987 (class 2606 OID 66049)
+-- TOC entry 2986 (class 2606 OID 66049)
 -- Name: supplies supplies_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -967,7 +964,7 @@ ALTER TABLE ONLY public.supplies
 
 
 --
--- TOC entry 3011 (class 2606 OID 65955)
+-- TOC entry 3010 (class 2606 OID 65955)
 -- Name: transportvehicle transportvehicle_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -976,7 +973,7 @@ ALTER TABLE ONLY public.transportvehicle
 
 
 --
--- TOC entry 3029 (class 2606 OID 66027)
+-- TOC entry 3028 (class 2606 OID 66027)
 -- Name: Reviews about_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -985,7 +982,7 @@ ALTER TABLE ONLY public."Reviews"
 
 
 --
--- TOC entry 3019 (class 2606 OID 65985)
+-- TOC entry 3018 (class 2606 OID 65985)
 -- Name: Product adminSeller_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -994,7 +991,7 @@ ALTER TABLE ONLY public."Product"
 
 
 --
--- TOC entry 3028 (class 2606 OID 66022)
+-- TOC entry 3027 (class 2606 OID 66022)
 -- Name: Reviews author_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1003,7 +1000,7 @@ ALTER TABLE ONLY public."Reviews"
 
 
 --
--- TOC entry 3020 (class 2606 OID 65997)
+-- TOC entry 3019 (class 2606 OID 65997)
 -- Name: Product brand_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1012,7 +1009,7 @@ ALTER TABLE ONLY public."Product"
 
 
 --
--- TOC entry 3021 (class 2606 OID 66004)
+-- TOC entry 3020 (class 2606 OID 66004)
 -- Name: Product category_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1021,7 +1018,7 @@ ALTER TABLE ONLY public."Product"
 
 
 --
--- TOC entry 3044 (class 2606 OID 66177)
+-- TOC entry 3043 (class 2606 OID 66177)
 -- Name: transportvehicle company_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1030,7 +1027,7 @@ ALTER TABLE ONLY public.transportvehicle
 
 
 --
--- TOC entry 3030 (class 2606 OID 66036)
+-- TOC entry 3029 (class 2606 OID 66036)
 -- Name: Cart customer_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1039,7 +1036,7 @@ ALTER TABLE ONLY public."Cart"
 
 
 --
--- TOC entry 3022 (class 2606 OID 66084)
+-- TOC entry 3021 (class 2606 OID 66084)
 -- Name: Order customer_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1048,7 +1045,7 @@ ALTER TABLE ONLY public."Order"
 
 
 --
--- TOC entry 3035 (class 2606 OID 66103)
+-- TOC entry 3034 (class 2606 OID 66103)
 -- Name: PaymentCard customer_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1057,7 +1054,7 @@ ALTER TABLE ONLY public."PaymentCard"
 
 
 --
--- TOC entry 3039 (class 2606 OID 66120)
+-- TOC entry 3038 (class 2606 OID 66120)
 -- Name: customers_information delivery_kind_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1066,7 +1063,7 @@ ALTER TABLE ONLY public.customers_information
 
 
 --
--- TOC entry 3041 (class 2606 OID 66125)
+-- TOC entry 3040 (class 2606 OID 66125)
 -- Name: receipt_information delivery_status_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1075,7 +1072,7 @@ ALTER TABLE ONLY public.receipt_information
 
 
 --
--- TOC entry 3023 (class 2606 OID 66130)
+-- TOC entry 3022 (class 2606 OID 66130)
 -- Name: Order delivery_status_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1084,7 +1081,7 @@ ALTER TABLE ONLY public."Order"
 
 
 --
--- TOC entry 3042 (class 2606 OID 66135)
+-- TOC entry 3041 (class 2606 OID 66135)
 -- Name: receipt_information delivery_type_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1093,7 +1090,7 @@ ALTER TABLE ONLY public.receipt_information
 
 
 --
--- TOC entry 3024 (class 2606 OID 66140)
+-- TOC entry 3023 (class 2606 OID 66140)
 -- Name: Order delivery_type_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1102,7 +1099,7 @@ ALTER TABLE ONLY public."Order"
 
 
 --
--- TOC entry 3036 (class 2606 OID 66145)
+-- TOC entry 3035 (class 2606 OID 66145)
 -- Name: customer_receipt_connector email_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1111,7 +1108,7 @@ ALTER TABLE ONLY public.customer_receipt_connector
 
 
 --
--- TOC entry 3038 (class 2606 OID 66150)
+-- TOC entry 3037 (class 2606 OID 66150)
 -- Name: customers_addresses email_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1120,7 +1117,7 @@ ALTER TABLE ONLY public.customers_addresses
 
 
 --
--- TOC entry 3043 (class 2606 OID 66155)
+-- TOC entry 3042 (class 2606 OID 66155)
 -- Name: receipt_information email_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1129,7 +1126,7 @@ ALTER TABLE ONLY public.receipt_information
 
 
 --
--- TOC entry 3025 (class 2606 OID 66091)
+-- TOC entry 3024 (class 2606 OID 66091)
 -- Name: OrderDescription order_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1138,7 +1135,7 @@ ALTER TABLE ONLY public."OrderDescription"
 
 
 --
--- TOC entry 3027 (class 2606 OID 66011)
+-- TOC entry 3026 (class 2606 OID 66011)
 -- Name: ProductImages  product_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1147,7 +1144,7 @@ ALTER TABLE ONLY public."ProductImages "
 
 
 --
--- TOC entry 3031 (class 2606 OID 66041)
+-- TOC entry 3030 (class 2606 OID 66041)
 -- Name: Cart product_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1156,7 +1153,7 @@ ALTER TABLE ONLY public."Cart"
 
 
 --
--- TOC entry 3026 (class 2606 OID 66096)
+-- TOC entry 3025 (class 2606 OID 66096)
 -- Name: OrderDescription product_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1165,7 +1162,7 @@ ALTER TABLE ONLY public."OrderDescription"
 
 
 --
--- TOC entry 3047 (class 2606 OID 66072)
+-- TOC entry 3046 (class 2606 OID 66072)
 -- Name: Inventory productsku_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1174,7 +1171,7 @@ ALTER TABLE ONLY public."Inventory"
 
 
 --
--- TOC entry 3037 (class 2606 OID 66160)
+-- TOC entry 3036 (class 2606 OID 66160)
 -- Name: customer_receipt_connector receipt_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1183,7 +1180,7 @@ ALTER TABLE ONLY public.customer_receipt_connector
 
 
 --
--- TOC entry 3040 (class 2606 OID 66165)
+-- TOC entry 3039 (class 2606 OID 66165)
 -- Name: goods_in_receipt receipt_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1192,7 +1189,7 @@ ALTER TABLE ONLY public.goods_in_receipt
 
 
 --
--- TOC entry 3018 (class 2606 OID 65990)
+-- TOC entry 3017 (class 2606 OID 65990)
 -- Name: Product supplierSeller_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1201,7 +1198,7 @@ ALTER TABLE ONLY public."Product"
 
 
 --
--- TOC entry 3032 (class 2606 OID 66050)
+-- TOC entry 3031 (class 2606 OID 66050)
 -- Name: supplies supplier_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1210,7 +1207,7 @@ ALTER TABLE ONLY public.supplies
 
 
 --
--- TOC entry 3034 (class 2606 OID 66062)
+-- TOC entry 3033 (class 2606 OID 66062)
 -- Name: SuppliesStock supply_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1219,7 +1216,7 @@ ALTER TABLE ONLY public."SuppliesStock"
 
 
 --
--- TOC entry 3045 (class 2606 OID 66172)
+-- TOC entry 3044 (class 2606 OID 66172)
 -- Name: deliverytrip truck_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1228,7 +1225,7 @@ ALTER TABLE ONLY public.deliverytrip
 
 
 --
--- TOC entry 3033 (class 2606 OID 66055)
+-- TOC entry 3032 (class 2606 OID 66055)
 -- Name: supplies warehouse_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1237,7 +1234,7 @@ ALTER TABLE ONLY public.supplies
 
 
 --
--- TOC entry 3046 (class 2606 OID 66189)
+-- TOC entry 3045 (class 2606 OID 66189)
 -- Name: deliverytrip warehouse_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1246,7 +1243,7 @@ ALTER TABLE ONLY public.deliverytrip
 
 
 --
--- TOC entry 3048 (class 2606 OID 66077)
+-- TOC entry 3047 (class 2606 OID 66077)
 -- Name: Inventory warehousecode_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1254,7 +1251,7 @@ ALTER TABLE ONLY public."Inventory"
     ADD CONSTRAINT warehousecode_fkey FOREIGN KEY (warehousecode_fk) REFERENCES public."Warehouse"("warehouseCode") NOT VALID;
 
 
--- Completed on 2021-12-13 20:01:04
+-- Completed on 2021-12-14 22:40:05
 
 --
 -- PostgreSQL database dump complete
