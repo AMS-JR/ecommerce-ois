@@ -1,0 +1,6 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Introduction}{2}%
+\contentsline {section}{\numberline {2}Ontology}{2}%
+\contentsline {section}{\numberline {3}Mapping}{2}%
+\contentsline {section}{\numberline {4}Queries}{2}%
+\contentsline {section}{\numberline {5}Discussion}{2}%
