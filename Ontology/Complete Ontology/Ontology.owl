@@ -125,18 +125,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Inventory -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Inventory">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Warehouse"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Inventory"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Order_Description -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Order_Description">
@@ -376,6 +364,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#warehouse_has">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Warehouse"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Inventory"/>
     </owl:ObjectProperty>
