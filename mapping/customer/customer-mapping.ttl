@@ -1,0 +1,257 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix ecommerce: <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#>.
+
+# customers_information Mapping
+<#customers_information>
+  a rr:TriplesMap ;
+  rr:logicalTable [
+    rr:tableName "customers_information"
+  ];
+  rr:subjectMap [
+    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_information/{email}";
+    rr:class ecommerce:Customer;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:first_name ;
+    rr:objectMap [rr:column "first_name"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:last_name ;
+    rr:objectMap [rr:column "last_name"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:birth_date ;
+    rr:objectMap [rr:column "birth_date"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:phone_number ;
+    rr:objectMap [rr:column "phone_number"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:phone_number ;
+    rr:objectMap [rr:column "phone_number"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:Delivery_Type ;
+    rr:objectMap [
+      rr:parentTriplesMap <#delivery_services_type> ;
+      rr:joinCondition [
+      rr:child "delivery_kind" ;
+      rr:parent "delivery_kind"
+      ]
+    ]
+  ].
+
+# delivery_services_type Mapping
+<#delivery_services_type>
+  a rr:TriplesMap ;
+  rr:logicalTable [
+    rr:tableName "delivery_services_type"
+  ];
+  rr:subjectMap [
+    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/delivery_services_type/{delivery_kind}";
+    rr:class ecommerce:Delivery_Type;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:Delivery_Type ;
+    rr:objectMap [rr:column "delivery_kind"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:price ;
+    rr:objectMap [rr:column "price"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:delivery_duration ;
+    rr:objectMap [rr:column "delivery_duration"];
+  ].
+
+# PaymentCard Mapping
+<#paymentcard>
+  a rr:TriplesMap ;
+  rr:logicalTable [
+    rr:tableName "paymentcard"
+  ];
+  rr:subjectMap [
+    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/PaymentCard/{cardType}_{cardNumber}";
+    rr:class ecommerce:Payment_Card;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:cardHolderName ;
+    rr:objectMap [rr:column "cardHolderName"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:cardExpiryDate ;
+    rr:objectMap [rr:column "cardExpiryDate"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:cardExpiryDate ;
+    rr:objectMap [rr:column "cardExpiryDate"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:Customer_email ;
+    rr:objectMap [
+      rr:parentTriplesMap <#customers_information> ;
+      rr:joinCondition [
+      rr:child "customerEmail" ;
+      rr:parent "email"
+      ]
+    ]
+  ].
+
+# customers_addresses Mapping
+<#customers_addresses>
+  a rr:TriplesMap ;
+  rr:logicalTable [
+    rr:tableName "customers_addresses"
+  ];
+  rr:subjectMap [
+    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_addresses/{email}_{country}_{city}_{address}";
+    rr:class ecommerce:Address;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:Customer_email ;
+    rr:objectMap [
+      rr:parentTriplesMap <#customers_information> ;
+      rr:joinCondition [
+      rr:child "email" ;
+      rr:parent "email"
+      ]
+    ]
+  ].
+
+# delivery_status_description Mapping
+<#delivery_status_description>
+  a rr:TriplesMap ;
+  rr:logicalTable [
+    rr:tableName "delivery_status_description"
+  ];
+  rr:subjectMap [
+    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/delivery_status_description/{delivery_status}";
+    rr:class ecommerce:Delivery_status;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:description ;
+    rr:objectMap [rr:column "decription"];
+  ].
+
+# receipt_information Mapping
+<#receipt_information>
+  a rr:TriplesMap ;
+  rr:logicalTable [
+    rr:tableName "receipt_information"
+  ];
+  rr:subjectMap [
+    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/receipt_information/{receipt_id}";
+    rr:class ecommerce:Order;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:date ;
+    rr:objectMap [rr:column "date"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:orderAmount ;
+    rr:objectMap [rr:column "orderamount"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:full_address ;
+    rr:objectMap [rr:column "address"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:Customer_email ;
+    rr:objectMap [
+      rr:parentTriplesMap <#customers_information> ;
+      rr:joinCondition [
+      rr:child "email" ;
+      rr:parent "email"
+      ]
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:Delivery_status ;
+    rr:objectMap [
+      rr:parentTriplesMap <#delivery_status_description> ;
+      rr:joinCondition [
+      rr:child "delivery_status" ;
+      rr:parent "delivery_status"
+      ]
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:Delivery_Type ;
+    rr:objectMap [
+      rr:parentTriplesMap <#delivery_services_type> ;
+      rr:joinCondition [
+      rr:child "delivery_type" ;
+      rr:parent "delivery_kind"
+      ]
+    ]
+  ].
+
+# customer_receipt_connector Mapping
+<#customer_receipt_connector>
+  a rr:TriplesMap ;
+  rr:logicalTable [
+    rr:tableName "customer_receipt_connector"
+  ];
+  rr:subjectMap [
+    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customer_receipt_connector/{email}_{receipt_id}";
+    rr:class ecommerce:Customer;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:Customer_email ;
+    rr:objectMap [
+      rr:parentTriplesMap <#customers_information> ;
+      rr:joinCondition [
+      rr:child "email" ;
+      rr:parent "email"
+      ]
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:Order ;
+    rr:objectMap [
+      rr:parentTriplesMap <#receipt_information> ;
+      rr:joinCondition [
+      rr:child "receipt_id" ;
+      rr:parent "receipt_id"
+      ]
+    ]
+  ].
+
+  # goods_in_receipt Mapping
+  <#goods_in_receipt>
+    a rr:TriplesMap ;
+    rr:logicalTable [
+      rr:tableName "goods_in_receipt"
+    ];
+    rr:subjectMap [
+      rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/goods_in_receipt/{receipt_id}_{good_id}";
+      rr:class ecommerce:Order_Description;
+    ];
+    rr:predicateObjectMap [
+      rr:predicate ecommerce:numberof ;
+      rr:objectMap [rr:column "numberof"];
+    ];
+    rr:predicateObjectMap [
+      rr:predicate ecommerce:Order ;
+      rr:objectMap [
+        rr:parentTriplesMap <#receipt_information> ;
+        rr:joinCondition [
+        rr:child "receipt_id" ;
+        rr:parent "receipt_id"
+        ]
+      ]
+    ].
+    
+# This part is for Amadou to complete
+
+    # rr:predicateObjectMap [
+    #   rr:predicate ecommerce:Product ;
+    #   rr:objectMap [
+    #     rr:parentTriplesMap <#product> ;
+    #     rr:joinCondition [
+    #     rr:child "good_id" ;
+    #     rr:parent "sku"
+    #     ]
+    #   ]
+    # ].
