@@ -48,7 +48,7 @@
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#addresscity>
                 "Brussels" ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#addresscountry>
-                "BE" ;
+                "BEL" ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#addresslocality>
                 "Vorst" ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#companyname>
@@ -69,7 +69,7 @@
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#addresscity>
                 "Nederland" ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#addresscountry>
-                "NL" ;
+                "NLD" ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#addresslocality>
                 "Eindhoven" ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#companyname>
