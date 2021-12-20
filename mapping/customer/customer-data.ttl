@@ -1,0 +1,274 @@
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customer_receipt_connector/ardavan.khalij%40vub.be_1>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer_email>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_information/ardavan.khalij%40vub.be> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/receipt_information/1> .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/goods_in_receipt/3_2>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order_Description> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/receipt_information/3> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#numberof>
+                1 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customer_receipt_connector/harry.potter%40hogwarts.uk_2>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer_email>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_information/harry.potter%40hogwarts.uk> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/receipt_information/2> .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_addresses/monica.geller%40gmail.com_USA_New%20York_Manhattan%2C%20223%2C%203>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Address> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer_email>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_information/monica.geller%40gmail.com> .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/delivery_services_type/Ordinary>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Type> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Type>
+                "Ordinary" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#delivery_duration>
+                45 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#price>
+                2.0E1 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/delivery_services_type/Super%20fast>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Type> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Type>
+                "Super fast" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#delivery_duration>
+                25 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#price>
+                3.0E1 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/goods_in_receipt/1_3>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order_Description> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/receipt_information/1> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#numberof>
+                3 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_addresses/ted.mosby%40gmail.com_USA_New%20York_Manhattan%2C%20180%2C%2044>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Address> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer_email>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_information/ted.mosby%40gmail.com> .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/goods_in_receipt/3_1>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order_Description> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/receipt_information/3> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#numberof>
+                1 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_information/monica.geller%40gmail.com>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Type>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/delivery_services_type/Fast> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1970-09-02"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Monica" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Geller" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#phone_number>
+                "+1342987442" .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_addresses/tonystark%40gmail.com_USA_New%20York_Manhattan%2C%20Stark%20Tower>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Address> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer_email>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_information/tonystark%40gmail.com> .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customer_receipt_connector/rick.sanchez%40yahoo.com_3>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer_email>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_information/rick.sanchez%40yahoo.com> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/receipt_information/3> .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_information/tonystark%40gmail.com>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Type>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/delivery_services_type/Express> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1976-01-05"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Tony" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Stark" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#phone_number>
+                "+1637876787" .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/goods_in_receipt/1_2>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order_Description> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/receipt_information/1> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#numberof>
+                4 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/goods_in_receipt/2_1>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order_Description> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/receipt_information/2> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#numberof>
+                1 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/delivery_services_type/Fast>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Type> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Type>
+                "Fast" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#delivery_duration>
+                35 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#price>
+                2.5E1 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_information/rick.sanchez%40yahoo.com>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Type>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/delivery_services_type/Express> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1958-11-15"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Rick" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Sanchez" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#phone_number>
+                "+1467844325" .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/delivery_status_description/Delivered>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_status> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#description>
+                "The purchase has deliverd to the customer." .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/receipt_information/3>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_status>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/delivery_status_description/Not%20Delivered> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#date>
+                "2021-11-09"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_addresses/ardavan.khalij%40vub.be_Belgium_Brussels_Kroonlaan%20238>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Address> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer_email>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_information/ardavan.khalij%40vub.be> .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/goods_in_receipt/1_1>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order_Description> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/receipt_information/1> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#numberof>
+                1 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_information/ardavan.khalij%40vub.be>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Type>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/delivery_services_type/Express> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1998-11-15"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Ardavan" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Khalij" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#phone_number>
+                "+32467842501" .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_addresses/ardavan.khalij%40vub.be_Iran_Tehran_Dibaji%2010>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Address> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer_email>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_information/ardavan.khalij%40vub.be> .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_information/harry.potter%40hogwarts.uk>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Type>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/delivery_services_type/Super%20fast> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1992-09-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Harry" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Potter" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#phone_number>
+                "+44987823775" .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/receipt_information/2>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_status>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/delivery_status_description/Not%20Delivered> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#date>
+                "2021-10-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_information/ted.mosby%40gmail.com>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Type>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/delivery_services_type/Fast> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1978-01-24"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Ted" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Mosby" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#phone_number>
+                "+1637873456" .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_addresses/rick.sanchez%40yahoo.com_USA_Seattle_2%2C%2010>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Address> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer_email>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_information/rick.sanchez%40yahoo.com> .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_addresses/ross.geller%40gmail.com_USA_New%20York_Manhattan%2C%20233%2C%2023>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Address> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer_email>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_information/ross.geller%40gmail.com> .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_addresses/harry.potter%40hogwarts.uk_UK_London_Privet%20Drive%204>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Address> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer_email>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_information/harry.potter%40hogwarts.uk> .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/delivery_services_type/Express>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Type> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Type>
+                "Express" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#delivery_duration>
+                10 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#price>
+                4.0E1 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/receipt_information/1>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_status>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/delivery_status_description/Delivered> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#date>
+                "2021-10-09"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/delivery_status_description/Not%20Delivered>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_status> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#description>
+                "The purchase has not deliverd to the customer." .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_information/ross.geller%40gmail.com>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Type>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/delivery_services_type/Ordinary> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1968-10-25"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Ross" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Geller" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#phone_number>
+                "+1342987444" .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/goods_in_receipt/1_4>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order_Description> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/receipt_information/1> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#numberof>
+                1 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/goods_in_receipt/2_3>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order_Description> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/receipt_information/2> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#numberof>
+                2 .
