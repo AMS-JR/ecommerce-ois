@@ -8,7 +8,7 @@
     rr:tableName "warehouse"
   ];
   rr:subjectMap [
-    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse{warehousecode}";
+    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/{warehousecode}";
     rr:class ecommerce:Warehouse;
   ];
   rr:predicateObjectMap [
@@ -48,6 +48,7 @@
     rr:objectMap [rr:column "streetaddress"]
   ].
 
+
 #Inventory mapping
 <#Inventory>
   a rr:TriplesMap;
@@ -55,7 +56,7 @@
     rr:tableName "inventory"
   ];
   rr:subjectMap [
-    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/inventory{productsku_fk}_{warehousecode_fk}";
+    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/inventory/{productsku_fk}_{warehousecode_fk}";
     rr:class ecommerce:Inventory;
   ];
   rr:predicateObjectMap [
@@ -69,4 +70,42 @@
   rr:predicateObjectMap [
     rr:predicate ecommerce:productsku_fk;
     rr:objectMap [rr:column "productsku_fk"]
+  ].
+
+#warehouse_has mapping
+<#warehouse_has>
+  rr:logicalTable [
+  rr:sqlQuery """SELECT A.warehousecode AS warehousecode,
+                  B.warehousecode_fk,
+                  B.productsku_fk
+                  FROM warehouse A INNER JOIN inventory B ON warehousecode=B.warehousecode_fk"""
+  ];
+  rr:subjectMap [
+    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/{warehousecode}";
+    rr:class ecommerce:warehouse;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:warehouse_has;
+    rr:objectMap [
+      rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/inventory/{productsku_fk}_{warehousecode_fk}";
+    ];
+  ].
+
+#inventory_has mapping
+<#inventory_has>
+  rr:logicalTable [
+  rr:sqlQuery """SELECT A.warehousecode_fk,
+                  A.productsku_fk,
+                  B.warehousecode
+                  FROM inventory A INNER JOIN warehouse B ON A.warehousecode_fk=B.warehousecode"""
+  ];
+  rr:subjectMap [
+    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/inventory/{productsku_fk}_{warehousecode_fk}";
+    rr:class ecommerce:inventory;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:inventory_has;
+      rr:objectMap [
+      rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/{warehousecode}";
+    ];
   ].
