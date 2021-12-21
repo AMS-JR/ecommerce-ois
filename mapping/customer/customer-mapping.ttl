@@ -8,7 +8,7 @@
     rr:tableName "customers_information"
   ];
   rr:subjectMap [
-    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_information/{email}";
+    rr:template "http://data.ecommerce/customers_information/{email}";
     rr:class ecommerce:Customer;
   ];
   rr:predicateObjectMap [
@@ -49,7 +49,7 @@
     rr:tableName "delivery_services_type"
   ];
   rr:subjectMap [
-    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/delivery_services_type/{delivery_kind}";
+    rr:template "http://data.ecommerce/delivery_services_type/{delivery_kind}";
     rr:class ecommerce:Delivery_Type;
   ];
   rr:predicateObjectMap [
@@ -72,7 +72,7 @@
     rr:tableName "paymentcard"
   ];
   rr:subjectMap [
-    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/PaymentCard/{cardType}_{cardNumber}";
+    rr:template "http://data.ecommerce/PaymentCard/{cardType}_{cardNumber}";
     rr:class ecommerce:Payment_Card;
   ];
   rr:predicateObjectMap [
@@ -105,7 +105,7 @@
     rr:tableName "customers_addresses"
   ];
   rr:subjectMap [
-    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customers_addresses/{email}_{country}_{city}_{address}";
+    rr:template "http://data.ecommerce/customers_addresses/{email}_{country}_{city}_{address}";
     rr:class ecommerce:Address;
   ];
   rr:predicateObjectMap [
@@ -126,7 +126,7 @@
     rr:tableName "delivery_status_description"
   ];
   rr:subjectMap [
-    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/delivery_status_description/{delivery_status}";
+    rr:template "http://data.ecommerce/delivery_status_description/{delivery_status}";
     rr:class ecommerce:Delivery_status;
   ];
   rr:predicateObjectMap [
@@ -141,7 +141,7 @@
     rr:tableName "receipt_information"
   ];
   rr:subjectMap [
-    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/receipt_information/{receipt_id}";
+    rr:template "http://data.ecommerce/receipt_information/{receipt_id}";
     rr:class ecommerce:Order;
   ];
   rr:predicateObjectMap [
@@ -194,7 +194,7 @@
     rr:tableName "customer_receipt_connector"
   ];
   rr:subjectMap [
-    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/customer_receipt_connector/{email}_{receipt_id}";
+    rr:template "http://data.ecommerce/customer_receipt_connector/{email}_{receipt_id}";
     rr:class ecommerce:Customer;
   ];
   rr:predicateObjectMap [
@@ -225,7 +225,7 @@
     rr:tableName "product"
   ];
   rr:subjectMap [
-    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/product/{sku}";
+    rr:template "http://data.ecommerce/product/{sku}";
     rr:class ecommerce:Product;
   ];
   rr:predicateObjectMap [
@@ -284,7 +284,7 @@
     rr:tableName "goods_in_receipt"
   ];
   rr:subjectMap [
-    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/goods_in_receipt/{receipt_id}_{good_id}";
+    rr:template "http://data.ecommerce/goods_in_receipt/{receipt_id}_{good_id}";
     rr:class ecommerce:Order_Description;
   ];
   rr:predicateObjectMap [
@@ -321,13 +321,13 @@ rr:logicalTable [
                  ON A.email = B.email;"""
   ];
   rr:subjectMap[
-    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Has_Address/{email}_{first_name}_{last_name}";
+    rr:template "http://data.ecommerce/Has_Address/{email}_{first_name}_{last_name}";
     rr:class ecommerce:Customer;
   ];
   rr:predicateObjectMap[
     rr:predicate ecommerce:Has_Address;
     rr:objectMap[
-      rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Has_Address/{country}_{city}_{address}";
+      rr:template "http://data.ecommerce/Has_Address/{country}_{city}_{address}";
     ]
   ].
 
@@ -340,13 +340,13 @@ rr:logicalTable [
                    ON A.delivery_status = B.delivery_status;"""
   ];
   rr:subjectMap[
-    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Has_Delivery_Status/{receipt_id}";
+    rr:template "http://data.ecommerce/Has_Delivery_Status/{receipt_id}";
     rr:class ecommerce:Order;
   ];
   rr:predicateObjectMap[
     rr:predicate ecommerce:Has_Delivery_Status;
     rr:objectMap[
-      rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Has_Delivery_Status/{delivery_status}";
+      rr:template "http://data.ecommerce/Has_Delivery_Status/{delivery_status}";
     ]
   ].
 
@@ -359,13 +359,13 @@ rr:logicalTable [
                    ON A.delivery_type = B.delivery_kind;"""
   ];
   rr:subjectMap[
-    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Has_The_Delivery_Type/{receipt_id}";
+    rr:template "http://data.ecommerce/Has_The_Delivery_Type/{receipt_id}";
     rr:class ecommerce:Order;
   ];
   rr:predicateObjectMap[
     rr:predicate ecommerce:Has_The_Delivery_Type;
     rr:objectMap[
-      rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Has_The_Delivery_Type/{delivery_kind}";
+      rr:template "http://data.ecommerce/Has_The_Delivery_Type/{delivery_kind}";
     ]
   ].
 
@@ -380,13 +380,13 @@ rr:logicalTable [
                    ON B.good_id = C.sku;"""
   ];
   rr:subjectMap[
-    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Has_Order_Description/{receipt_id}";
+    rr:template "http://data.ecommerce/Has_Order_Description/{receipt_id}";
     rr:class ecommerce:Order;
   ];
   rr:predicateObjectMap [
     rr:predicate ecommerce:Has_Order_Description ;
     rr:objectMap [
-      rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Has_Order_Description/{name}_{price}_{numberof}";
+      rr:template "http://data.ecommerce/Has_Order_Description/{name}_{price}_{numberof}";
     ]
   ].
 
@@ -399,13 +399,13 @@ rr:logicalTable [
                    ON A.email = B.customeremail"""
   ];
   rr:subjectMap[
-    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Has_Payment_Card/{first_name}_{last_name}";
+    rr:template "http://data.ecommerce/Has_Payment_Card/{first_name}_{last_name}";
     rr:class ecommerce:Customer;
   ];
   rr:predicateObjectMap [
     rr:predicate ecommerce:Has_Payment_Card ;
     rr:objectMap [
-      rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Has_Payment_Card/{cardnumber}_{cardexpirydate}_{cardtype}";
+      rr:template "http://data.ecommerce/Has_Payment_Card/{cardnumber}_{cardexpirydate}_{cardtype}";
     ]
 ].
 
@@ -420,13 +420,13 @@ rr:logicalTable [
                    ON C.receipt_id = B.receipt_id;"""
   ];
   rr:subjectMap[
-    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/places_order/{first_name}_{last_name}";
+    rr:template "http://data.ecommerce/places_order/{first_name}_{last_name}";
     rr:class ecommerce:Customer;
   ];
   rr:predicateObjectMap [
     rr:predicate ecommerce:places_order ;
     rr:objectMap [
-      rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/places_order/{receipt_id}_{date}_{orderamount}_{delivery_type}_{delivery_status}";
+      rr:template "http://data.ecommerce/places_order/{receipt_id}_{date}_{orderamount}_{delivery_type}_{delivery_status}";
     ]
 ].
 
@@ -439,12 +439,12 @@ rr:logicalTable [
                    ON A.delivery_kind = B.delivery_kind"""
   ];
   rr:subjectMap[
-    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/prefers_delivery_type/{first_name}_{last_name}";
+    rr:template "http://data.ecommerce/prefers_delivery_type/{first_name}_{last_name}";
     rr:class ecommerce:Customer;
   ];
   rr:predicateObjectMap [
     rr:predicate ecommerce:prefers_delivery_type ;
     rr:objectMap [
-      rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/prefers_delivery_type/{delivery_kind}";
+      rr:template "http://data.ecommerce/prefers_delivery_type/{delivery_kind}";
     ]
 ].
