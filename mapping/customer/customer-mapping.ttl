@@ -241,17 +241,14 @@
         rr:parent "receipt_id"
         ]
       ]
+    ];
+    rr:predicateObjectMap [
+      rr:predicate ecommerce:Product ;
+      rr:objectMap [
+        rr:parentTriplesMap <#product> ;
+        rr:joinCondition [
+        rr:child "good_id" ;
+        rr:parent "sku"
+        ]
+      ]
     ].
-    
-# This part is for Amadou to complete
-
-    # rr:predicateObjectMap [
-    #   rr:predicate ecommerce:Product ;
-    #   rr:objectMap [
-    #     rr:parentTriplesMap <#product> ;
-    #     rr:joinCondition [
-    #     rr:child "good_id" ;
-    #     rr:parent "sku"
-    #     ]
-    #   ]
-    # ].
