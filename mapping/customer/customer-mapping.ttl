@@ -218,7 +218,66 @@
     ]
   ].
 
-  # goods_in_receipt Mapping
+# product Mapping
+<#product>
+  a rr:TriplesMap ;
+  rr:logicalTable [
+    rr:tableName "product"
+  ];
+  rr:subjectMap [
+    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/product/{sku}";
+    rr:class ecommerce:Product;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:Product_Name ;
+    rr:objectMap [rr:column "name"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:color ;
+    rr:objectMap [rr:column "color"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:Item_condition ;
+    rr:objectMap [rr:column "itemcondition"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:Product_description ;
+    rr:objectMap [rr:column "description"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:stockQuantity ;
+    rr:objectMap [rr:column "stockquantity"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:location ;
+    rr:objectMap [rr:column "location"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:Product_date_added ;
+    rr:objectMap [rr:column "date"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:Product_date_added ;
+    rr:objectMap [rr:column "dateadded"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:brand ;
+    rr:objectMap [rr:column "brand"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:category ;
+    rr:objectMap [rr:column "category"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:Product_price ;
+    rr:objectMap [rr:column "category"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:model ;
+    rr:objectMap [rr:column "model"];
+  ].
+
+# goods_in_receipt Mapping
   <#goods_in_receipt>
     a rr:TriplesMap ;
     rr:logicalTable [
