@@ -25,6 +25,11 @@
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
                 206 .
 
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Brown%2C%20Monahan%20and%20Walker>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/34> .
+
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/252>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderPrice>
@@ -38,8 +43,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-10-01T05:00:37"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 97 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/310> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/312> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/309> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/311> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/313> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/314> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -47,8 +56,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-08-07T05:00:18"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 19 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/359> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/356> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/360> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/355> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/358> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/357> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -95,8 +108,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-09-10T05:00:05"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 65 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/409> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -113,8 +130,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-11-10T05:00:32"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 33 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/33> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -168,6 +189,11 @@
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
                 43 .
 
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/O%20Kon%2C%20Hermiston%20and%20Jenkins>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/40> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/6> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/87> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/8> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/56> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/47> .
+
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/164>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderPrice>
@@ -190,8 +216,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-09-17T05:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 1 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/163> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/161> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/164> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/162> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/165> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/166> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -248,6 +278,11 @@
                 162.0 ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
                 100 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Borer%20Group>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/5> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/7> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/46> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/39> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/86> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/55> .
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/321>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
@@ -362,8 +397,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-02-09T05:00:18"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 78 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/143> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -435,8 +474,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-03-16T05:00:45"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 46 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/216> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/214> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/217> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/218> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/215> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -497,8 +540,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-10-17T05:00:32"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 92 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/105> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/104> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/103> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/106> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/107> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -506,8 +553,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-05-12T05:00:13"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 14 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/100> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/99> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/98> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/101> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/102> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -533,8 +584,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-10-03T05:00:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 60 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/142> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/141> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -574,15 +629,6 @@
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
                 191 .
 
-<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/366>
-        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderPrice>
-                1.49 ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderQuantity>
-                95.0 ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
-                366 .
-
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Product/GROBread-Rye>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
@@ -605,6 +651,20 @@
                 "GROBread-Rye" ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
                 50.0 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/366>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderPrice>
+                1.49 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderQuantity>
+                95.0 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
+                366 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Wiegand-Rogahn>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/33> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/72> .
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/113>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
@@ -797,8 +857,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-05-25T05:00:58"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 59 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/272> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/271> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -856,8 +920,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-06-04T05:00:26"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 27 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/244> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -883,28 +951,14 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-03-25T05:00:13"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 73 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/384> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/381> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/380> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/382> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/383> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/379> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
-
-<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/158>
-        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderPrice>
-                9.18 ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderQuantity>
-                162.0 ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
-                158 .
-
-<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/83>
-        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderPrice>
-                3.42 ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderQuantity>
-                117.0 ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
-                83 .
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Product/GROMushroom-Portebello>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
@@ -928,6 +982,29 @@
                 "GROMushroom-Portebello" ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
                 6.0 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/158>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderPrice>
+                9.18 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderQuantity>
+                162.0 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
+                158 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/83>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderPrice>
+                3.42 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderQuantity>
+                117.0 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
+                83 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Marquardt%2C%20Luettgen%20and%20Gaylord>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/85> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/38> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/84> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/45> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/4> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/54> .
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplier/Wolff%2C%20Harris%20and%20Watsica>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
@@ -954,8 +1031,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-03-31T05:00:40"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 41 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/371> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/370> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/369> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/372> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/367> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/368> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -1007,6 +1088,11 @@
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
                 51 .
 
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Baumbach%2C%20Bernier%20and%20Jones>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/12> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/90> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/51> .
+
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/172>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderPrice>
@@ -1042,6 +1128,16 @@
                 114.0 ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
                 140 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Bradtke-Murray>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/62> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/23> .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Rippin-Smitham>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/18> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/57> .
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/315>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
@@ -1128,6 +1224,11 @@
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier_addressLocaity>
                 "" .
 
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Bashirian-Stoltenberg>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/20> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/3> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/81> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/42> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/97> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/36> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/74> .
+
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/259>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderPrice>
@@ -1205,8 +1306,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-10-21T05:00:40"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 100 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/136> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -1246,8 +1351,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-08-06T05:00:26"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 86 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/225> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/224> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/227> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/226> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/228> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -1264,8 +1373,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-02-01T05:00:07"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 8 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/326> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/323> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/324> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/322> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/325> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -1282,8 +1395,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-10-21T05:00:53"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 54 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/20> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/19> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/17> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/16> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/18> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -1355,8 +1472,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-09-19T05:00:21"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 22 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/249> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/247> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/248> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/246> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/250> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -1506,6 +1627,11 @@
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier_addressLocaity>
                 "" .
 
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Mayer%2C%20Ryan%20and%20Purdy>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/76> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/83> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/99> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/44> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/22> .
+
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Product/GROChicken-Leg%2CFresh>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
@@ -1629,8 +1755,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-07-14T05:00:39"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 99 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/268> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/270> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/267> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/269> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/266> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -1670,8 +1800,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-09-30T05:00:07"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 67 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/109> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -1688,8 +1822,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-06-18T05:00:34"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 35 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/364> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/361> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/362> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/365> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/366> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/363> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -1738,8 +1876,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-09-06T05:00:21"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 81 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/307> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/306> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/304> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/305> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/303> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/308> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -1807,8 +1949,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-08-30T05:00:02"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 3 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/276> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/273> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/274> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/277> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/275> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/278> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -2141,8 +2287,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-10-05T05:00:47"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 48 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/116> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/119> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/117> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/115> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/118> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -2159,8 +2309,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-04-09T05:00:34"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 94 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/194> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/195> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/197> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/198> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/196> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -2168,8 +2322,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-05-16T05:00:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 16 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/193> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/192> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/191> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/189> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/190> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -2195,8 +2353,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-04-08T05:00:02"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 62 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/46> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -2222,8 +2384,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-09-06T05:00:29"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 30 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/137> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -2303,6 +2469,11 @@
                 74.0 ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
                 336 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Hamill-Langworth>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/27> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/66> .
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Product/GROBread-Roll%2CItalian>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
@@ -2449,6 +2620,11 @@
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
                 248 .
 
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Wolff%2C%20Harris%20and%20Watsica>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/78> .
+
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/294>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderPrice>
@@ -2554,8 +2730,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-07-28T05:00:28"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 29 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/139> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -2590,8 +2770,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-05-17T05:00:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 75 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/67> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/70> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/69> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/66> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/65> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/68> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -2608,8 +2792,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-06-02T05:00:42"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 43 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/64> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/59> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/63> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/61> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/62> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/60> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -2631,12 +2819,21 @@
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
                 53 .
 
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/O%20Connell%20Inc>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/68> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/29> .
+
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/11>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-10-06T05:00:10"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 11 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/86> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/87> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/84> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/85> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/83> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -2934,8 +3131,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-06-02T05:00:28"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 88 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/241> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/243> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/240> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/242> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/239> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -2961,8 +3162,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-03-05T05:00:55"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 56 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/340> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/338> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/337> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/339> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/341> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -2979,8 +3184,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-04-09T05:00:23"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 24 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/31> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -3024,8 +3233,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-03-24T05:00:10"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 70 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/160> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -3192,8 +3405,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-07-24T05:00:09"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 69 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/138> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -3219,8 +3436,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-08-14T05:00:36"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 37 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/58> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/56> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/53> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/54> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/57> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/55> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -3260,8 +3481,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-09-20T05:00:23"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 83 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/262> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/264> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/261> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/263> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/265> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -3287,8 +3512,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-08-10T05:00:04"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 5 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/202> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/199> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/200> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/203> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/201> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -3305,8 +3534,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-07-26T05:00:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 51 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/127> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/128> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/129> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/125> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/126> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -3576,8 +3809,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-10-16T05:00:36"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 96 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/396> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/391> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/393> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/392> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/395> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/394> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -3585,8 +3822,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-03-14T05:00:17"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 18 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/398> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/399> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/401> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/397> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/400> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -3603,8 +3844,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-07-25T05:00:04"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 64 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/348> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -3639,8 +3884,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-03-17T05:00:31"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 32 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/315> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -3844,6 +4093,11 @@
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
                 61.0 .
 
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Hessel%20LLC>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/77> .
+
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/264>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderPrice>
@@ -3896,10 +4150,19 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-09-20T05:00:17"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 77 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/173> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Trantow%2C%20Labadie%20and%20Ward>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/30> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/69> .
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/407>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
@@ -3909,6 +4172,16 @@
                 109.0 ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
                 407 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Pagac%20LLC>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/60> .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Wintheiser%20LLC>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/28> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/67> .
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/87>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
@@ -3955,8 +4228,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-04-26T05:00:44"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 45 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/14> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/15> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/13> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/12> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/11> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -3973,49 +4250,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-02-14T05:00:31"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 91 ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
-                "A" .
-
-<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/176>
-        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderPrice>
-                3.22 ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderQuantity>
-                144.0 ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
-                176 .
-
-<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Product/GROGeneralPurposeTrigger>
-        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
-                "" ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
-                "" ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
-                "General Purpose Trigger" ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#brand>
-                "" ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#category>
-                "GRO" ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
-                "" ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
-                "" ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#price>
-                3.7 ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
-                "GROGeneralPurposeTrigger" ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
-                53.0 .
-
-<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/13>
-        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
-                "2021-03-03T05:00:12"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
-                13 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/157> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/154> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/155> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/158> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/156> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -4041,6 +4281,51 @@
                 "GROFlour-SoMixCakeWhite" ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
                 75.0 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/176>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderPrice>
+                3.22 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderQuantity>
+                144.0 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
+                176 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/13>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
+                "2021-03-03T05:00:12"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
+                13 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/147> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/148> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/145> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/146> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/144> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
+                "A" .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Product/GROGeneralPurposeTrigger>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
+                "" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
+                "" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
+                "General Purpose Trigger" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#brand>
+                "" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#category>
+                "GRO" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
+                "" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
+                "" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#price>
+                3.7 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
+                "GROGeneralPurposeTrigger" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
+                53.0 .
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/23>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
@@ -4078,6 +4363,11 @@
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
                 319 .
 
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Dach-Connelly>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/19> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/53> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/41> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/73> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/2> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/35> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/80> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/96> .
+
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/190>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderPrice>
@@ -4086,6 +4376,11 @@
                 54.0 ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
                 190 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Schulist%2C%20Ortiz%20and%20Gulgowski>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/1> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/79> .
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/365>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
@@ -4231,6 +4526,11 @@
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
                 245 .
 
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Lind%20Inc>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/32> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/71> .
+
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/291>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderPrice>
@@ -4253,8 +4553,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-10-15T05:00:57"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 58 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/187> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/185> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/188> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/186> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/184> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -4280,8 +4584,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-07-06T05:00:25"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 26 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/408> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -4293,6 +4601,11 @@
                 71.0 ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
                 189 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Trantow-Legros>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/13> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/52> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/91> .
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/36>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
@@ -4307,8 +4620,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-08-24T05:00:12"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 72 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/34> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -4343,8 +4660,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-11-20T05:00:39"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 40 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/331> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/329> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/327> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/328> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/330> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -4671,8 +4992,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-03-27T05:00:38"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 39 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/210> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/213> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/212> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/209> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/211> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -4698,8 +5023,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-09-16T05:00:25"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 85 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/27> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/29> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/30> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/26> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/28> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -4760,8 +5089,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-08-27T05:00:06"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 7 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/204> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/207> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/205> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/208> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/206> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -4778,10 +5111,19 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-05-17T05:00:52"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 53 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/375> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/378> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/374> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/377> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/373> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/376> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Gerhold%2C%20Rolfson%20and%20Schmidt>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/11> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/50> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/89> .
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/138>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
@@ -4828,8 +5170,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-11-29T05:00:20"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 21 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/50> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/49> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/47> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/48> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/52> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/51> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -5002,6 +5348,11 @@
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier_addressLocaity>
                 "" .
 
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Schuppe%20Group>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/64> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/25> .
+
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/239>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderPrice>
@@ -5042,8 +5393,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-05-04T05:00:38"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 98 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/77> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/80> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/79> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/82> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/78> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/81> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -5104,8 +5459,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-08-16T05:00:06"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 66 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/245> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -5122,8 +5481,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-05-04T05:00:33"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 34 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/407> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -5158,8 +5521,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-07-08T05:00:20"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 80 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/390> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/386> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/388> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/389> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/385> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/387> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -5231,8 +5598,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-04-29T05:00:01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 2 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/353> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/351> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/349> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/352> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/350> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/354> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -5484,10 +5855,19 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-09-20T05:00:19"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 79 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/168> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/172> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/170> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/169> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/171> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/167> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Rolfson-Gutmann>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/59> .
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/280>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
@@ -5520,8 +5900,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-10-12T05:00:46"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 47 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/333> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/336> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/334> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/332> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/335> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -5538,8 +5922,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-03-18T05:00:33"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 93 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/179> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/181> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/182> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/180> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/183> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -5547,8 +5935,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-08-06T05:00:14"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 15 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/178> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/175> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/174> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/177> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/176> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -5574,8 +5966,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-01-16T05:00:01"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 61 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/135> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -5715,6 +6111,11 @@
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
                 303 .
 
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Kuhn-Hills>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/95> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/17> .
+
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Product/GROChineseFoods-PlainFried>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
@@ -5746,6 +6147,11 @@
                 154.0 ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
                 279 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Brown-Medhurst>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/58> .
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Product/HOMVinylv2>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
@@ -5888,8 +6294,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-10-29T05:00:27"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 28 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/108> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -5915,8 +6325,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-04-23T05:00:14"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 74 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/298> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/299> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/301> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/300> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/302> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/297> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -5988,8 +6402,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-07-10T05:00:41"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 42 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/294> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/291> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/293> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/296> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/292> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/295> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -6038,8 +6456,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-07-10T05:00:09"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 10 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/232> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/231> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/230> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/229> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/233> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -6276,8 +6698,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-08-12T05:00:27"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 87 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/346> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/343> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/345> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/342> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/344> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -6340,8 +6766,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-04-23T05:00:08"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 9 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/112> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/111> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/114> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/110> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/113> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -6367,8 +6797,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-03-12T05:00:54"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 55 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/221> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/223> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/222> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/220> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/219> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -6385,8 +6819,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-03-09T05:00:22"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 23 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/45> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -6453,6 +6891,11 @@
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
                 122 .
 
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Maggio%20and%20Sons>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/70> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/31> .
+
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplier/Bradtke-Murray>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplier_city>
@@ -6512,6 +6955,11 @@
                 "0597879662" ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier_addressLocaity>
                 "" .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Johns%2C%20Osinski%20and%20Purdy>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/26> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/65> .
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/287>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
@@ -6620,8 +7068,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-01-29T05:00:08"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 68 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/140> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -6684,8 +7136,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-04-21T05:00:35"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 36 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/286> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/287> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/290> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/288> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/289> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/285> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -6732,10 +7188,19 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-11-10T05:00:22"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 82 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/71> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/74> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/72> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/75> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/76> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/73> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Franecki-Durgan>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/48> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/9> .
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/167>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
@@ -6759,8 +7224,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-02-13T05:00:03"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 4 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/5> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/4> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/3> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/2> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/1> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -6798,8 +7267,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-05-07T05:00:49"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 50 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/90> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/89> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/91> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/88> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/92> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -6930,6 +7403,11 @@
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
                 268 .
 
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Ortiz-Murphy>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/24> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/63> .
+
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/236>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderPrice>
@@ -6938,6 +7416,11 @@
                 55.0 ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
                 236 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Spencer-Pollich>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/61> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/100> .
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Product/HOMPlasticv2>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
@@ -6984,8 +7467,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-10-30T05:00:48"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 49 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/238> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/236> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/234> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/237> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/235> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -7011,8 +7498,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-10-22T05:00:35"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 95 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/44> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/41> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/40> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/43> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/42> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -7020,8 +7511,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-11-05T05:00:16"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 17 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/37> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/36> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/39> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/38> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/35> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -7059,8 +7554,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-08-16T05:00:03"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 63 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/32> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -7118,10 +7617,37 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-07-01T05:00:30"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 31 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/159> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Product/GROBeef-Tongue%2CFresh>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
+                "" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
+                "" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
+                "Beef - Tongue, Fresh" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#brand>
+                "" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#category>
+                "GRO" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
+                "" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
+                "" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#price>
+                3.66 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
+                "GROBeef-Tongue,Fresh" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
+                97.0 .
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/369>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
@@ -7149,29 +7675,6 @@
                 115.0 ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
                 41 .
-
-<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Product/GROBeef-Tongue%2CFresh>
-        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
-                "" ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
-                "" ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
-                "Beef - Tongue, Fresh" ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#brand>
-                "" ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#category>
-                "GRO" ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
-                "" ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
-                "" ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#price>
-                3.66 ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
-                "GROBeef-Tongue,Fresh" ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
-                97.0 .
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplier/Brown%2C%20Monahan%20and%20Walker>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
@@ -7211,6 +7714,11 @@
                 139.0 ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
                 337 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Haley-Casper>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/14> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/92> .
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/383>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
@@ -7270,6 +7778,11 @@
                 98.0 ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
                 351 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Hamill-Trantow>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/37> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/21> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/43> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/82> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/98> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/75> .
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Product/GROBroccoli-Fresh>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
@@ -7384,8 +7897,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-04-02T05:00:16"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 76 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/260> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/257> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/259> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/256> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/258> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -7425,8 +7942,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-06-21T05:00:43"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 44 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/252> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/251> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/255> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/254> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/253> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -7452,8 +7973,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-07-23T05:00:30"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 90 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/130> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/133> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/131> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/132> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/134> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -7484,8 +8009,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-12-06T05:00:11"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 12 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/122> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/120> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/121> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/124> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/123> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -7594,6 +8123,11 @@
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
                 111 .
 
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Hyatt%2C%20Tromp%20and%20Anderson>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/10> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/49> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/88> .
+
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/332>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderPrice>
@@ -7699,8 +8233,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-07-01T05:00:29"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 89 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/96> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/95> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/94> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/97> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/93> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -7735,8 +8273,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-06-12T05:00:56"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 57 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/405> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/403> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/406> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/404> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/402> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -7748,6 +8290,11 @@
                 57.0 ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
                 67 .
+
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Gleason%20Group>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/94> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/16> .
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/188>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock> ;
@@ -7762,8 +8309,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-07-01T05:00:24"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 25 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/347> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -7789,8 +8340,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-08-14T05:00:11"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 71 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/316> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -7965,6 +8520,11 @@
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku>
                 289 .
 
+<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/Frami%2C%20Thompson%20and%20Wiegand>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/15> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/93> .
+
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplier/Swaniawski%20Group>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplier_city>
@@ -8107,8 +8667,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-04-28T05:00:37"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 38 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/10> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/8> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/9> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/6> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/7> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -8171,8 +8735,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-03-18T05:00:24"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 84 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/24> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/23> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/25> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/21> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/22> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -8198,8 +8766,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-02-02T05:00:05"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 6 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/321> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/320> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/317> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/318> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/319> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -8216,8 +8788,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-07-02T05:00:51"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 52 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/150> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/151> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/153> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/149> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/152> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
@@ -8252,8 +8828,12 @@
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate>
                 "2021-03-31T05:00:19"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/1024444158> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID>
                 20 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has>
+                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/279> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/283> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/284> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/282> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/281> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/280> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState>
                 "A" .
 
