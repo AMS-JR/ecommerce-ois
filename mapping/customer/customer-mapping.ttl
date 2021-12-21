@@ -424,7 +424,7 @@ rr:logicalTable [
     rr:class ecommerce:Customer;
   ];
   rr:predicateObjectMap [
-    rr:predicate ecommerce:Order ;
+    rr:predicate ecommerce:places_order ;
     rr:objectMap [
       rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/places_order/{receipt_id}_{date}_{orderamount}_{delivery_type}_{delivery_status}";
     ]
