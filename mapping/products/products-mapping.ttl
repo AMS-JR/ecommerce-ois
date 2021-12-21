@@ -1,0 +1,242 @@
+# This is the vocabulary for creating R2RML
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+# This is the vocabulary of our ontology
+@prefix upendo: <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#>.
+
+
+<#Brand>
+a rr:TriplesMap ;
+rr:logicalTable [ rr:tableName "Brand" ] ;
+rr:subjectMap [
+rr:template "http://data.upendo-ecommerce/brand/{name}" ;
+rr:class upendo:Brand ;
+] ;
+rr:predicateObjectMap [
+rr:predicate upendo:brandName ;
+rr:objectMap [ rr:column "name" ] ;
+].
+
+<#Category>
+a rr:TriplesMap ;
+rr:logicalTable [ rr:tableName "Category" ] ;
+rr:subjectMap [
+rr:template "http://data.upendo-ecommerce/category/{name}" ;
+rr:class upendo:Category ;
+] ;
+rr:predicateObjectMap [
+rr:predicate upendo:categoryName ;
+rr:objectMap [ rr:column "name" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:Category_description ;
+rr:objectMap [ rr:column "description" ] ;
+].
+
+<#ProductImages>
+a rr:TriplesMap ;
+rr:logicalTable [ rr:tableName "Category" ] ;
+rr:subjectMap [
+rr:template "http://data.upendo-ecommerce/{product}/{imageUrl}" ;
+rr:class upendo:ProductImage ;
+] ;
+rr:predicateObjectMap [
+rr:predicate upendo:ProductImage_name ;
+rr:objectMap [ rr:column "product" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:ProductImage_url ;
+rr:objectMap [ rr:column "imageUrl" ] ;
+].
+
+<#Admin>
+a rr:TriplesMap ;
+rr:logicalTable [ rr:tableName "Admin" ] ;
+rr:subjectMap [
+rr:template "http://data.upendo-ecommerce/admin/{name}" ;
+rr:class upendo:Admin ;
+] ;
+rr:predicateObjectMap [
+rr:predicate upendo:adminName ;
+rr:objectMap [ rr:column "name" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:Admin_telephone ;
+rr:objectMap [ rr:column "telephone" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:Admin_email ;
+rr:objectMap [ rr:column "email" ] ;
+].
+
+
+<#Product>
+a rr:TriplesMap ;
+rr:logicalTable [ rr:tableName "Product" ] ;
+rr:subjectMap [
+rr:template "http://data.upendo-ecommerce/product/{sku}" ;
+rr:class upendo:Product ;
+] ;
+rr:predicateObjectMap [
+rr:predicate upendo:sku;
+rr:objectMap [ rr:column "sku" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:Product_name;
+rr:objectMap [ rr:column "name" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:color;
+rr:objectMap [ rr:column "color" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:Item_condition;
+rr:objectMap [ rr:column "itemCondition" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:Product_price ;
+rr:objectMap [ rr:column "price" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:model ;
+rr:objectMap [ rr:column "model" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:Product_description ;
+rr:objectMap [ rr:column "description" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:stockQuantity ;
+rr:objectMap [ rr:column "stockQuantity" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:location ;
+rr:objectMap [ rr:column "location" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:Product_date_added ;
+rr:objectMap [ rr:column "dateAdded" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:brand ;
+rr:objectMap [ rr:column "brand" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:category ;
+rr:objectMap [ rr:column "category" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:Admin_seller ; ###############
+rr:objectMap [ rr:column "adminSeller" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:Supplier_seller ; ############## This and the admin_seller can be represented in a better way
+rr:objectMap [ rr:column "supplierSeller" ] ;
+].
+
+<#Cart>
+a rr:TriplesMap ;
+rr:logicalTable [ rr:tableName "Cart" ] ;
+rr:subjectMap [
+rr:template "http://data.upendo-ecommerce/cart/{customer}/{product}" ;
+rr:class upendo:Admin ;
+] ;
+rr:predicateObjectMap [
+rr:predicate upendo: ;#######################
+rr:objectMap [ rr:column "customer" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo: ;#####################
+rr:objectMap [ rr:column "product" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:Cart_date_added ;
+rr:objectMap [ rr:column "dateAdded" ] ;
+].
+
+<#Reviews>
+a rr:TriplesMap ;
+rr:logicalTable [ rr:tableName "Reviews" ] ;
+rr:subjectMap [
+rr:template "http://data.upendo-ecommerce/review/{author}/{about}" ;
+rr:class upendo:Reviews ;
+] ;
+rr:predicateObjectMap [
+rr:predicate upendo: ; ###############
+rr:objectMap [ rr:column "author" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo: ;######################
+rr:objectMap [ rr:column "about" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:review_body ;
+rr:objectMap [ rr:column "reviewBody" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:review_ratingValue ;
+rr:objectMap [ rr:column "reviewRatingValue" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:review_dateCreated ;
+rr:objectMap [ rr:column "dateCreated" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:review_dateModified ;
+rr:objectMap [ rr:column "dateModified" ] ;
+].
+
+<#Order>
+a rr:TriplesMap ;
+rr:logicalTable [ rr:tableName "Reviews" ] ;
+rr:subjectMap [
+rr:template "http://data.upendo-ecommerce/order/{orderID}" ;
+rr:class upendo:Order ;
+] ;
+rr:predicateObjectMap [
+rr:predicate upendo:orderID ;
+rr:objectMap [ rr:column "orderID" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:orderStatus ;
+rr:objectMap [ rr:column "orderStatus" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:date ;
+rr:objectMap [ rr:column "orderDate" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo: ; ###################
+rr:objectMap [ rr:column "customerEmail" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo: ; ##################
+rr:objectMap [ rr:column "customerAddress" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:orderAmount ;
+rr:objectMap [ rr:column "orderAmount" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo: ; ######################
+rr:objectMap [ rr:column "deliveryService" ] ;
+].
+
+<#OrderDescription>
+a rr:TriplesMap ;
+rr:logicalTable [ rr:tableName "Reviews" ] ;
+rr:subjectMap [
+rr:template "http://data.upendo-ecommerce/order/{order}/{product}" ;
+rr:class upendo:OrderDescription ;
+] ;
+rr:predicateObjectMap [
+rr:predicate upendo: ; ###############
+rr:objectMap [ rr:column "order" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo: ;######################
+rr:objectMap [ rr:column "product" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:orderQuantity ;
+rr:objectMap [ rr:column "quantity" ] ;
+].
