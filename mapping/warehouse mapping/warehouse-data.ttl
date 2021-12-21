@@ -1,7 +1,5 @@
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/inventory492354322345_8358495063>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Inventory> ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#inventory_warehouse>
-                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse8358495063> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#productsku_fk>
                 "492354322345" ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#quantity>
@@ -11,8 +9,6 @@
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/inventory432890572_8358495063>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Inventory> ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#inventory_warehouse>
-                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse8358495063> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#productsku_fk>
                 "432890572" ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#quantity>
@@ -22,8 +18,6 @@
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/inventory43564678987_4389754987>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Inventory> ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#inventory_warehouse>
-                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse4389754987> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#productsku_fk>
                 "43564678987" ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#quantity>
@@ -33,8 +27,6 @@
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/inventory76555546_4389754987>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Inventory> ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#inventory_warehouse>
-                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse4389754987> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#productsku_fk>
                 "76555546" ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#quantity>
@@ -44,8 +36,6 @@
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/inventory8658675687_4389754987>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Inventory> ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#inventory_warehouse>
-                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse4389754987> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#productsku_fk>
                 "8658675687" ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#quantity>
@@ -97,8 +87,6 @@
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/inventory74849305_8358495063>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Inventory> ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#inventory_warehouse>
-                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse8358495063> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#productsku_fk>
                 "74849305" ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#quantity>
@@ -108,8 +96,6 @@
 
 <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/inventory43252_4389754987>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Inventory> ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#inventory_warehouse>
-                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse4389754987> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#productsku_fk>
                 "43252" ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#quantity>

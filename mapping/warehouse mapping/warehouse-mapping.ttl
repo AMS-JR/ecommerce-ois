@@ -47,18 +47,8 @@
     rr:predicate ecommerce:streetaddress;
     rr:objectMap [rr:column "streetaddress"]
   ].
-#  rr:predicateObjectMap [
-#    rr:predicate ecommerce:warehouse_inventory;
-#    rr:objectMap [
-#      rr:parentTriplesMap <#inventory>;
-#      rr:joinCondition [
-#        rr:child "warehousecode";
-#        rr:parent "warehousecode_fk";
-#      ]
-#    ]
-#  ].
 
-  #Inventory mapping
+#Inventory mapping
 <#Inventory>
   a rr:TriplesMap;
   rr:logicalTable [
@@ -79,14 +69,4 @@
   rr:predicateObjectMap [
     rr:predicate ecommerce:productsku_fk;
     rr:objectMap [rr:column "productsku_fk"]
-  ];
-  rr:predicateObjectMap [
-    rr:predicate ecommerce:inventory_warehouse;
-    rr:objectMap [
-      rr:parentTriplesMap <#warehouse>;
-      rr:joinCondition [
-        rr:child "warehousecode_fk";
-        rr:parent "warehousecode";
-      ]
-    ]
   ].
