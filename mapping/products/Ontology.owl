@@ -25,6 +25,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Admin_advertises">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#advertises"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#has_adminSeller"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Admin"/>
@@ -89,7 +90,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Cart">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#cart_by"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
@@ -116,6 +117,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Image">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Image"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
@@ -129,7 +131,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Order_Description">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#describes_order"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order"/>
@@ -207,6 +210,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplier_advertises">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#advertises"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#has_supplierSeller"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier"/>
@@ -221,14 +225,104 @@
     
 
 
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#cart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#cart">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#cart_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#cart_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#cart"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Cart"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#cart_contains"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#cart_contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#cart_contains">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#cart"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#cart_has"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Cart"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#cart_has -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#cart_has">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Cart"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product"/>
         <rdfs:comment>A cart contains one or more products</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#describes_order -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#describes_order">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderDescription"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order_Description"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#has_adminSeller -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#has_adminSeller">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#seller"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Admin"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#has_supplierSeller"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#has_supplierSeller -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#has_supplierSeller">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#seller"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#image_is_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#image_is_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#ProductImage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product"/>
     </owl:ObjectProperty>
     
 
@@ -274,12 +368,69 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#makes_review">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#review_by"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Reviews"/>
         <rdfs:comment>A customer reviews products</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderDescription -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderDescription">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_deliveryAddress"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_deliveryAddress -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_deliveryAddress">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Address"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderDescription"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order_Description"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product"/>
     </owl:ObjectProperty>
     
 
@@ -308,9 +459,30 @@
     
 
 
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#review -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#review"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#review_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#review_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#review"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Reviews"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#review_on"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#review_is_on -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#review_is_on">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#review_on"/>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
@@ -318,6 +490,28 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Reviews"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product"/>
         <rdfs:comment>A review is made on a product by a customer</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#review_on -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#review_on">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#review"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Reviews"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A review is made on a product by a customer</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#seller -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#seller">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -531,6 +725,16 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#ProductImage"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplier_url"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_Name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
