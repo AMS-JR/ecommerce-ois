@@ -5,112 +5,113 @@
 <#Supplier>
   rr:logicalTable [rr:tableName "v_supplier"];
   rr:subjectMap[
-    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplier/{csuppliername}";
+    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplier/{companyname}";
     rr:class ecommerce:supplier;
   ];
   rr:predicateObjectMap[
     rr:predicate ecommerce:Supplierbce;
     rr:objectMap[
-      rr:column "csupplierbce"
+      rr:column "bce"
     ]
   ];
   rr:predicateObjectMap[
     rr:predicate ecommerce:Supplier_companyName;
     rr:objectMap[
-      rr:column "csuppliername"
+      rr:column "companyname"
     ]
   ];
   rr:predicateObjectMap[
     rr:predicate ecommerce:Supplier_postalCode;
     rr:objectMap[
-      rr:column "cpostalcode"
+      rr:column "postalcode"
     ]
   ];
   rr:predicateObjectMap[
     rr:predicate ecommerce:Supplier_ph;
     rr:objectMap[
-      rr:column "cphone"
+      rr:column "telephone"
     ]
   ];
   rr:predicateObjectMap[
     rr:predicate ecommerce:Supplier_country;
     rr:objectMap[
-      rr:column "ccountry"
+      rr:column "addresscountry"
     ]
   ];
   rr:predicateObjectMap[
     rr:predicate ecommerce:Supplier_streetAddress;
     rr:objectMap[
-      rr:column "caddress"
+      rr:column "streetaddress"
     ]
   ];
   rr:predicateObjectMap[
     rr:predicate ecommerce:supplier_addressLocaity;
     rr:objectMap[
-      rr:column "caddresslocality"
+      rr:column "addresslocality"
     ]
   ];
   rr:predicateObjectMap[
     rr:predicate ecommerce:Supplier_city;
     rr:objectMap[
-      rr:column "ccity"
+      rr:column "addresscity"
     ]
   ];
   rr:predicateObjectMap[
     rr:predicate ecommerce:Supplier_email;
     rr:objectMap[
-      rr:column "cemail"
+      rr:column "email"
     ]
   ].
 
 <#Supplies>
-  rr:logicalTable [rr:tableName "purchase_order"];
+  rr:logicalTable [rr:tableName "v_supplies"];
   rr:subjectMap[
-    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/{norderuuid}";
+    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/{suppliesid}";
     rr:class ecommerce:Supplies;
   ];
   rr:predicateObjectMap[
     rr:predicate ecommerce:suppliesID;
     rr:objectMap[
-      rr:column "norderuuid"
+      rr:column "suppliesid"
     ]
   ];
   rr:predicateObjectMap[
     rr:predicate ecommerce:arrivalDate;
     rr:objectMap[
-      rr:column "torderdelivered"
+      rr:column "arrivaldate"
     ]
   ];
   rr:predicateObjectMap[
     rr:predicate ecommerce:supplyState;
     rr:objectMap[
-      rr:column "cstate"
+      rr:column "supplystate"
     ]
   ].
 <#SuppliesStock>
-  rr:logicalTable [rr:tableName "purchase_order_detail"];
+  rr:logicalTable [rr:tableName "v_suppliesstock"];
   rr:subjectMap[
-    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/{norderdetailuuid}";
+    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/{supply}";
     rr:class ecommerce:SuppliesStock;
   ];
   rr:predicateObjectMap[
     rr:predicate ecommerce:suppliesStockSku;
     rr:objectMap[
-      rr:column "norderdetailuuid"
+      rr:column "supply"
     ]
   ];
   rr:predicateObjectMap[
     rr:predicate ecommerce:suppliesOrderPrice;
     rr:objectMap[
-      rr:column "nprice"
+      rr:column "price"
     ]
   ];
   rr:predicateObjectMap[
     rr:predicate ecommerce:suppliesOrderQuantity;
     rr:objectMap[
-      rr:column "nquantity"
+      rr:column "quantity"
     ]
   ].
+# adding products for supplyStock class 
 <#ProductsSupplies>
   rr:logicalTable [rr:tableName "v_product"];
   rr:subjectMap[
@@ -132,7 +133,7 @@
   rr:predicateObjectMap[
     rr:predicate ecommerce:category;
     rr:objectMap[
-      rr:column "ccategory"
+      rr:column "category"
     ]
   ];
   rr:predicateObjectMap[
@@ -177,6 +178,7 @@
       rr:column "stockquantity"
     ]
   ].
+  # adding warehouse for supplies class 
   <#warehouse>
   a rr:TriplesMap;
   rr:logicalTable [
@@ -222,45 +224,3 @@
     rr:predicate ecommerce:streetaddress;
     rr:objectMap [rr:column "streetaddress"]
   ].
-  <#SuppliesProperty>
-  rr:logicalTable [rr:sqlQuery """SELECT B.csuppliername As csuppliername, A.norderuuid AS norderuuid FROM public.purchase_order A
-                                  INNER JOIN public.supplier B ON B.csupplierbce=A.csupplierbce"""];
-  rr:subjectMap[
-    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/{csuppliername}";
-    rr:class ecommerce:supplier;
-  ];
-  rr:predicateObjectMap[
-    rr:predicate ecommerce:supplies;
-    rr:objectMap[
-      rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/{norderuuid}";
-    ]
-  ].
-  <#Supplies_has>
-  rr:logicalTable [rr:sqlQuery """SELECT A.norderuuid, B.norderdetailuuid FROM public.purchase_order A
-                                  INNER JOIN public.purchase_order_detail B ON B.norderuuid=A.norderuuid"""];
-  rr:subjectMap[
-    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/{norderuuid}";
-    rr:class ecommerce:Supplies;
-  ];
-  rr:predicateObjectMap[
-    rr:predicate ecommerce:supplies_has;
-    rr:objectMap[
-      rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/{norderdetailuuid}";
-    ]
-  ].
-  <#is_delivered_to>
-  rr:logicalTable [rr:sqlQuery """SELECT A.norderuuid, B.bce AS warehousecode FROM public.purchase_order A
-                                  INNER JOIN public.warehouse B ON B.bce=A.warehousecode"""];
-  rr:subjectMap[
-    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/{norderuuid}";
-    rr:class ecommerce:Supplies;
-  ];
-  rr:predicateObjectMap[
-    rr:predicate ecommerce:is_delivered_to;
-    rr:objectMap[
-      rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/{warehousecode}";
-    ]
-  ].
-
-
-
