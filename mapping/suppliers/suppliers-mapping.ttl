@@ -224,3 +224,47 @@
     rr:predicate ecommerce:streetaddress;
     rr:objectMap [rr:column "streetaddress"]
   ].
+
+# Properties for supplier
+
+<#SuppliesProperty>
+  rr:logicalTable [rr:sqlQuery """SELECT B.csuppliername As csuppliername, A.norderuuid AS norderuuid FROM public.purchase_order A
+                                  INNER JOIN public.supplier B ON B.csupplierbce=A.csupplierbce"""];
+  rr:subjectMap[
+    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/supplier/{csuppliername}";
+    rr:class ecommerce:supplier;
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:supplies;
+    rr:objectMap[
+      rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/{norderuuid}";
+    ]
+  ].
+  <#Supplies_has>
+  rr:logicalTable [rr:sqlQuery """SELECT A.norderuuid, B.norderdetailuuid FROM public.purchase_order A
+                                  INNER JOIN public.purchase_order_detail B ON B.norderuuid=A.norderuuid"""];
+  rr:subjectMap[
+    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/{norderuuid}";
+    rr:class ecommerce:Supplies;
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:supplies_has;
+    rr:objectMap[
+      rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/SuppliesStock/{norderdetailuuid}";
+    ]
+  ].
+  <#is_delivered_to>
+  rr:logicalTable [rr:sqlQuery """SELECT A.norderuuid, B.bce AS warehousecode FROM public.purchase_order A
+                                  INNER JOIN public.warehouse B ON B.bce=A.warehousecode"""];
+  rr:subjectMap[
+    rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/Supplies/{norderuuid}";
+    rr:class ecommerce:Supplies;
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:is_delivered_to;
+    rr:objectMap[
+      rr:template "http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/{warehousecode}";
+    ]
+  ].
+
+
