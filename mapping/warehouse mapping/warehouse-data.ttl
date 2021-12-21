@@ -1,15 +1,26 @@
-<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/inventory/43564678987_4389754987>
+<http://data.ecommerce/inventory/432890572_8358495063>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Inventory> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#inventory> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#inventory_has>
-                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/4389754987> ;
+                <http://data.ecommerce/warehouse/8358495063> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#productsku_fk>
-                "43564678987" ;
+                "432890572" ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#quantity>
-                235.0 ;
+                93.0 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#warehousecode>
+                "8358495063" .
+
+<http://data.ecommerce/inventory/8658675687_4389754987>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Inventory> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#inventory> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#inventory_has>
+                <http://data.ecommerce/warehouse/4389754987> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#productsku_fk>
+                "8658675687" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#quantity>
+                653.0 ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#warehousecode>
                 "4389754987" .
 
-<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/4389754987>
+<http://data.ecommerce/warehouse/4389754987>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#warehouse> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Warehouse> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#addresscity>
                 "Nederland" ;
@@ -28,58 +39,36 @@
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#telephone>
                 "31206555260" ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#warehouse_has>
-                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/inventory/76555546_4389754987> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/inventory/43252_4389754987> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/inventory/43564678987_4389754987> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/inventory/8658675687_4389754987> ;
+                <http://data.ecommerce/inventory/43564678987_4389754987> , <http://data.ecommerce/inventory/76555546_4389754987> , <http://data.ecommerce/inventory/8658675687_4389754987> , <http://data.ecommerce/inventory/43252_4389754987> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#warehousecode>
                 "4389754987" .
 
-<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/inventory/76555546_4389754987>
+<http://data.ecommerce/inventory/74849305_8358495063>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Inventory> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#inventory> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#inventory_has>
-                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/4389754987> ;
+                <http://data.ecommerce/warehouse/8358495063> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#productsku_fk>
-                "76555546" ;
+                "74849305" ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#quantity>
-                243.0 ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#warehousecode>
-                "4389754987" .
-
-<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/inventory/432890572_8358495063>
-        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Inventory> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#inventory> ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#inventory_has>
-                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/8358495063> ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#productsku_fk>
-                "432890572" ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#quantity>
-                93.0 ;
+                3.0 ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#warehousecode>
                 "8358495063" .
 
-<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/inventory/43252_4389754987>
+<http://data.ecommerce/inventory/43564678987_4389754987>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Inventory> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#inventory> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#inventory_has>
-                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/4389754987> ;
+                <http://data.ecommerce/warehouse/4389754987> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#productsku_fk>
-                "43252" ;
+                "43564678987" ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#quantity>
-                43.0 ;
+                235.0 ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#warehousecode>
                 "4389754987" .
 
-<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/inventory/8658675687_4389754987>
+<http://data.ecommerce/inventory/492354322345_8358495063>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Inventory> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#inventory> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#inventory_has>
-                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/4389754987> ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#productsku_fk>
-                "8658675687" ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#quantity>
-                653.0 ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#warehousecode>
-                "4389754987" .
-
-<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/inventory/492354322345_8358495063>
-        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Inventory> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#inventory> ;
-        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#inventory_has>
-                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/8358495063> ;
+                <http://data.ecommerce/warehouse/8358495063> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#productsku_fk>
                 "492354322345" ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#quantity>
@@ -87,8 +76,19 @@
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#warehousecode>
                 "8358495063" .
 
-<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/8358495063>
-        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Warehouse> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#warehouse> ;
+<http://data.ecommerce/inventory/76555546_4389754987>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Inventory> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#inventory> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#inventory_has>
+                <http://data.ecommerce/warehouse/4389754987> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#productsku_fk>
+                "76555546" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#quantity>
+                243.0 ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#warehousecode>
+                "4389754987" .
+
+<http://data.ecommerce/warehouse/8358495063>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#warehouse> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Warehouse> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#addresscity>
                 "Brussels" ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#addresscountry>
@@ -106,17 +106,17 @@
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#telephone>
                 "32027155050" ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#warehouse_has>
-                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/inventory/432890572_8358495063> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/inventory/74849305_8358495063> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/inventory/492354322345_8358495063> ;
+                <http://data.ecommerce/inventory/432890572_8358495063> , <http://data.ecommerce/inventory/492354322345_8358495063> , <http://data.ecommerce/inventory/74849305_8358495063> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#warehousecode>
                 "8358495063" .
 
-<http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/inventory/74849305_8358495063>
+<http://data.ecommerce/inventory/43252_4389754987>
         a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Inventory> , <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#inventory> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#inventory_has>
-                <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7/warehouse/8358495063> ;
+                <http://data.ecommerce/warehouse/4389754987> ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#productsku_fk>
-                "74849305" ;
+                "43252" ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#quantity>
-                3.0 ;
+                43.0 ;
         <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#warehousecode>
-                "8358495063" .
+                "4389754987" .
