@@ -6,7 +6,7 @@
 
 <#Brand>
 a rr:TriplesMap ;
-rr:logicalTable [ rr:tableName "Brand" ] ;
+rr:logicalTable [ rr:tableName "brand" ] ;
 rr:subjectMap [
 rr:template "http://data.upendo-ecommerce/brand/{name}" ;
 rr:class upendo:Brand ;
@@ -18,7 +18,7 @@ rr:objectMap [ rr:column "name" ] ;
 
 <#Category>
 a rr:TriplesMap ;
-rr:logicalTable [ rr:tableName "Category" ] ;
+rr:logicalTable [ rr:tableName "category" ] ;
 rr:subjectMap [
 rr:template "http://data.upendo-ecommerce/category/{name}" ;
 rr:class upendo:Category ;
@@ -34,7 +34,7 @@ rr:objectMap [ rr:column "description" ] ;
 
 <#ProductImages>
 a rr:TriplesMap ;
-rr:logicalTable [ rr:tableName "ProductImages" ] ;
+rr:logicalTable [ rr:tableName "product_images" ] ;
 rr:subjectMap [
 rr:template "http://data.upendo-ecommerce/{product}/{imageUrl}" ;
 rr:class upendo:ProductImage ;
@@ -45,6 +45,7 @@ rr:objectMap [
 rr:parentTriplesMap <#Product> ;
 rr:joinCondition [rr:child "product" ; rr:parent "sku" ]
 ];
+];
 rr:predicateObjectMap [
 rr:predicate upendo:ProductImage_url ;
 rr:objectMap [ rr:column "imageUrl" ] ;
@@ -52,7 +53,7 @@ rr:objectMap [ rr:column "imageUrl" ] ;
 
 <#Admin>
 a rr:TriplesMap ;
-rr:logicalTable [ rr:tableName "Admin" ] ;
+rr:logicalTable [ rr:tableName "admin" ] ;
 rr:subjectMap [
 rr:template "http://data.upendo-ecommerce/admin/{name}" ;
 rr:class upendo:Admin ;
@@ -70,10 +71,9 @@ rr:predicate upendo:Admin_email ;
 rr:objectMap [ rr:column "email" ] ;
 ].
 
-
 <#Product>
 a rr:TriplesMap ;
-rr:logicalTable [ rr:tableName "Product" ] ;
+rr:logicalTable [ rr:tableName "product" ] ;
 rr:subjectMap [
 rr:template "http://data.upendo-ecommerce/product/{sku}" ;
 rr:class upendo:Product ;
@@ -136,19 +136,20 @@ rr:predicateObjectMap [
 rr:predicate upendo:has_adminSeller ; ###############
 rr:objectMap [ 
 rr:parentTriplesMap <#Admin> ;    
-rr:joinCondition [rr:child "adminSeller" ; rr:parent "email" ]
+rr:joinCondition [rr:child "admin_seller" ; rr:parent "email" ]
 ];
-rr:predicateObjectMap [
-rr:predicate upendo:has_supplierSeller ; ############## This and the admin_seller can be represented in a better way
-rr:objectMap [ 
-rr:parentTriplesMap <#Supplier> ;    
-rr:joinCondition [rr:child "supplierSeller" ; rr:parent "bce" ]
-] ;
 ].
+# rr:predicateObjectMap [
+# rr:predicate upendo:has_supplierSeller ; ############## This and the admin_seller can be represented in a better way
+# rr:objectMap [ 
+# rr:parentTriplesMap <#Supplier> ;    
+# rr:joinCondition [rr:child "supplier_seller" ; rr:parent "bce" ]
+# ] ;
+# ].
 
 <#Cart>
 a rr:TriplesMap ;
-rr:logicalTable [ rr:tableName "Cart" ] ;
+rr:logicalTable [ rr:tableName "cart" ] ;
 rr:subjectMap [
 rr:template "http://data.upendo-ecommerce/cart/{customer}/{product}" ;
 rr:class upendo:Cart ;
@@ -174,7 +175,7 @@ rr:objectMap [ rr:column "dateAdded" ] ;
 
 <#Reviews>
 a rr:TriplesMap ;
-rr:logicalTable [ rr:tableName "Reviews" ] ;
+rr:logicalTable [ rr:tableName "reviews" ] ;
 rr:subjectMap [
 rr:template "http://data.upendo-ecommerce/review/{author}/{about}" ;
 rr:class upendo:Reviews ;
@@ -212,7 +213,7 @@ rr:objectMap [ rr:column "dateModified" ] ;
 
 <#Order>
 a rr:TriplesMap ;
-rr:logicalTable [ rr:tableName "Order" ] ;
+rr:logicalTable [ rr:tableName "order" ] ;
 rr:subjectMap [
 rr:template "http://data.upendo-ecommerce/order/{orderID}" ;
 rr:class upendo:Order ;
@@ -221,13 +222,13 @@ rr:predicateObjectMap [
 rr:predicate upendo:orderID ;
 rr:objectMap [ rr:column "orderID" ] ;
 ];
-rr:predicateObjectMap [
-rr:predicate upendo:Has_Delivery_Status ;#####################
-rr:objectMap [
-rr:parentTriplesMap <#delivery_status_description> ;    
-rr:joinCondition [rr:child "orderStatus" ; rr:parent "delivery_status" ]  
-] ;
-];
+# rr:predicateObjectMap [
+# rr:predicate upendo:Has_Delivery_Status ;#####################
+# rr:objectMap [
+# rr:parentTriplesMap <#delivery_status_description> ;    
+# rr:joinCondition [rr:child "orderStatus" ; rr:parent "delivery_status" ]  
+# ] ;
+# ];
 rr:predicateObjectMap [
 rr:predicate upendo:date ;
 rr:objectMap [ rr:column "orderDate" ] ;
@@ -239,28 +240,28 @@ rr:parentTriplesMap <#customers_information> ;
 rr:joinCondition [rr:child "customerEmail" ; rr:parent "email" ] 
 ] ;
 ];
-rr:predicateObjectMap [
-rr:predicate upendo:order_deliveryAddress ; ##################
-rr:objectMap [ 
-rr:parentTriplesMap <#customers_addresses> ;    
-rr:joinCondition [rr:child "customerAddress" ; rr:parent "address" ]  
-] ;
-];
+# rr:predicateObjectMap [
+# rr:predicate upendo:order_deliveryAddress ; ##################
+# rr:objectMap [ 
+# rr:parentTriplesMap <#customers_addresses> ;    
+# rr:joinCondition [rr:child "customerAddress" ; rr:parent "address" ]  
+# ] ;
+# ];
+# rr:predicateObjectMap [
+# rr:predicate upendo:Has_The_Delivery_Type ; ######################
+# rr:objectMap [ 
+# rr:parentTriplesMap <#delivery_services_type> ;    
+# rr:joinCondition [rr:child "deliveryService" ; rr:parent "delivery_kind" ]  
+# ] ;
+# ];
 rr:predicateObjectMap [
 rr:predicate upendo:orderAmount ;
 rr:objectMap [ rr:column "orderAmount" ] ;
-];
-rr:predicateObjectMap [
-rr:predicate upendo:Has_The_Delivery_Type ; ######################
-rr:objectMap [ 
-rr:parentTriplesMap <#delivery_services_type> ;    
-rr:joinCondition [rr:child "deliveryService" ; rr:parent "delivery_kind" ]  
-] ;
 ].
 
 <#OrderDescription>
 a rr:TriplesMap ;
-rr:logicalTable [ rr:tableName "OrderDescription" ] ;
+rr:logicalTable [ rr:tableName "order_description" ] ;
 rr:subjectMap [
 rr:template "http://data.upendo-ecommerce/order/{order}/{product}" ;
 rr:class upendo:OrderDescription ;
@@ -284,9 +285,38 @@ rr:predicate upendo:orderQuantity ;
 rr:objectMap [ rr:column "quantity" ] ;
 ].
 
-#ARDAVAN'S PART
+#ARDAVAN'S AND FLORENT'S PART
 <#customers_information>
-  a rr:TriplesMap ;
-  rr:logicalTable [
-    rr:tableName "customers_information"
-  ];
+a rr:TriplesMap ;
+rr:logicalTable [rr:tableName "customers_information"];
+rr:subjectMap [
+rr:template "http://data.upendo-ecommerce/customer/{first_name}_{last_name}" ;
+rr:class upendo:Customer ;
+] ;
+rr:predicateObjectMap [
+rr:predicate upendo:orderID ;
+rr:objectMap [ rr:column "email" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:first_name ;
+rr:objectMap [ rr:column "first_name" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate upendo:last_name ;
+rr:objectMap [ rr:column "last_name" ] ;
+];
+# rr:predicateObjectMap [
+# rr:predicate upendo:orderAmount ;
+# rr:objectMap [ rr:column "delivery_kind" ] ;
+# ];
+rr:predicateObjectMap [
+rr:predicate upendo:birth_date ;
+rr:objectMap [ rr:column "birth_date" ] ;
+].
+
+# <#delivery_services_type>
+
+# <#delivery_status_description>
+
+#bol's part
+# <#Supplier>

@@ -5,7 +5,7 @@
 <#customers_information>
   a rr:TriplesMap ;
   rr:logicalTable [
-    rr:tableName "customers_information"
+    rr:tableName "ecommerce.customers_information"
   ];
   rr:subjectMap [
     rr:template "http://data.ecommerce/customers_information/{email}";
@@ -46,7 +46,7 @@
 <#delivery_services_type>
   a rr:TriplesMap ;
   rr:logicalTable [
-    rr:tableName "delivery_services_type"
+    rr:tableName "ecommerce.delivery_services_type"
   ];
   rr:subjectMap [
     rr:template "http://data.ecommerce/delivery_services_type/{delivery_kind}";
@@ -69,7 +69,7 @@
 <#paymentcard>
   a rr:TriplesMap ;
   rr:logicalTable [
-    rr:tableName "paymentcard"
+    rr:tableName "ecommerce.paymentcard"
   ];
   rr:subjectMap [
     rr:template "http://data.ecommerce/PaymentCard/{cardType}_{cardNumber}";
@@ -102,7 +102,7 @@
 <#customers_addresses>
   a rr:TriplesMap ;
   rr:logicalTable [
-    rr:tableName "customers_addresses"
+    rr:tableName "ecommerce.customers_addresses"
   ];
   rr:subjectMap [
     rr:template "http://data.ecommerce/customers_addresses/{email}_{country}_{city}_{address}";
@@ -123,7 +123,7 @@
 <#delivery_status_description>
   a rr:TriplesMap ;
   rr:logicalTable [
-    rr:tableName "delivery_status_description"
+    rr:tableName "ecommerce.delivery_status_description"
   ];
   rr:subjectMap [
     rr:template "http://data.ecommerce/delivery_status_description/{delivery_status}";
@@ -138,7 +138,7 @@
 <#receipt_information>
   a rr:TriplesMap ;
   rr:logicalTable [
-    rr:tableName "receipt_information"
+    rr:tableName "ecommerce.receipt_information"
   ];
   rr:subjectMap [
     rr:template "http://data.ecommerce/receipt_information/{receipt_id}";
@@ -191,7 +191,7 @@
 <#customer_receipt_connector>
   a rr:TriplesMap ;
   rr:logicalTable [
-    rr:tableName "customer_receipt_connector"
+    rr:tableName "ecommerce.customer_receipt_connector"
   ];
   rr:subjectMap [
     rr:template "http://data.ecommerce/customer_receipt_connector/{email}_{receipt_id}";
@@ -222,7 +222,7 @@
 <#product>
   a rr:TriplesMap ;
   rr:logicalTable [
-    rr:tableName "product"
+    rr:tableName "ecommerce.product"
   ];
   rr:subjectMap [
     rr:template "http://data.ecommerce/product/{sku}";
@@ -281,7 +281,7 @@
 <#goods_in_receipt>
   a rr:TriplesMap ;
   rr:logicalTable [
-    rr:tableName "goods_in_receipt"
+    rr:tableName "ecommerce.goods_in_receipt"
   ];
   rr:subjectMap [
     rr:template "http://data.ecommerce/goods_in_receipt/{receipt_id}_{good_id}";
@@ -316,9 +316,10 @@
 <#Has_Address>
 rr:logicalTable [
   rr:sqlQuery """SELECT A.email, A.first_name, A.last_name, B.country, B.city, B.address
-                 FROM public.customers_addresses B
-                 FULL JOIN public.customers_information A
-                 ON A.email = B.email;"""
+                 FROM ecommerce.customers_addresses B
+                 FULL JOIN ecommerce.customers_information A
+                 ON A.email = B.email;""";
+    rr:sqlVersion rr:SQL2008;
   ];
   rr:subjectMap[
     rr:template "http://data.ecommerce/Has_Address/{email}_{first_name}_{last_name}";
@@ -335,9 +336,10 @@ rr:logicalTable [
 <#Has_Delivery_Status>
   rr:logicalTable [
     rr:sqlQuery """SELECT A.receipt_id, B.delivery_status
-                   FROM public.receipt_information A
-                   FULL JOIN public.delivery_status_description B
+                   FROM ecommerce.receipt_information A
+                   FULL JOIN ecommerce.delivery_status_description B
                    ON A.delivery_status = B.delivery_status;"""
+    rr:sqlVersion rr:SQL2008;
   ];
   rr:subjectMap[
     rr:template "http://data.ecommerce/Has_Delivery_Status/{receipt_id}";
@@ -354,9 +356,10 @@ rr:logicalTable [
 <#Has_The_Delivery_Type>
   rr:logicalTable [
     rr:sqlQuery """SELECT A.receipt_id, B.delivery_kind
-                   FROM public.receipt_information A
-                   FULL JOIN public.delivery_services_type B
-                   ON A.delivery_type = B.delivery_kind;"""
+                   FROM ecommerce.receipt_information A
+                   FULL JOIN ecommerce.delivery_services_type B
+                   ON A.delivery_type = B.delivery_kind;""";
+    rr:sqlVersion rr:SQL2008;
   ];
   rr:subjectMap[
     rr:template "http://data.ecommerce/Has_The_Delivery_Type/{receipt_id}";
@@ -373,11 +376,12 @@ rr:logicalTable [
 <#Has_Order_Description>
   rr:logicalTable [
     rr:sqlQuery """SELECT A.receipt_id, C.name, C.price, B.numberof
-                   FROM public.receipt_information A
-                   FULL JOIN public.goods_in_receipt B
+                   FROM ecommerce.receipt_information A
+                   FULL JOIN ecommerce.goods_in_receipt B
                    ON A.receipt_id = B.receipt_id
-                   FULL JOIN product C
-                   ON B.good_id = C.sku;"""
+                   FULL JOIN ecommerce.product C
+                   ON B.good_id = C.sku;""";
+    rr:sqlVersion rr:SQL2008;
   ];
   rr:subjectMap[
     rr:template "http://data.ecommerce/Has_Order_Description/{receipt_id}";
@@ -394,9 +398,10 @@ rr:logicalTable [
 <#Has_Payment_Card>
   rr:logicalTable [
     rr:sqlQuery """SELECT A.first_name, A.last_name, B.cardType, B.cardnumber, B.cardexpirydate
-                   FROM public.customers_information A
-                   FULL JOIN public.paymentcard B
-                   ON A.email = B.customeremail"""
+                   FROM ecommerce.customers_information A
+                   FULL JOIN ecommerce.paymentcard B
+                   ON A.email = B.customeremail""";
+    rr:sqlVersion rr:SQL2008;
   ];
   rr:subjectMap[
     rr:template "http://data.ecommerce/Has_Payment_Card/{first_name}_{last_name}";
@@ -413,11 +418,12 @@ rr:logicalTable [
 <#places_order>
   rr:logicalTable [
     rr:sqlQuery """SELECT A.first_name, A.last_name, C.receipt_id, C.date, C.orderamount, C.delivery_type, C.delivery_status
-                   FROM public.customers_information A
-                   FULL JOIN public.customer_receipt_connector B
+                   FROM ecommerce.customers_information A
+                   FULL JOIN ecommerce.customer_receipt_connector B
                    ON A.email = B.email
-                   FULL JOIN public.receipt_information C
-                   ON C.receipt_id = B.receipt_id;"""
+                   FULL JOIN ecommerce.receipt_information C
+                   ON C.receipt_id = B.receipt_id;""";
+    rr:sqlVersion rr:SQL2008;
   ];
   rr:subjectMap[
     rr:template "http://data.ecommerce/places_order/{first_name}_{last_name}";
@@ -434,9 +440,10 @@ rr:logicalTable [
 <#prefers_delivery_type>
   rr:logicalTable [
     rr:sqlQuery """SELECT A.first_name, A.last_name, B.delivery_kind
-                   FROM public.customers_information A
-                   FULL JOIN public.delivery_services_type B
-                   ON A.delivery_kind = B.delivery_kind"""
+                   FROM ecommerce.customers_information A
+                   FULL JOIN ecommerce.delivery_services_type B
+                   ON A.delivery_kind = B.delivery_kind""";
+    rr:sqlVersion rr:SQL2008;
   ];
   rr:subjectMap[
     rr:template "http://data.ecommerce/prefers_delivery_type/{first_name}_{last_name}";

@@ -5,7 +5,7 @@
 -- Dumped from database version 14.0
 -- Dumped by pg_dump version 14.1
 
--- Started on 2021-12-11 21:54:52 CET
+-- Started on 2021-12-22 19:11:20 CET
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -21,23 +21,6 @@ SET row_security = off;
 SET default_tablespace = '';
 
 SET default_table_access_method = heap;
-
---
--- TOC entry 216 (class 1259 OID 16495)
--- Name: PaymentCard; Type: TABLE; Schema: public; Owner: postgres
---
-
-CREATE TABLE public."PaymentCard" (
-    "cardType" character varying(10) NOT NULL,
-    "cardNumber" character varying(17) NOT NULL,
-    "cardHolderName" character varying(100) NOT NULL,
-    "cardExpiryDate" date NOT NULL,
-    customer character varying(100) NOT NULL,
-    "customerEmail" character varying(256) NOT NULL
-);
-
-
-ALTER TABLE public."PaymentCard" OWNER TO postgres;
 
 --
 -- TOC entry 211 (class 1259 OID 16414)
@@ -126,6 +109,48 @@ CREATE TABLE public.goods_in_receipt (
 ALTER TABLE public.goods_in_receipt OWNER TO postgres;
 
 --
+-- TOC entry 216 (class 1259 OID 16495)
+-- Name: paymentcard; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.paymentcard (
+    cardtype character varying(10) NOT NULL,
+    cardnumber character varying(17) NOT NULL,
+    cardholdername character varying(100) NOT NULL,
+    cardexpirydate date NOT NULL,
+    customer character varying(100) NOT NULL,
+    customeremail character varying(256) NOT NULL
+);
+
+
+ALTER TABLE public.paymentcard OWNER TO postgres;
+
+--
+-- TOC entry 217 (class 1259 OID 16529)
+-- Name: product; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.product (
+    sku character varying(30) NOT NULL,
+    name character varying(200) NOT NULL,
+    color character varying(20),
+    itemcondition character varying(20) NOT NULL,
+    description character varying(512),
+    stockquantity integer NOT NULL,
+    location character varying(50) NOT NULL,
+    dateadded timestamp without time zone NOT NULL,
+    brand character varying(30),
+    category character varying(30),
+    adminseller character varying(30),
+    supplierseller character varying(10),
+    price numeric(10,2) NOT NULL,
+    model character varying
+);
+
+
+ALTER TABLE public.product OWNER TO postgres;
+
+--
 -- TOC entry 212 (class 1259 OID 16419)
 -- Name: receipt_information; Type: TABLE; Schema: public; Owner: postgres
 --
@@ -136,7 +161,7 @@ CREATE TABLE public.receipt_information (
     delivery_status character varying(128) NOT NULL,
     delivery_type character varying(128) NOT NULL,
     email character varying(256),
-    "orderAmount" integer,
+    orderamount integer,
     address text
 );
 
@@ -144,17 +169,7 @@ CREATE TABLE public.receipt_information (
 ALTER TABLE public.receipt_information OWNER TO postgres;
 
 --
--- TOC entry 3628 (class 0 OID 16495)
--- Dependencies: 216
--- Data for Name: PaymentCard; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-COPY public."PaymentCard" ("cardType", "cardNumber", "cardHolderName", "cardExpiryDate", customer, "customerEmail") FROM stdin;
-\.
-
-
---
--- TOC entry 3623 (class 0 OID 16414)
+-- TOC entry 3629 (class 0 OID 16414)
 -- Dependencies: 211
 -- Data for Name: customer_receipt_connector; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -167,7 +182,7 @@ rick.sanchez@yahoo.com	3
 
 
 --
--- TOC entry 3627 (class 0 OID 16453)
+-- TOC entry 3633 (class 0 OID 16453)
 -- Dependencies: 215
 -- Data for Name: customers_addresses; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -185,7 +200,7 @@ ted.mosby@gmail.com	USA	New York	Manhattan, 180, 44
 
 
 --
--- TOC entry 3621 (class 0 OID 16395)
+-- TOC entry 3627 (class 0 OID 16395)
 -- Dependencies: 209
 -- Data for Name: customers_information; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -202,7 +217,7 @@ Ted	Mosby	1978-01-24	Fast	ted.mosby@gmail.com	+1637873456
 
 
 --
--- TOC entry 3622 (class 0 OID 16409)
+-- TOC entry 3628 (class 0 OID 16409)
 -- Dependencies: 210
 -- Data for Name: delivery_services_type; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -216,7 +231,7 @@ Express	40	10
 
 
 --
--- TOC entry 3626 (class 0 OID 16429)
+-- TOC entry 3632 (class 0 OID 16429)
 -- Dependencies: 214
 -- Data for Name: delivery_status_description; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -228,7 +243,7 @@ Not Delivered	The purchase has not deliverd to the customer.
 
 
 --
--- TOC entry 3625 (class 0 OID 16424)
+-- TOC entry 3631 (class 0 OID 16424)
 -- Dependencies: 213
 -- Data for Name: goods_in_receipt; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -246,12 +261,33 @@ COPY public.goods_in_receipt (receipt_id, good_id, numberof) FROM stdin;
 
 
 --
--- TOC entry 3624 (class 0 OID 16419)
+-- TOC entry 3634 (class 0 OID 16495)
+-- Dependencies: 216
+-- Data for Name: paymentcard; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.paymentcard (cardtype, cardnumber, cardholdername, cardexpirydate, customer, customeremail) FROM stdin;
+\.
+
+
+--
+-- TOC entry 3635 (class 0 OID 16529)
+-- Dependencies: 217
+-- Data for Name: product; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.product (sku, name, color, itemcondition, description, stockquantity, location, dateadded, brand, category, adminseller, supplierseller, price, model) FROM stdin;
+1	Iphone 12	1	1	1	1	1	2021-10-02 00:00:00	1	1	1	1	1000.00	1
+\.
+
+
+--
+-- TOC entry 3630 (class 0 OID 16419)
 -- Dependencies: 212
 -- Data for Name: receipt_information; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.receipt_information (receipt_id, date, delivery_status, delivery_type, email, "orderAmount", address) FROM stdin;
+COPY public.receipt_information (receipt_id, date, delivery_status, delivery_type, email, orderamount, address) FROM stdin;
 1	2021-10-09	Delivered	Paid	\N	\N	\N
 2	2021-10-29	Not Delivered	Not Paid	\N	\N	\N
 3	2021-11-09	Not Delivered	Paid	\N	\N	\N
@@ -259,16 +295,16 @@ COPY public.receipt_information (receipt_id, date, delivery_status, delivery_typ
 
 
 --
--- TOC entry 3472 (class 2606 OID 16499)
--- Name: PaymentCard PaymentCard_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- TOC entry 3476 (class 2606 OID 16499)
+-- Name: paymentcard PaymentCard_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public."PaymentCard"
-    ADD CONSTRAINT "PaymentCard_pkey" PRIMARY KEY ("cardType", "cardNumber");
+ALTER TABLE ONLY public.paymentcard
+    ADD CONSTRAINT "PaymentCard_pkey" PRIMARY KEY (cardtype, cardnumber);
 
 
 --
--- TOC entry 3462 (class 2606 OID 16418)
+-- TOC entry 3466 (class 2606 OID 16418)
 -- Name: customer_receipt_connector customer_receipt_connector_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -277,7 +313,7 @@ ALTER TABLE ONLY public.customer_receipt_connector
 
 
 --
--- TOC entry 3470 (class 2606 OID 16459)
+-- TOC entry 3474 (class 2606 OID 16459)
 -- Name: customers_addresses customers_addresses_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -286,7 +322,7 @@ ALTER TABLE ONLY public.customers_addresses
 
 
 --
--- TOC entry 3458 (class 2606 OID 16401)
+-- TOC entry 3462 (class 2606 OID 16401)
 -- Name: customers_information customers_information_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -295,7 +331,7 @@ ALTER TABLE ONLY public.customers_information
 
 
 --
--- TOC entry 3460 (class 2606 OID 16413)
+-- TOC entry 3464 (class 2606 OID 16413)
 -- Name: delivery_services_type delivery_servies_types_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -304,7 +340,7 @@ ALTER TABLE ONLY public.delivery_services_type
 
 
 --
--- TOC entry 3468 (class 2606 OID 16435)
+-- TOC entry 3472 (class 2606 OID 16435)
 -- Name: delivery_status_description delivery_status_description_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -313,7 +349,7 @@ ALTER TABLE ONLY public.delivery_status_description
 
 
 --
--- TOC entry 3466 (class 2606 OID 16428)
+-- TOC entry 3470 (class 2606 OID 16428)
 -- Name: goods_in_receipt goods_in_receipt_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -322,7 +358,16 @@ ALTER TABLE ONLY public.goods_in_receipt
 
 
 --
--- TOC entry 3464 (class 2606 OID 16423)
+-- TOC entry 3478 (class 2606 OID 16535)
+-- Name: product product_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.product
+    ADD CONSTRAINT product_pkey PRIMARY KEY (sku);
+
+
+--
+-- TOC entry 3468 (class 2606 OID 16423)
 -- Name: receipt_information receipt_information_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -331,16 +376,16 @@ ALTER TABLE ONLY public.receipt_information
 
 
 --
--- TOC entry 3481 (class 2606 OID 16505)
--- Name: PaymentCard customerEmail; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- TOC entry 3487 (class 2606 OID 16505)
+-- Name: paymentcard customerEmail; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public."PaymentCard"
-    ADD CONSTRAINT "customerEmail" FOREIGN KEY ("customerEmail") REFERENCES public.customers_information(email) ON UPDATE CASCADE ON DELETE CASCADE NOT VALID;
+ALTER TABLE ONLY public.paymentcard
+    ADD CONSTRAINT "customerEmail" FOREIGN KEY (customeremail) REFERENCES public.customers_information(email) ON UPDATE CASCADE ON DELETE CASCADE NOT VALID;
 
 
 --
--- TOC entry 3473 (class 2606 OID 16465)
+-- TOC entry 3479 (class 2606 OID 16465)
 -- Name: customers_information delivery_kind; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -349,7 +394,7 @@ ALTER TABLE ONLY public.customers_information
 
 
 --
--- TOC entry 3476 (class 2606 OID 16490)
+-- TOC entry 3482 (class 2606 OID 16490)
 -- Name: receipt_information delivery_status; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -358,7 +403,7 @@ ALTER TABLE ONLY public.receipt_information
 
 
 --
--- TOC entry 3478 (class 2606 OID 16524)
+-- TOC entry 3484 (class 2606 OID 16524)
 -- Name: receipt_information delivery_type; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -367,7 +412,7 @@ ALTER TABLE ONLY public.receipt_information
 
 
 --
--- TOC entry 3474 (class 2606 OID 16443)
+-- TOC entry 3480 (class 2606 OID 16443)
 -- Name: customer_receipt_connector email; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -376,7 +421,7 @@ ALTER TABLE ONLY public.customer_receipt_connector
 
 
 --
--- TOC entry 3480 (class 2606 OID 16460)
+-- TOC entry 3486 (class 2606 OID 16460)
 -- Name: customers_addresses email; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -385,7 +430,7 @@ ALTER TABLE ONLY public.customers_addresses
 
 
 --
--- TOC entry 3477 (class 2606 OID 16514)
+-- TOC entry 3483 (class 2606 OID 16514)
 -- Name: receipt_information email; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -394,7 +439,7 @@ ALTER TABLE ONLY public.receipt_information
 
 
 --
--- TOC entry 3475 (class 2606 OID 16448)
+-- TOC entry 3481 (class 2606 OID 16448)
 -- Name: customer_receipt_connector receipt_id; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -403,7 +448,7 @@ ALTER TABLE ONLY public.customer_receipt_connector
 
 
 --
--- TOC entry 3479 (class 2606 OID 16470)
+-- TOC entry 3485 (class 2606 OID 16470)
 -- Name: goods_in_receipt receipt_id; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -411,7 +456,7 @@ ALTER TABLE ONLY public.goods_in_receipt
     ADD CONSTRAINT receipt_id FOREIGN KEY (receipt_id) REFERENCES public.receipt_information(receipt_id) ON UPDATE CASCADE ON DELETE CASCADE NOT VALID;
 
 
--- Completed on 2021-12-11 21:54:52 CET
+-- Completed on 2021-12-22 19:11:20 CET
 
 --
 -- PostgreSQL database dump complete
