@@ -22,7 +22,7 @@
   rr:predicateObjectMap [
     rr:predicate ecommerce:api_key ;
     rr:objectMap [rr:column "api_key"];
-  ];
+  ].
 
 # deliverytrip Mapping
 <#transportvehicle>
@@ -31,12 +31,12 @@
     rr:tableName "transportvehicle"
   ];
   rr:subjectMap [
-    rr:template "http://data.ecommerce/transportvehicle/{ID}";
+    rr:template "http://data.ecommerce/transportvehicle/{id}";
     rr:class ecommerce:TransportVehicle;
   ];
   rr:predicateObjectMap [
     rr:predicate ecommerce:TransportVehicleID ;
-    rr:objectMap [rr:column "ID"];
+    rr:objectMap [rr:column "id"];
   ];
   rr:predicateObjectMap [
     rr:predicate ecommerce:position ;
@@ -60,12 +60,12 @@
     rr:tableName "deliverytrip"
   ];
   rr:subjectMap [
-    rr:template "http://data.ecommerce/deliverytrip/{ID}";
+    rr:template "http://data.ecommerce/deliverytrip/{id}";
     rr:class ecommerce:DeliveryTrip;
   ];
   rr:predicateObjectMap [
     rr:predicate ecommerce:DeliveryTrip_ID ;
-    rr:objectMap [rr:column "ID"];
+    rr:objectMap [rr:column "id"];
   ];
   rr:predicateObjectMap [
     rr:predicate ecommerce:departure_time ;

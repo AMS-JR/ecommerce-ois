@@ -20,7 +20,7 @@ ALTER TABLE public.transportcompany OWNER TO postgres;
 
 
 CREATE TABLE public.transportvehicle(
-    ID              SERIAL NOT NULL,
+    id              SERIAL NOT NULL,
     position        CHAR(50),
 
     company         CHAR(50) NOT NULL
@@ -30,7 +30,7 @@ ALTER TABLE public.transportvehicle OWNER TO postgres;
 
 
 CREATE TABLE public.deliverytrip(
-    ID                  SERIAL NOT NULL,
+    id                  SERIAL NOT NULL,
     departure_time      TIMESTAMP,
     arrival_time        TIMESTAMP,
 
@@ -63,10 +63,10 @@ ALTER TABLE ONLY public.warehouse
     ADD CONSTRAINT warehouse_pkey PRIMARY KEY (warehousecode);
 
 ALTER TABLE ONLY public.transportvehicle
-	ADD CONSTRAINT transportvehicle_pkey PRIMARY KEY (ID);
+	ADD CONSTRAINT transportvehicle_pkey PRIMARY KEY (id);
 
 ALTER TABLE ONLY public.deliverytrip
-	ADD CONSTRAINT deliverytrip_pkey PRIMARY KEY (ID);
+	ADD CONSTRAINT deliverytrip_pkey PRIMARY KEY (id);
 
 ALTER TABLE ONLY public.transportcompany
 	ADD CONSTRAINT transportcompany_pkey PRIMARY KEY (name);
@@ -74,7 +74,7 @@ ALTER TABLE ONLY public.transportcompany
 
 ALTER TABLE public.transportvehicle ADD FOREIGN KEY(company) REFERENCES public.transportcompany(name) ON DELETE CASCADE;
 
-ALTER TABLE public.deliverytrip ADD FOREIGN KEY(truck) REFERENCES public.transportvehicle(ID) ON DELETE CASCADE;
+ALTER TABLE public.deliverytrip ADD FOREIGN KEY(truck) REFERENCES public.transportvehicle(id) ON DELETE CASCADE;
 ALTER TABLE public.deliverytrip ADD FOREIGN KEY(starting_warehouse) REFERENCES public.warehouse(warehousecode) ON DELETE CASCADE;
 
 COMMIT;
