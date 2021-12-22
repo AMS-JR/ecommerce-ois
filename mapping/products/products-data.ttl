@@ -1,0 +1,1676 @@
+<http://data.upendo-ecommerce/customer/Joye_Vigar>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Joye" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Vigar" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "jvigare@printfriendly.com" .
+
+<http://data.upendo-ecommerce/customer/Sula_Sotworth>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Sula" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Sotworth" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "ssotworth5@businessweek.com" .
+
+<http://data.upendo-ecommerce/category/Movies%20&%20Music>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Category> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#categoryName>
+                "Movies & Music" .
+
+<http://data.upendo-ecommerce/product/e4f7d42f-2232-422d-91f1>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Belongs_To>
+                <http://data.upendo-ecommerce/category/Mobiles> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Brand>
+                <http://data.upendo-ecommerce/brand/Samsung> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
+                "New" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
+                "2021-06-14 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_name>
+                "Samsung Galaxy Note 20 Ultra 5G with Snapdragon 865+" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_price>
+                "1050"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
+                "Mystic Black" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#has_adminSeller>
+                <http://data.upendo-ecommerce/admin/Martha%20Brna> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#location>
+                "Brussels" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
+                "Samsung Galaxy Note 20 Ultra 5G" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
+                "e4f7d42f-2232-422d-91f1" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
+                "105"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.upendo-ecommerce/order/df13c18d-6e93/4cd04183-a0da-4bf3-aedb>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/4cd04183-a0da-4bf3-aedb> .
+
+<http://data.upendo-ecommerce/customer/Theresa_Artz>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Theresa" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Artz" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "tartza@ask.com" .
+
+<http://data.upendo-ecommerce/product/2c5311ac-aea1-443e-b15e>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Belongs_To>
+                <http://data.upendo-ecommerce/category/Mobiles> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Brand>
+                <http://data.upendo-ecommerce/brand/Apple> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
+                "New" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
+                "2021-09-19 16:51:12.0"^^<java:java.sql.Timestamp> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_name>
+                "Apple iPhone 11 (64GB) - White" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_price>
+                "450"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
+                "White" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#has_adminSeller>
+                <http://data.upendo-ecommerce/admin/Amadou%20Sarjo%20Jallow> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#location>
+                "Brussels" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
+                "IPhone 11" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
+                "2c5311ac-aea1-443e-b15e" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
+                "85"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.upendo-ecommerce/order/1f126c2d-7852/4cd04183-a0da-4bf3-aedb>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/4cd04183-a0da-4bf3-aedb> .
+
+<http://data.upendo-ecommerce/order/7add4332-46b3/161ef15e-5908-45fa-b3d3>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/161ef15e-5908-45fa-b3d3> .
+
+<http://data.upendo-ecommerce/customer/Thedrick_Arrell>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Thedrick" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Arrell" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "tarrell2@shareasale.com" .
+
+<http://data.upendo-ecommerce/customer/Wolf_Malzard>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Wolf" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Malzard" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "wmalzard8@nps.gov" .
+
+<http://data.upendo-ecommerce/order/7b87e34a-0191/8d428fc2-d711-4905-a0ad>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/8d428fc2-d711-4905-a0ad> .
+
+<http://data.upendo-ecommerce/customer/Calypso_Bevans>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Calypso" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Bevans" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "cbevansf@fda.gov" .
+
+<http://data.upendo-ecommerce/order/5ae48ea0-8dff/97e94d6a-aea2-4695-9722>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/97e94d6a-aea2-4695-9722> .
+
+<http://data.upendo-ecommerce/customer/Mose_Solomonides>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Mose" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Solomonides" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "msolomonidesi@gnu.org" .
+
+<http://data.upendo-ecommerce/customer/Felita_Kemet>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Felita" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Kemet" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "fkemetg@ebay.co.uk" .
+
+<http://data.upendo-ecommerce/customer/Jen_Domegan>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Jen" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Domegan" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "jdomegan9@opera.com" .
+
+<http://data.upendo-ecommerce/order/05ab0cd0-ab45/3aaaa278-1de4-480c-8baa>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/3aaaa278-1de4-480c-8baa> .
+
+<http://data.upendo-ecommerce/customer/Adriane_Sire>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Adriane" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Sire" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "asireb@wikispaces.com" .
+
+<http://data.upendo-ecommerce/customer/Thornton_Macvey>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Thornton" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Macvey" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "tmacveye@dmoz.org" .
+
+<http://data.upendo-ecommerce/order/b0bf1fcf-295d/97e94d6a-aea2-4695-9722>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/97e94d6a-aea2-4695-9722> .
+
+<http://data.upendo-ecommerce/category/Health%20&%20Beauty>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Category> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#categoryName>
+                "Health & Beauty" .
+
+<http://data.upendo-ecommerce/product/161ef15e-5908-45fa-b3d3>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Belongs_To>
+                <http://data.upendo-ecommerce/category/Computers> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Brand>
+                <http://data.upendo-ecommerce/brand/Asus> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
+                "New" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
+                "2021-11-06 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_name>
+                "ASUS VivoBook 14 (2021)" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_price>
+                "1000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
+                "Transparent Silver" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#location>
+                "Ghent" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
+                "VivoBook 14 (2021)" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
+                "161ef15e-5908-45fa-b3d3" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
+                "55"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.upendo-ecommerce/customer/Jobina_Melby>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Jobina" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Melby" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "jmelbyd@wix.com" .
+
+<http://data.upendo-ecommerce/order/df13c18d-6e93/21bca5f9-a789-48c9-82a0>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/21bca5f9-a789-48c9-82a0> .
+
+<http://data.upendo-ecommerce/category/Women's%20Fashion>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Category> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Category_description>
+                "Clothes, shoes, jewelery..." ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#categoryName>
+                "Women's Fashion" .
+
+<http://data.upendo-ecommerce/customer/Melodie_Dymick>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Melodie" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Dymick" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "mdymickj@sourceforge.net" .
+
+<http://data.upendo-ecommerce/customer/Mallory_Shiel>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Mallory" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Shiel" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "mshielg@jimdo.com" .
+
+<http://data.upendo-ecommerce/customer/Delly_Lapthorn>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Delly" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Lapthorn" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "dlapthorn6@phoca.cz" .
+
+<http://data.upendo-ecommerce/order/0563a725-73da/71b399d0-8f8b-42eb-9b47>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/71b399d0-8f8b-42eb-9b47> .
+
+<http://data.upendo-ecommerce/category/Books>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Category> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#categoryName>
+                "Books" .
+
+<http://data.upendo-ecommerce/order/5ab6e3ca-f9c3/18903ea8-0f19-4e87-a0c9>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/18903ea8-0f19-4e87-a0c9> .
+
+<http://data.upendo-ecommerce/order/d4f8f116-d586/8d428fc2-d711-4905-a0ad>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/8d428fc2-d711-4905-a0ad> .
+
+<http://data.upendo-ecommerce/customer/Oberon_Stockford>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Oberon" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Stockford" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "ostockford7@liveinternet.ru" .
+
+<http://data.upendo-ecommerce/product/ff5d9d07-56fa-4cfa-905a>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Belongs_To>
+                <http://data.upendo-ecommerce/category/Computers> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Brand>
+                <http://data.upendo-ecommerce/brand/Asus> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
+                "New" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
+                "2021-07-16 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_name>
+                "ASUS ROG Strix G17 (2021) 17.3-inch" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_price>
+                "700"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
+                "Eclipse Gray" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#location>
+                "Ghent" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
+                "ROG Strix G17 (2021)" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
+                "ff5d9d07-56fa-4cfa-905a" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
+                "65"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.upendo-ecommerce/customer/Alair_Novello>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Alair" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Novello" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "anovelloh@blogtalkradio.com" .
+
+<http://data.upendo-ecommerce/customer/Roz_Thurley>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Roz" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Thurley" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "rthurley3@amazon.co.jp" .
+
+<http://data.upendo-ecommerce/order/3e176920-b166/d695052e-d926-4d01-bb3b>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/d695052e-d926-4d01-bb3b> .
+
+<http://data.upendo-ecommerce/customer/Gweneth_Libbis>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Gweneth" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Libbis" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "glibbis5@ycombinator.com" .
+
+<http://data.upendo-ecommerce/customer/Dinny_Duckels>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Dinny" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Duckels" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "dduckelsd@google.pl" .
+
+<http://data.upendo-ecommerce/order/0563a725-73da/4988825f-72da-44a1-9a01>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/4988825f-72da-44a1-9a01> .
+
+<http://data.upendo-ecommerce/customer/Annette_Rosterne>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Annette" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Rosterne" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "arosterne2@usa.gov" .
+
+<http://data.upendo-ecommerce/order/095da47b-c203/fc07b915-5f56-4e50-8600>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/fc07b915-5f56-4e50-8600> .
+
+<http://data.upendo-ecommerce/customer/Eddi_Sealey>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Eddi" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Sealey" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "esealey7@samsung.com" .
+
+<http://data.upendo-ecommerce/customer/Caralie_Elliot>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Caralie" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Elliot" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "celliotb@columbia.edu" .
+
+<http://data.upendo-ecommerce/category/Computers>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Category> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Category_description>
+                "Computers and computer equipements" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#categoryName>
+                "Computers" .
+
+<http://data.upendo-ecommerce/customer/Orville_Cubberley>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Orville" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Cubberley" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "ocubberley3@craigslist.org" .
+
+<http://data.upendo-ecommerce/customer/Bartram_Bridden>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Bartram" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Bridden" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "bbriddenj@jiathis.com" .
+
+<http://data.upendo-ecommerce/product/b1700344-d908-45e2-9bc4>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Belongs_To>
+                <http://data.upendo-ecommerce/category/Mobiles> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Brand>
+                <http://data.upendo-ecommerce/brand/Redmi> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
+                "New" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
+                "2021-06-14 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_name>
+                "Redmi Note 10 Pro (Vintage Bronze, 6GB RAM, 128GB Storage)" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_price>
+                "300"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
+                "Vintage Bronze" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#has_adminSeller>
+                <http://data.upendo-ecommerce/admin/Dave%20Sabonis> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#location>
+                "Brussels" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
+                "Redmi Note 10 Pro" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
+                "b1700344-d908-45e2-9bc4" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
+                "100"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.upendo-ecommerce/order/7cf5ca33-0ec3/97e94d6a-aea2-4695-9722>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/97e94d6a-aea2-4695-9722> .
+
+<http://data.upendo-ecommerce/product/21bca5f9-a789-48c9-82a0>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Belongs_To>
+                <http://data.upendo-ecommerce/category/Mobiles> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Brand>
+                <http://data.upendo-ecommerce/brand/Samsung> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
+                "New" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
+                "2021-06-14 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_name>
+                "Samsung Galaxy Note 20 Ultra 5G with Snapdragon 865+" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_price>
+                "1050"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
+                "Mystic Black" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#has_adminSeller>
+                <http://data.upendo-ecommerce/admin/Martha%20Brna> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#location>
+                "California" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
+                "Samsung Galaxy Note 20 Ultra 5G" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
+                "21bca5f9-a789-48c9-82a0" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
+                "105"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.upendo-ecommerce/customer/Yardley_Doswell>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Yardley" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Doswell" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "ydoswell1@soundcloud.com" .
+
+<http://data.upendo-ecommerce/order/ade78110-04f3/b362f9f0-1f0d-4b2e-8e1d>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/b362f9f0-1f0d-4b2e-8e1d> .
+
+<http://data.upendo-ecommerce/customer/Averil_Bundy>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Averil" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Bundy" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "abundy0@patch.com" .
+
+<http://data.upendo-ecommerce/product/3aaaa278-1de4-480c-8baa>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Belongs_To>
+                <http://data.upendo-ecommerce/category/Mobiles> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Brand>
+                <http://data.upendo-ecommerce/brand/Samsung> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
+                "New" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
+                "2021-07-16 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_name>
+                "Samsung Galaxy Z Fold3 5G (Phantom Black, 12GB RAM, 512GB Storage)" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_price>
+                "1500"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
+                "Phantom Black" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#has_adminSeller>
+                <http://data.upendo-ecommerce/admin/Martha%20Brna> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#location>
+                "London" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
+                "Samsung Galaxy Z Fold3 5G" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
+                "3aaaa278-1de4-480c-8baa" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
+                "100"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.upendo-ecommerce/customer/Sigismondo_Ormrod>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Sigismondo" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Ormrod" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "sormrod9@tuttocitta.it" .
+
+<http://data.upendo-ecommerce/order/949b0b3d-f6b9/8d428fc2-d711-4905-a0ad>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/8d428fc2-d711-4905-a0ad> .
+
+<http://data.upendo-ecommerce/order/05ab0cd0-ab45/97e94d6a-aea2-4695-9722>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/97e94d6a-aea2-4695-9722> .
+
+<http://data.upendo-ecommerce/customer/Sally_Bendan>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Sally" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Bendan" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "sbendani@xinhuanet.com" .
+
+<http://data.upendo-ecommerce/customer/Huey_Pudge>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Huey" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Pudge" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "hpudge6@mozilla.com" .
+
+<http://data.upendo-ecommerce/order/d4f8f116-d586/3aaaa278-1de4-480c-8baa>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/3aaaa278-1de4-480c-8baa> .
+
+<http://data.upendo-ecommerce/order/4abf8353-487f/b1700344-d908-45e2-9bc4>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/b1700344-d908-45e2-9bc4> .
+
+<http://data.upendo-ecommerce/customer/Bren_Casillis>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Bren" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Casillis" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "bcasillis0@dropbox.com" .
+
+<http://data.upendo-ecommerce/product/08749f5a-ed6c-493c-9f63>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Belongs_To>
+                <http://data.upendo-ecommerce/category/Mobiles> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Brand>
+                <http://data.upendo-ecommerce/brand/Samsung> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
+                "New" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
+                "2021-07-16 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_name>
+                "Samsung Galaxy Z Fold3 5G (Phantom Black, 12GB RAM, 512GB Storage)" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_price>
+                "1500"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
+                "Phantom Black" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#has_adminSeller>
+                <http://data.upendo-ecommerce/admin/Martha%20Brna> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#location>
+                "Ghent" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
+                "Samsung Galaxy Z Fold3 5G" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
+                "08749f5a-ed6c-493c-9f63" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
+                "80"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.upendo-ecommerce/product/cf490540-e13b-4588-86b2>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Belongs_To>
+                <http://data.upendo-ecommerce/category/Mobiles> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Brand>
+                <http://data.upendo-ecommerce/brand/Redmi> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
+                "New" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
+                "2021-06-14 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_name>
+                "Redmi Note 10 Pro (Vintage Bronze, 6GB RAM, 128GB Storage)" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_price>
+                "300"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
+                "Vintage Bronze" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#has_adminSeller>
+                <http://data.upendo-ecommerce/admin/Dave%20Sabonis> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#location>
+                "Ghent" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
+                "Redmi Note 10 Pro" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
+                "cf490540-e13b-4588-86b2" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
+                "100"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.upendo-ecommerce/customer/Concordia_Gianolo>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Concordia" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Gianolo" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "cgianolof@surveymonkey.com" .
+
+<http://data.upendo-ecommerce/product/8d428fc2-d711-4905-a0ad>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Belongs_To>
+                <http://data.upendo-ecommerce/category/Mobiles> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Brand>
+                <http://data.upendo-ecommerce/brand/Apple> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
+                "New" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
+                "2021-09-04 13:51:12.0"^^<java:java.sql.Timestamp> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_name>
+                "Apple iPhone 11 (64GB) - White" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_price>
+                "1000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
+                "White" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#has_adminSeller>
+                <http://data.upendo-ecommerce/admin/Amadou%20Sarjo%20Jallow> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#location>
+                "London" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
+                "IPhone 11" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
+                "8d428fc2-d711-4905-a0ad" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
+                "65"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.upendo-ecommerce/customer/Joyce_Long>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Joyce" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Long" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "jlong8@usatoday.com" .
+
+<http://data.upendo-ecommerce/order/a2b72693-6dd6/b362f9f0-1f0d-4b2e-8e1d>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/b362f9f0-1f0d-4b2e-8e1d> .
+
+<http://data.upendo-ecommerce/customer/Gonzales_Landy>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Gonzales" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Landy" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "glandy4@google.co.uk" .
+
+<http://data.upendo-ecommerce/product/71b399d0-8f8b-42eb-9b47>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Belongs_To>
+                <http://data.upendo-ecommerce/category/Mobiles> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Brand>
+                <http://data.upendo-ecommerce/brand/Apple> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
+                "New" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
+                "2021-10-09 16:51:12.976426"^^<java:java.sql.Timestamp> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_name>
+                "Apple iPhone 11 (64GB) - Black" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_price>
+                "1100"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
+                "Black" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#has_adminSeller>
+                <http://data.upendo-ecommerce/admin/Amadou%20Sarjo%20Jallow> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#location>
+                "California" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
+                "IPhone 11" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
+                "71b399d0-8f8b-42eb-9b47" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
+                "120"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.upendo-ecommerce/order/42f3c02a-ec14/8d428fc2-d711-4905-a0ad>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/8d428fc2-d711-4905-a0ad> .
+
+<http://data.upendo-ecommerce/customer/Minor_Scantleberry>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Minor" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Scantleberry" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "mscantleberryi@google.de" .
+
+<http://data.upendo-ecommerce/category/Men's%20Fashion>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Category> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Category_description>
+                "clothes, watches, shoes, hats..." ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#categoryName>
+                "Men's Fashion" .
+
+<http://data.upendo-ecommerce/order/3cc735c1-74d4/4988825f-72da-44a1-9a01>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/4988825f-72da-44a1-9a01> .
+
+<http://data.upendo-ecommerce/customer/Leland_Bermingham>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Leland" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Bermingham" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "lberminghama@jiathis.com" .
+
+<http://data.upendo-ecommerce/product/18903ea8-0f19-4e87-a0c9>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Belongs_To>
+                <http://data.upendo-ecommerce/category/Mobiles> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Brand>
+                <http://data.upendo-ecommerce/brand/Apple> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
+                "New" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
+                "2021-10-09 16:40:36.317058"^^<java:java.sql.Timestamp> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
+                "6.1-inch (15.5 cm diagonal) Liquid Retina HD LCD display\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDual-camera system with 12MP Ultra Wide and Wide cameras; Night mode, Portrait mode, and 4K video up to 60fps\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12MP TrueDepth front camera with Portrait mode, 4K video, and Slo-Mo\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFace ID for secure authentication\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFast-charge capable\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tWireless charging\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_name>
+                "Apple iPhone 11 (64GB) - White" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_price>
+                "1000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
+                "White" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#has_adminSeller>
+                <http://data.upendo-ecommerce/admin/Amadou%20Sarjo%20Jallow> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#location>
+                "California" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
+                "IPhone 11" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
+                "18903ea8-0f19-4e87-a0c9" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
+                "120"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.upendo-ecommerce/order/5ab6e3ca-f9c3/3b08e48f-9be1-454b-8374>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/3b08e48f-9be1-454b-8374> .
+
+<http://data.upendo-ecommerce/order/b30f3919-7595/4a0bec5b-f0c8-4e0c-8182>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/4a0bec5b-f0c8-4e0c-8182> .
+
+<http://data.upendo-ecommerce/customer/Aluino_Daud>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Aluino" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Daud" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "adaud9@biglobe.ne.jp" .
+
+<http://data.upendo-ecommerce/customer/Jo-anne_Frankling>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Jo-anne" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Frankling" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "jfrankling8@people.com.cn" .
+
+<http://data.upendo-ecommerce/customer/Conn_Apfler>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Conn" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Apfler" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "capflerh@multiply.com" .
+
+<http://data.upendo-ecommerce/product/4988825f-72da-44a1-9a01>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Belongs_To>
+                <http://data.upendo-ecommerce/category/Mobiles> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Brand>
+                <http://data.upendo-ecommerce/brand/Apple> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
+                "New" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
+                "2021-10-11 16:51:12.0"^^<java:java.sql.Timestamp> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_name>
+                "Apple AirPods Pro" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_price>
+                "450"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
+                "Black" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#has_adminSeller>
+                <http://data.upendo-ecommerce/admin/Amadou%20Sarjo%20Jallow> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#location>
+                "California" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
+                "MBP22HN/A" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
+                "4988825f-72da-44a1-9a01" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
+                "85"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.upendo-ecommerce/customer/Liesa_Perkins>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Liesa" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Perkins" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "lperkins2@imdb.com" .
+
+<http://data.upendo-ecommerce/category/Appliances%20&%20Electronics>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Category> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#categoryName>
+                "Appliances & Electronics" .
+
+<http://data.upendo-ecommerce/order/eb258842-6691/97e94d6a-aea2-4695-9722>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/97e94d6a-aea2-4695-9722> .
+
+<http://data.upendo-ecommerce/customer/Myrlene_Alderwick>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Myrlene" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Alderwick" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "malderwickb@hp.com" .
+
+<http://data.upendo-ecommerce/customer/Rosemarie_Sahlstrom>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Rosemarie" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Sahlstrom" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "rsahlstrom5@bigcartel.com" .
+
+<http://data.upendo-ecommerce/customer/Wallis_Boule>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Wallis" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Boule" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "wboulee@wp.com" .
+
+<http://data.upendo-ecommerce/order/f1cb31a1-7912/97e94d6a-aea2-4695-9722>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/97e94d6a-aea2-4695-9722> .
+
+<http://data.upendo-ecommerce/order/7cf5ca33-0ec3/4cd04183-a0da-4bf3-aedb>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/4cd04183-a0da-4bf3-aedb> .
+
+<http://data.upendo-ecommerce/customer/Jaine_Bowlas>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Jaine" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Bowlas" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "jbowlas1@sciencedirect.com" .
+
+<http://data.upendo-ecommerce/order/81dfc1d4-5078/cf490540-e13b-4588-86b2>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/cf490540-e13b-4588-86b2> .
+
+<http://data.upendo-ecommerce/order/124d210e-a5d7/b1700344-d908-45e2-9bc4>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/b1700344-d908-45e2-9bc4> .
+
+<http://data.upendo-ecommerce/customer/Cooper_Bradbeer>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Cooper" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Bradbeer" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "cbradbeer6@hao123.com" .
+
+<http://data.upendo-ecommerce/product/d695052e-d926-4d01-bb3b>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Belongs_To>
+                <http://data.upendo-ecommerce/category/Computers> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Brand>
+                <http://data.upendo-ecommerce/brand/Asus> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
+                "New" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
+                "2021-07-16 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_name>
+                "ASUS ROG Strix G17 (2021) 17.3-inch" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_price>
+                "700"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
+                "Eclipse Gray" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#location>
+                "Brussels" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
+                "ROG Strix G17 (2021)" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
+                "d695052e-d926-4d01-bb3b" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
+                "104"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.upendo-ecommerce/category/Video%20games>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Category> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#categoryName>
+                "Video games" .
+
+<http://data.upendo-ecommerce/product/97e94d6a-aea2-4695-9722>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Belongs_To>
+                <http://data.upendo-ecommerce/category/Mobiles> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Brand>
+                <http://data.upendo-ecommerce/brand/Samsung> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
+                "New" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
+                "2021-06-14 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_name>
+                "Samsung Galaxy Note 20 Ultra 5G with Snapdragon 865+" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_price>
+                "1050"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
+                "Mystic Black" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#has_adminSeller>
+                <http://data.upendo-ecommerce/admin/Martha%20Brna> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#location>
+                "London" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
+                "Samsung Galaxy Note 20 Ultra 5G" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
+                "97e94d6a-aea2-4695-9722" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
+                "100"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.upendo-ecommerce/customer/Brook_Fallows>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Brook" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Fallows" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "bfallowsa@nytimes.com" .
+
+<http://data.upendo-ecommerce/order/6bdf82b2-7e6d/21bca5f9-a789-48c9-82a0>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/21bca5f9-a789-48c9-82a0> .
+
+<http://data.upendo-ecommerce/order/9b029c2f-0f52/8d428fc2-d711-4905-a0ad>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/8d428fc2-d711-4905-a0ad> .
+
+<http://data.upendo-ecommerce/order/ade78110-04f3/51235f3d-4fbe-402b-9bbc>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/51235f3d-4fbe-402b-9bbc> .
+
+<http://data.upendo-ecommerce/customer/Avril_Wallentin>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Avril" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Wallentin" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "awallentinc@sfgate.com" .
+
+<http://data.upendo-ecommerce/order/004e1dcf-7178/3b08e48f-9be1-454b-8374>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/3b08e48f-9be1-454b-8374> .
+
+<http://data.upendo-ecommerce/customer/Sibley_Faulds>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Sibley" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Faulds" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "sfauldsd@unicef.org" .
+
+<http://data.upendo-ecommerce/order/0b7deade-5fee/b1700344-d908-45e2-9bc4>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/b1700344-d908-45e2-9bc4> .
+
+<http://data.upendo-ecommerce/product/9fecf700-ddb6-4740-8e8f>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Belongs_To>
+                <http://data.upendo-ecommerce/category/Mobiles> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Brand>
+                <http://data.upendo-ecommerce/brand/Samsung> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
+                "New" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
+                "2021-06-14 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_name>
+                "Samsung Galaxy Note 20 Ultra 5G with Snapdragon 865+" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_price>
+                "1050"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
+                "Mystic Black" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#has_adminSeller>
+                <http://data.upendo-ecommerce/admin/Martha%20Brna> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#location>
+                "Ghent" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
+                "Samsung Galaxy Note 20 Ultra 5G" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
+                "9fecf700-ddb6-4740-8e8f" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
+                "105"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.upendo-ecommerce/customer/Marcelline_Keene>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Marcelline" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Keene" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "mkeeneg@csmonitor.com" .
+
+<http://data.upendo-ecommerce/order/08772404-bc1b/97e94d6a-aea2-4695-9722>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/97e94d6a-aea2-4695-9722> .
+
+<http://data.upendo-ecommerce/customer/Erena_Mar>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Erena" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Mar" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "emarf@desdev.cn" .
+
+<http://data.upendo-ecommerce/product/4a0bec5b-f0c8-4e0c-8182>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Belongs_To>
+                <http://data.upendo-ecommerce/category/Mobiles> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Brand>
+                <http://data.upendo-ecommerce/brand/Apple> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
+                "New" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
+                "2021-10-09 16:52:14.541691"^^<java:java.sql.Timestamp> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_name>
+                "Apple iPhone 10 (128GB) - Black" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_price>
+                "9150"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
+                "Black" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#has_adminSeller>
+                <http://data.upendo-ecommerce/admin/Amadou%20Sarjo%20Jallow> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#location>
+                "California" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
+                "IPhone 10" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
+                "4a0bec5b-f0c8-4e0c-8182" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
+                "70"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.upendo-ecommerce/product/b362f9f0-1f0d-4b2e-8e1d>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Belongs_To>
+                <http://data.upendo-ecommerce/category/Mobiles> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Brand>
+                <http://data.upendo-ecommerce/brand/Apple> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
+                "New" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
+                "2021-09-04 13:51:12.0"^^<java:java.sql.Timestamp> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_name>
+                "Apple iPhone 11 (64GB) - Black" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_price>
+                "1100"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
+                "Black" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#has_adminSeller>
+                <http://data.upendo-ecommerce/admin/Amadou%20Sarjo%20Jallow> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#location>
+                "Brussels" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
+                "IPhone 11" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
+                "b362f9f0-1f0d-4b2e-8e1d" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
+                "94"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.upendo-ecommerce/customer/Jilly_Bidnall>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Jilly" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Bidnall" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "jbidnall7@shinystat.com" .
+
+<http://data.upendo-ecommerce/customer/Karoline_Klehn>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Karoline" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Klehn" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "kklehn3@liveinternet.ru" .
+
+<http://data.upendo-ecommerce/customer/Margarette_Czapla>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Margarette" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Czapla" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "mczaplaj@pinterest.com" .
+
+<http://data.upendo-ecommerce/product/076e2af4-37b2-4ec0-8c2e>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Belongs_To>
+                <http://data.upendo-ecommerce/category/Mobiles> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Brand>
+                <http://data.upendo-ecommerce/brand/Samsung> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
+                "New" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
+                "2021-07-16 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_name>
+                "Samsung Galaxy Z Fold3 5G (Phantom Black, 12GB RAM, 512GB Storage)" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_price>
+                "1500"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
+                "Phantom Black" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#has_adminSeller>
+                <http://data.upendo-ecommerce/admin/Martha%20Brna> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#location>
+                "Brussels" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
+                "Samsung Galaxy Z Fold3 5G" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
+                "076e2af4-37b2-4ec0-8c2e" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
+                "115"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.upendo-ecommerce/order/489510f4-a7e3/b1700344-d908-45e2-9bc4>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/b1700344-d908-45e2-9bc4> .
+
+<http://data.upendo-ecommerce/customer/Julie_Cox>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Julie" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Cox" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "jcoxc@nbcnews.com" .
+
+<http://data.upendo-ecommerce/customer/Brietta_Hoggan>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Brietta" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Hoggan" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "bhoggan0@eepurl.com" .
+
+<http://data.upendo-ecommerce/category/Mobiles>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Category> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Category_description>
+                "Mobile devices, earphones, mobile accessories..." ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#categoryName>
+                "Mobiles" .
+
+<http://data.upendo-ecommerce/category/TV%20&%20Camera>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Category> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#categoryName>
+                "TV & Camera" .
+
+<http://data.upendo-ecommerce/customer/Paul_Enoch>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Paul" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Enoch" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "penoch4@illinois.edu" .
+
+<http://data.upendo-ecommerce/product/3b08e48f-9be1-454b-8374>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Belongs_To>
+                <http://data.upendo-ecommerce/category/Mobiles> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Brand>
+                <http://data.upendo-ecommerce/brand/Apple> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
+                "New" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
+                "2021-10-09 17:08:07.870954"^^<java:java.sql.Timestamp> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_name>
+                "Apple AirPods Pro" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_price>
+                "400"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
+                "White" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#has_adminSeller>
+                <http://data.upendo-ecommerce/admin/Amadou%20Sarjo%20Jallow> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#location>
+                "California" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
+                "MWP22HN/A" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
+                "3b08e48f-9be1-454b-8374" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
+                "85"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.upendo-ecommerce/product/fc07b915-5f56-4e50-8600>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Belongs_To>
+                <http://data.upendo-ecommerce/category/Computers> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Brand>
+                <http://data.upendo-ecommerce/brand/Asus> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
+                "New" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
+                "2021-10-06 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_name>
+                "ASUS VivoBook 14 (2021)" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_price>
+                "700"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
+                "Transparent Silver" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#location>
+                "Brussels" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
+                "VivoBook 14 (2021)" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
+                "fc07b915-5f56-4e50-8600" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
+                "154"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.upendo-ecommerce/customer/Hazlett_Jeannard>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Hazlett" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Jeannard" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "hjeannard4@yellowpages.com" .
+
+<http://data.upendo-ecommerce/category/Grocery>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Category> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#categoryName>
+                "Grocery" .
+
+<http://data.upendo-ecommerce/customer/Karlik_Sinnatt>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Karlik" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Sinnatt" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "ksinnattc@earthlink.net" .
+
+<http://data.upendo-ecommerce/product/51235f3d-4fbe-402b-9bbc>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Belongs_To>
+                <http://data.upendo-ecommerce/category/Mobiles> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Brand>
+                <http://data.upendo-ecommerce/brand/Apple> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
+                "New" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
+                "2021-10-11 16:51:12.0"^^<java:java.sql.Timestamp> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_name>
+                "Apple AirPods Pro" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_price>
+                "950"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
+                "Black" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#has_adminSeller>
+                <http://data.upendo-ecommerce/admin/Amadou%20Sarjo%20Jallow> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#location>
+                "Brussels" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
+                "MBP22HN/A" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
+                "51235f3d-4fbe-402b-9bbc" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
+                "84"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.upendo-ecommerce/customer/Tyler_MacGowan>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Tyler" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "MacGowan" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "tmacgowan1@blogspot.com" .
+
+<http://data.upendo-ecommerce/product/3a62141b-933c-440c-a5b7>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Belongs_To>
+                <http://data.upendo-ecommerce/category/Mobiles> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Brand>
+                <http://data.upendo-ecommerce/brand/Apple> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
+                "New" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
+                "2021-10-09 16:53:01.428812"^^<java:java.sql.Timestamp> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_name>
+                "Apple iPhone 10 (128GB) - White" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_price>
+                "700"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
+                "White" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#has_adminSeller>
+                <http://data.upendo-ecommerce/admin/Amadou%20Sarjo%20Jallow> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#location>
+                "California" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
+                "IPhone 10" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
+                "3a62141b-933c-440c-a5b7" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
+                "60"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.upendo-ecommerce/order/f1cb31a1-7912/4cd04183-a0da-4bf3-aedb>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#OrderDescription> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderQuantity>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#order_on>
+                <http://data.upendo-ecommerce/product/4cd04183-a0da-4bf3-aedb> .
+
+<http://data.upendo-ecommerce/customer/Aggy_Purkins>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name>
+                "Aggy" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name>
+                "Purkins" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderID>
+                "apurkinsh@epa.gov" .
+
+<http://data.upendo-ecommerce/product/4cd04183-a0da-4bf3-aedb>
+        a       <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Belongs_To>
+                <http://data.upendo-ecommerce/category/Mobiles> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Brand>
+                <http://data.upendo-ecommerce/brand/Samsung> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition>
+                "New" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added>
+                "2021-07-16 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_name>
+                "Samsung Galaxy Z Fold3 5G (Phantom Black, 12GB RAM, 512GB Storage)" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_price>
+                "1500"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color>
+                "Phantom Black" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#has_adminSeller>
+                <http://data.upendo-ecommerce/admin/Martha%20Brna> ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#location>
+                "California" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model>
+                "Samsung Galaxy Z Fold3 5G" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku>
+                "4cd04183-a0da-4bf3-aedb" ;
+        <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity>
+                "180"^^<http://www.w3.org/2001/XMLSchema#int> .
