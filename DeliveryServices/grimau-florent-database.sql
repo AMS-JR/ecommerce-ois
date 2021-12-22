@@ -59,11 +59,11 @@ ALTER TABLE public.warehouse OWNER TO postgres;
 CREATE TABLE public.order (
     id                  character varying(255) NOT NULL PRIMARY KEY,
     email               CHAR(100),
-    date                DATETIME NOT NULL,
+    date                TIMESTAMP NOT NULL,
     address             CHAR(50),
     status              character varying(128) NOT NULL,
     delivery_type       character varying(128) NOT NULL,
-    trip                character varying(255),
+    trip                INTEGER NOT NULL
 );
 
 ALTER TABLE public.order OWNER TO postgres;
