@@ -1,0 +1,121 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix ecommerce: <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#>.
+
+# deliverytrip Mapping
+<#deliverytrip>
+  a rr:TriplesMap ;
+  rr:logicalTable [
+    rr:tableName "deliverytrip"
+  ];
+  rr:subjectMap [
+    rr:template "http://data.ecommerce/deliverytrip/{ID}";
+    rr:class ecommerce:DeliveryTrip;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:DeliveryTrip_ID ;
+    rr:objectMap [rr:column "id"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:departure_time ;
+    rr:objectMap [rr:column "departure_time"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:arrival_time ;
+    rr:objectMap [rr:column "arrival_time"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:truck ;
+    rr:objectMap [
+      rr:parentTriplesMap <#transportvehicle> ;
+      rr:joinCondition [
+        rr:child "truck" ;  # The name of the field in deliverytrip that's a foreign key
+        rr:parent "id"  # The name of the field referenced in the parent
+      ]
+    ]
+  ].
+
+# deliverytrip Mapping
+<#transportvehicle>
+  a rr:TriplesMap ;
+  rr:logicalTable [
+    rr:tableName "transportvehicle"
+  ];
+  rr:subjectMap [
+    rr:template "http://data.ecommerce/transportvehicle/{ID}";
+    rr:class ecommerce:TransportVehicle;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:TransportVehicleID ;
+    rr:objectMap [rr:column "ID"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:position ;
+    rr:objectMap [rr:column "position"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:transport_company ;
+    rr:objectMap [
+      rr:parentTriplesMap <#transportcompany> ;
+      rr:joinCondition [
+      rr:child "company" ;
+      rr:parent "name"
+      ]
+    ]
+  ].
+
+
+# TransportCompany Mapping
+<#transportcompany>
+  a rr:TriplesMap ;
+  rr:logicalTable [
+    rr:tableName "transportcompany"
+  ];
+  rr:subjectMap [
+    rr:template "http://data.ecommerce/transportvehicle/{ID}";
+    rr:class ecommerce:TrnasportCompany;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:TransportCompanyname ;
+    rr:objectMap [rr:column "name"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:price_per_km ;
+    rr:objectMap [rr:column "price_per_km"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:api_key ;
+    rr:objectMap [rr:column "api_key"];
+  ];
+
+# TransportCompany Mapping
+<#order>
+  a rr:TriplesMap ;
+  rr:logicalTable [
+    rr:tableName "order"
+  ];
+  rr:subjectMap [
+    rr:template "http://data.ecommerce/transportvehicle/{ID}";
+    rr:class ecommerce:TrnasportCompany;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:transportcompany_name ;
+    rr:objectMap [rr:column "name"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:transportcompany_price_per_km ;
+    rr:objectMap [rr:column "price_per_km"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:transportcompany_api_key ;
+    rr:objectMap [rr:column "api_key"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:transport_company ;
+    rr:objectMap [
+      rr:parentTriplesMap <#transportcompany> ;
+      rr:joinCondition [
+      rr:child "company" ;
+      rr:parent "transportcompany"
+      ]
+    ]
+  ].
