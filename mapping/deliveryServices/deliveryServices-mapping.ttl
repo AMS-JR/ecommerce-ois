@@ -47,8 +47,8 @@
     rr:objectMap [
       rr:parentTriplesMap <#transportcompany> ;
       rr:joinCondition [
-      rr:child "company" ;
-      rr:parent "name"
+        rr:child "company" ;
+        rr:parent "name"
       ]
     ]
   ].
