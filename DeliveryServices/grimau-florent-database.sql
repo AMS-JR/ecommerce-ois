@@ -57,7 +57,7 @@ ALTER TABLE public.warehouse OWNER TO postgres;
 
 
 CREATE TABLE public.order (
-    id                  character varying(255) NOT NULL PRIMARY KEY,
+    id                  SERIAL NOT NULL,
     email               CHAR(100),
     date                TIMESTAMP NOT NULL,
     address             CHAR(50),
@@ -84,6 +84,8 @@ ALTER TABLE ONLY public.deliverytrip
 ALTER TABLE ONLY public.transportcompany
 	ADD CONSTRAINT transportcompany_pkey PRIMARY KEY (name);
 
+ALTER TABLE ONLY public.order
+	ADD CONSTRAINT order_pkey PRIMARY KEY (id);
 
 ALTER TABLE public.transportvehicle ADD FOREIGN KEY(company) REFERENCES public.transportcompany(name) ON DELETE CASCADE;
 
@@ -123,13 +125,21 @@ Bruxelles	UPS
 Bruxelles	DHL
 \.
 
-COPY DeliveryTrip (departure_time, arrival_time, truck, starting_warehouse) FROM stdin;
+COPY public.deliverytrip (departure_time, arrival_time, truck, starting_warehouse) FROM stdin;
 2021-11-02 12:34:36+0100	\N	1	8358495063
 2021-11-02 12:34:36+0100	2021-11-03 10:14:15+0100	2	8358495063
 \N	\N	2	4389754987
 2021-11-02 12:34:36+0100	2021-11-05 14:26:18+0100	3	8358495063
 2021-11-02 12:34:36+0100	\N	4	4389754987
 2021-11-02 12:34:36+0100	\N	4	4389754987
+\.
+
+
+COPY public.order (email, date, address, status, delivery_type, trip) FROM stdin;
+one@test.mail	2021-11-02 12:34:36+0100	Vermont Street 123	on the road	quick	1
+another@test.mail	2021-08-07 09:23:36+0100	Vermont Street 123	delivered	quick	1
+one_more@test.mail	2021-03-02 11:35:31+0100	Vermont Street 123	lost	quick	1
+last@test.mail	2021-12-22 17:48:16+0100	Vermont Street 123	found	quick	1
 \.
 
 COMMIT;
