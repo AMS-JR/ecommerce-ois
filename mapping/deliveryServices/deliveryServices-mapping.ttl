@@ -142,3 +142,49 @@
     rr:predicate ecommerce:streetaddress;
     rr:objectMap [rr:column "streetaddress"]
   ].
+
+
+# order Mapping
+<#order>
+  a rr:TriplesMap ;
+  rr:logicalTable [
+    rr:tableName "order"
+  ];
+  rr:subjectMap [
+    rr:template "http://data.ecommerce/order/{id}";
+    rr:class ecommerce:Order;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:receipt_id;
+    rr:objectMap [rr:column "id"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:email ;
+    rr:objectMap [rr:column "email"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:date ;
+    rr:objectMap [rr:column "date"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:address ;
+    rr:objectMap [rr:column "address"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:DeliveryStatus ;
+    rr:objectMap [rr:column "status"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:Delivery_Type ;
+    rr:objectMap [rr:column "delivery_type"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:DeliveryTrip_ID ;
+    rr:objectMap [
+      rr:parentTriplesMap <#deliverytrip>;
+      rr:joinCondition [
+        rr:child "trip";
+        rr:parent "id"
+      ]
+    ]
+  ].
