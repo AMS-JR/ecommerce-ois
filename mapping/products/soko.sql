@@ -5,7 +5,7 @@
 -- Dumped from database version 13.4
 -- Dumped by pg_dump version 13.4
 
--- Started on 2021-12-22 18:02:34
+-- Started on 2021-12-23 03:47:59
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -190,7 +190,7 @@ ALTER TABLE public.delivery_services_type OWNER TO postgres;
 
 CREATE TABLE public.delivery_status_description (
     delivery_status character varying(128) NOT NULL,
-    decription text NOT NULL
+    description text NOT NULL
 );
 
 
@@ -510,66 +510,66 @@ glandy4@google.co.uk	Belgium	Brussels	25700 Oakridge Center,1170 Hooker,Brussels
 --
 
 COPY public.customers_information (first_name, email, phone_number, last_name, delivery_kind, birth_date) FROM stdin;
-Averil	abundy0@patch.com	+1 225 645 2213	Bundy	UPS	1996-07-27
-Tyler	tmacgowan1@blogspot.com	+1 941 871 2462	MacGowan	UPS	1996-07-27
-Annette	arosterne2@usa.gov	+1 305 753 0510	Rosterne	UPS	1996-07-27
-Orville	ocubberley3@craigslist.org	+1 619 207 4480	Cubberley	UPS	1996-07-27
-Paul	penoch4@illinois.edu	+1 915 433 4095	Enoch	UPS	1996-07-27
-Rosemarie	rsahlstrom5@bigcartel.com	+1 952 695 2327	Sahlstrom	UPS	1996-07-27
-Delly	dlapthorn6@phoca.cz	+1 571 674 5982	Lapthorn	UPS	1996-07-27
-Jilly	jbidnall7@shinystat.com	+1 310 905 9764	Bidnall	UPS	1996-07-27
-Wolf	wmalzard8@nps.gov	+1 636 848 5425	Malzard	UPS	1996-07-27
-Jen	jdomegan9@opera.com	+1 917 544 4986	Domegan	UPS	1996-07-27
-Brook	bfallowsa@nytimes.com	+1 862 836 2544	Fallows	UPS	1996-07-27
-Adriane	asireb@wikispaces.com	+1 608 445 6164	Sire	UPS	1996-07-27
-Julie	jcoxc@nbcnews.com	+1 251 870 0126	Cox	UPS	1996-07-27
-Sibley	sfauldsd@unicef.org	+1 215 672 4118	Faulds	UPS	1996-07-27
-Wallis	wboulee@wp.com	+1 713 914 6195	Boule	UPS	1996-07-27
-Concordia	cgianolof@surveymonkey.com	+1 602 974 3776	Gianolo	UPS	1996-07-27
-Felita	fkemetg@ebay.co.uk	+1 317 347 7286	Kemet	UPS	1996-07-27
-Conn	capflerh@multiply.com	+1 314 723 1015	Apfler	UPS	1996-07-27
-Sally	sbendani@xinhuanet.com	+1 513 918 3398	Bendan	UPS	1996-07-27
-Margarette	mczaplaj@pinterest.com	+1 941 756 2247	Czapla	UPS	1996-07-27
-Bren	bcasillis0@dropbox.com	+44 334 644 4906	Casillis	UPS	1996-07-27
-Jaine	jbowlas1@sciencedirect.com	+44 985 232 3716	Bowlas	UPS	1996-07-27
-Thedrick	tarrell2@shareasale.com	+44 762 120 8252	Arrell	UPS	1996-07-27
-Roz	rthurley3@amazon.co.jp	+44 365 218 3559	Thurley	UPS	1996-07-27
-Hazlett	hjeannard4@yellowpages.com	+44 909 336 7421	Jeannard	UPS	1996-07-27
-Gweneth	glibbis5@ycombinator.com	+44 101 152 6354	Libbis	UPS	1996-07-27
-Cooper	cbradbeer6@hao123.com	+44 884 537 5911	Bradbeer	UPS	1996-07-27
-Eddi	esealey7@samsung.com	+44 442 102 7707	Sealey	UPS	1996-07-27
-Joyce	jlong8@usatoday.com	+44 754 176 9922	Long	UPS	1996-07-27
-Brietta	bhoggan0@eepurl.com	+32 249 749 6595	Hoggan	UPS	1996-07-27
-Yardley	ydoswell1@soundcloud.com	+32 969 287 6321	Doswell	UPS	1996-07-27
-Liesa	lperkins2@imdb.com	+32 969 238 9774	Perkins	UPS	1996-07-27
-Karoline	kklehn3@liveinternet.ru	+32 758 456 3902	Klehn	UPS	1996-07-27
-Gonzales	glandy4@google.co.uk	+32 186 389 1271	Landy	UPS	1996-07-27
-Sula	ssotworth5@businessweek.com	+32 161 416 7354	Sotworth	UPS	1996-07-27
-Huey	hpudge6@mozilla.com	+32 537 662 8128	Pudge	UPS	1996-07-27
-Oberon	ostockford7@liveinternet.ru	+32 492 371 4657	Stockford	UPS	1996-07-27
-Jo-anne	jfrankling8@people.com.cn	+32 954 757 0659	Frankling	UPS	1996-07-27
-Aluino	adaud9@biglobe.ne.jp	+32 367 261 6687	Daud	UPS	1996-07-27
-Theresa	tartza@ask.com	+32 792 311 5613	Artz	UPS	1996-07-27
-Caralie	celliotb@columbia.edu	+32 192 878 9487	Elliot	UPS	1996-07-27
-Avril	awallentinc@sfgate.com	+32 598 967 4686	Wallentin	UPS	1996-07-27
-Jobina	jmelbyd@wix.com	+32 183 884 2703	Melby	UPS	1996-07-27
-Thornton	tmacveye@dmoz.org	+32 828 309 3511	Macvey	UPS	1996-07-27
-Erena	emarf@desdev.cn	+32 490 406 5575	Mar	UPS	1996-07-27
-Marcelline	mkeeneg@csmonitor.com	+32 202 588 8663	Keene	UPS	1996-07-27
-Alair	anovelloh@blogtalkradio.com	+32 159 140 9091	Novello	UPS	1996-07-27
-Mose	msolomonidesi@gnu.org	+32 879 807 6621	Solomonides	UPS	1996-07-27
-Melodie	mdymickj@sourceforge.net	+32 133 830 6223	Dymick	UPS	1996-07-27
-Sigismondo	sormrod9@tuttocitta.it	+44 414 230 1262	Ormrod	UPS	1996-07-27
-Leland	lberminghama@jiathis.com	+44 787 452 7062	Bermingham	UPS	1996-07-27
-Myrlene	malderwickb@hp.com	+44 492 252 2026	Alderwick	UPS	1996-07-27
-Karlik	ksinnattc@earthlink.net	+44 472 501 9419	Sinnatt	UPS	1996-07-27
-Dinny	dduckelsd@google.pl	+44 153 684 5883	Duckels	UPS	1996-07-27
-Joye	jvigare@printfriendly.com	+44 167 484 1914	Vigar	UPS	1996-07-27
-Calypso	cbevansf@fda.gov	+44 663 901 7157	Bevans	UPS	1996-07-27
-Mallory	mshielg@jimdo.com	+44 584 499 0980	Shiel	UPS	1996-07-27
-Aggy	apurkinsh@epa.gov	+44 488 258 9854	Purkins	UPS	1996-07-27
-Minor	mscantleberryi@google.de	+44 616 204 5820	Scantleberry	UPS	1996-07-27
-Bartram	bbriddenj@jiathis.com	+44 179 960 8621	Bridden	UPS	1996-07-27
+Averil	abundy0@patch.com	+1 225 645 2213	Bundy	Normal	1996-07-27
+Tyler	tmacgowan1@blogspot.com	+1 941 871 2462	MacGowan	Normal	1996-07-27
+Annette	arosterne2@usa.gov	+1 305 753 0510	Rosterne	Normal	1996-07-27
+Orville	ocubberley3@craigslist.org	+1 619 207 4480	Cubberley	Normal	1996-07-27
+Paul	penoch4@illinois.edu	+1 915 433 4095	Enoch	Normal	1996-07-27
+Rosemarie	rsahlstrom5@bigcartel.com	+1 952 695 2327	Sahlstrom	Normal	1996-07-27
+Delly	dlapthorn6@phoca.cz	+1 571 674 5982	Lapthorn	Normal	1996-07-27
+Jilly	jbidnall7@shinystat.com	+1 310 905 9764	Bidnall	Normal	1996-07-27
+Wolf	wmalzard8@nps.gov	+1 636 848 5425	Malzard	Normal	1996-07-27
+Jen	jdomegan9@opera.com	+1 917 544 4986	Domegan	Normal	1996-07-27
+Brook	bfallowsa@nytimes.com	+1 862 836 2544	Fallows	Normal	1996-07-27
+Adriane	asireb@wikispaces.com	+1 608 445 6164	Sire	Normal	1996-07-27
+Julie	jcoxc@nbcnews.com	+1 251 870 0126	Cox	Normal	1996-07-27
+Sibley	sfauldsd@unicef.org	+1 215 672 4118	Faulds	Normal	1996-07-27
+Wallis	wboulee@wp.com	+1 713 914 6195	Boule	Normal	1996-07-27
+Concordia	cgianolof@surveymonkey.com	+1 602 974 3776	Gianolo	Normal	1996-07-27
+Felita	fkemetg@ebay.co.uk	+1 317 347 7286	Kemet	Normal	1996-07-27
+Conn	capflerh@multiply.com	+1 314 723 1015	Apfler	Normal	1996-07-27
+Sally	sbendani@xinhuanet.com	+1 513 918 3398	Bendan	Normal	1996-07-27
+Margarette	mczaplaj@pinterest.com	+1 941 756 2247	Czapla	Normal	1996-07-27
+Bren	bcasillis0@dropbox.com	+44 334 644 4906	Casillis	Normal	1996-07-27
+Jaine	jbowlas1@sciencedirect.com	+44 985 232 3716	Bowlas	Normal	1996-07-27
+Thedrick	tarrell2@shareasale.com	+44 762 120 8252	Arrell	Normal	1996-07-27
+Roz	rthurley3@amazon.co.jp	+44 365 218 3559	Thurley	Normal	1996-07-27
+Hazlett	hjeannard4@yellowpages.com	+44 909 336 7421	Jeannard	Normal	1996-07-27
+Gweneth	glibbis5@ycombinator.com	+44 101 152 6354	Libbis	Normal	1996-07-27
+Cooper	cbradbeer6@hao123.com	+44 884 537 5911	Bradbeer	Normal	1996-07-27
+Eddi	esealey7@samsung.com	+44 442 102 7707	Sealey	Normal	1996-07-27
+Joyce	jlong8@usatoday.com	+44 754 176 9922	Long	Normal	1996-07-27
+Brietta	bhoggan0@eepurl.com	+32 249 749 6595	Hoggan	Normal	1996-07-27
+Yardley	ydoswell1@soundcloud.com	+32 969 287 6321	Doswell	Normal	1996-07-27
+Liesa	lperkins2@imdb.com	+32 969 238 9774	Perkins	Normal	1996-07-27
+Karoline	kklehn3@liveinternet.ru	+32 758 456 3902	Klehn	Normal	1996-07-27
+Gonzales	glandy4@google.co.uk	+32 186 389 1271	Landy	Normal	1996-07-27
+Sula	ssotworth5@businessweek.com	+32 161 416 7354	Sotworth	Normal	1996-07-27
+Huey	hpudge6@mozilla.com	+32 537 662 8128	Pudge	Normal	1996-07-27
+Oberon	ostockford7@liveinternet.ru	+32 492 371 4657	Stockford	Normal	1996-07-27
+Jo-anne	jfrankling8@people.com.cn	+32 954 757 0659	Frankling	Normal	1996-07-27
+Aluino	adaud9@biglobe.ne.jp	+32 367 261 6687	Daud	Normal	1996-07-27
+Theresa	tartza@ask.com	+32 792 311 5613	Artz	Normal	1996-07-27
+Caralie	celliotb@columbia.edu	+32 192 878 9487	Elliot	Normal	1996-07-27
+Avril	awallentinc@sfgate.com	+32 598 967 4686	Wallentin	Normal	1996-07-27
+Jobina	jmelbyd@wix.com	+32 183 884 2703	Melby	Normal	1996-07-27
+Thornton	tmacveye@dmoz.org	+32 828 309 3511	Macvey	Normal	1996-07-27
+Erena	emarf@desdev.cn	+32 490 406 5575	Mar	Normal	1996-07-27
+Marcelline	mkeeneg@csmonitor.com	+32 202 588 8663	Keene	Normal	1996-07-27
+Alair	anovelloh@blogtalkradio.com	+32 159 140 9091	Novello	Normal	1996-07-27
+Mose	msolomonidesi@gnu.org	+32 879 807 6621	Solomonides	Normal	1996-07-27
+Melodie	mdymickj@sourceforge.net	+32 133 830 6223	Dymick	Normal	1996-07-27
+Sigismondo	sormrod9@tuttocitta.it	+44 414 230 1262	Ormrod	Normal	1996-07-27
+Leland	lberminghama@jiathis.com	+44 787 452 7062	Bermingham	Normal	1996-07-27
+Myrlene	malderwickb@hp.com	+44 492 252 2026	Alderwick	Normal	1996-07-27
+Karlik	ksinnattc@earthlink.net	+44 472 501 9419	Sinnatt	Normal	1996-07-27
+Dinny	dduckelsd@google.pl	+44 153 684 5883	Duckels	Normal	1996-07-27
+Joye	jvigare@printfriendly.com	+44 167 484 1914	Vigar	Normal	1996-07-27
+Calypso	cbevansf@fda.gov	+44 663 901 7157	Bevans	Normal	1996-07-27
+Mallory	mshielg@jimdo.com	+44 584 499 0980	Shiel	Normal	1996-07-27
+Aggy	apurkinsh@epa.gov	+44 488 258 9854	Purkins	Normal	1996-07-27
+Minor	mscantleberryi@google.de	+44 616 204 5820	Scantleberry	Normal	1996-07-27
+Bartram	bbriddenj@jiathis.com	+44 179 960 8621	Bridden	Normal	1996-07-27
 \.
 
 
@@ -580,8 +580,8 @@ Bartram	bbriddenj@jiathis.com	+44 179 960 8621	Bridden	UPS	1996-07-27
 --
 
 COPY public.delivery_services_type (delivery_kind, price, delivery_duration) FROM stdin;
-UPS	10	5
-Uber	8	7
+Normal	8	7
+Premium	13	3
 \.
 
 
@@ -591,9 +591,9 @@ Uber	8	7
 -- Data for Name: delivery_status_description; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.delivery_status_description (delivery_status, decription) FROM stdin;
+COPY public.delivery_status_description (delivery_status, description) FROM stdin;
 Delivered	lorem ipsum si dolor
-Not Delivered	lorem ipsum si dolor
+notDelivered	lorem ipsum si dolor
 \.
 
 
@@ -604,36 +604,36 @@ Not Delivered	lorem ipsum si dolor
 --
 
 COPY public."order" ("orderID", "orderStatus", "orderDate", "customerAddress", "customerEmail", "orderAmount", "deliveryService") FROM stdin;
-ade78110-04f3	Delivered	2021-11-01 18:41:19	85 Macpherson Way,6834\tService, Brussels,Belgium	lperkins2@imdb.com	2000.00	UPS
-3e176920-b166	Delivered	2021-11-01 18:41:19	933 Bluestem Avenue,9404 Northport,Ninove,Belgium	ydoswell1@soundcloud.com	2000.00	UPS
-095da47b-c203	Delivered	2021-11-01 18:41:19	456 Drewry Center, 2170 Shelley, Antwerpen, Belgium	bhoggan0@eepurl.com	2000.00	UPS
-124d210e-a5d7	Delivered	2021-11-01 18:41:19	4 Sunbrook Way,7823 Sage,Brussels,Belgium	kklehn3@liveinternet.ru	2000.00	UPS
-81dfc1d4-5078	Delivered	2021-11-01 18:41:19	25700 Oakridge Center,1170 Hooker,Brussels,Belgium	glandy4@google.co.uk	2000.00	UPS
-7add4332-46b3	Delivered	2021-11-01 18:41:19	0 Hermina Street,9052 Eggendart,Gent,BelgiumBelgium	ostockford7@liveinternet.ru	2000.00	UPS
-a2b72693-6dd6	Delivered	2021-11-01 18:41:19	3 Portage Plaza,6042 Waubesa,Charleroi,BelgiumBelgium	jfrankling8@people.com.cn	2000.00	UPS
-489510f4-a7e3	Delivered	2021-11-01 18:41:19	1118 Roxbury Junction,6042 Lake View,Charleroi,Belgium	adaud9@biglobe.ne.jp	2000.00	UPS
-0b7deade-5fee	Delivered	2021-11-01 18:41:19	13 Moulton Lane,9404 Clyde Gallagher,Ninove,Belgium	tartza@ask.com	2000.00	UPS
-08772404-bc1b	Delivered	2021-11-01 18:41:19	DN21\tRidgeway\t09 Porter Trail,Upton,United Kingdom	sormrod9@tuttocitta.it	2000.00	UPS
-4abf8353-487f	Delivered	2021-11-01 18:41:19	9196 Hallows Terrace,6834 American,Brussels,Belgium	celliotb@columbia.edu	2000.00	UPS
-1f126c2d-7852	Delivered	2021-11-01 18:41:19	66799 Ridgeway Alley,70820\tCascada,Baton Rouge,United States	abundy0@patch.com	2000.00	UPS
-df13c18d-6e93	Delivered	2021-11-01 18:41:19	39452 4th Trail,4102\tBuena Vista,Carlifonia,United States	tmacgowan1@blogspot.com	2000.00	UPS
-6bdf82b2-7e6d	Delivered	2021-11-01 18:41:19	61702 Atwood Plaza,33175 High Crossing,Miami,United States	arosterne2@usa.gov	2000.00	UPS
-5ab6e3ca-f9c3	Delivered	2021-11-01 18:41:19	92153\tStraubel 58 Waxwing Place,San Diego,United States	ocubberley3@craigslist.org	2000.00	UPS
-3cc735c1-74d4	Delivered	2021-11-01 18:41:19	88541 Troy , 132 Banding Terrace,El Paso,United States	penoch4@illinois.edu	2000.00	UPS
-004e1dcf-7178	Delivered	2021-11-01 18:41:19	55564 Judy, 8335 Duke Avenue,Carlifonia,United States	rsahlstrom5@bigcartel.com	2000.00	UPS
-b30f3919-7595	Delivered	2021-11-01 18:41:19	23272\tKings, 8683 Golden Leaf Point,Carlifonia,United States	dlapthorn6@phoca.cz	2000.00	UPS
-0563a725-73da	Delivered	2021-11-01 18:41:19	90398\tGreen Ridge,\t5036 Esch Park,Inglewood,United States	jbidnall7@shinystat.com	2000.00	UPS
-f1cb31a1-7912	Delivered	2021-11-01 18:41:19	63126 Ronald Regan, 39352 Armistice Street,Saint Louis,United States	wmalzard8@nps.gov	2000.00	UPS
-7cf5ca33-0ec3	Delivered	2021-11-01 18:41:19	10469\tSpringview\t0820 Moose Junction,,United States	jdomegan9@opera.com	2000.00	UPS
-eb258842-6691	Delivered	2021-11-01 18:41:19	G4\tVillage Green, 44011 Pearson Hill,Glasgow,United Kingdom	bcasillis0@dropbox.com	2000.00	UPS
-d4f8f116-d586	Delivered	2021-11-01 18:41:19	LN6\tPorter\t37 Logan Junction,London,United Kingdom	jbowlas1@sciencedirect.com	2000.00	UPS
-5ae48ea0-8dff	Delivered	2021-11-01 18:41:19	SN13\tTruax\t8649 Warner Hill,London,United Kingdom	tarrell2@shareasale.com	2000.00	UPS
-05ab0cd0-ab45	Delivered	2021-11-01 18:41:19	L74\t3rd\t0 Susan Hill,Liverpool,United Kingdom	rthurley3@amazon.co.jp	2000.00	UPS
-42f3c02a-ec14	Delivered	2021-11-01 18:41:19	BT2\tMagdeline\t99 Carberry Plaza,Belfast,United Kingdom	hjeannard4@yellowpages.com	2000.00	UPS
-7b87e34a-0191	Delivered	2021-11-01 18:41:19	RH5\tGolf Course\t87 Mandrake Junction,,United Kingdom	glibbis5@ycombinator.com	2000.00	UPS
-949b0b3d-f6b9	Delivered	2021-11-01 18:41:19	SN1\tDerek\t6 Vernon Pass,London,United Kingdom	cbradbeer6@hao123.com	2000.00	UPS
-9b029c2f-0f52	Delivered	2021-11-01 18:41:19	BD23\tHudson\t98 Anzinger Place,London,United Kingdom	esealey7@samsung.com	2000.00	UPS
-b0bf1fcf-295d	Delivered	2021-11-01 18:41:19	CT16\tThompson\t3 Carioca Plaza,London,United Kingdom	jlong8@usatoday.com	2000.00	UPS
+ade78110-04f3	Delivered	2021-11-01 18:41:19	85 Macpherson Way,6834\tService, Brussels,Belgium	lperkins2@imdb.com	2000.00	Normal
+3e176920-b166	Delivered	2021-11-01 18:41:19	933 Bluestem Avenue,9404 Northport,Ninove,Belgium	ydoswell1@soundcloud.com	2000.00	Normal
+095da47b-c203	Delivered	2021-11-01 18:41:19	456 Drewry Center, 2170 Shelley, Antwerpen, Belgium	bhoggan0@eepurl.com	2000.00	Normal
+124d210e-a5d7	Delivered	2021-11-01 18:41:19	4 Sunbrook Way,7823 Sage,Brussels,Belgium	kklehn3@liveinternet.ru	2000.00	Normal
+81dfc1d4-5078	Delivered	2021-11-01 18:41:19	25700 Oakridge Center,1170 Hooker,Brussels,Belgium	glandy4@google.co.uk	2000.00	Normal
+7add4332-46b3	Delivered	2021-11-01 18:41:19	0 Hermina Street,9052 Eggendart,Gent,BelgiumBelgium	ostockford7@liveinternet.ru	2000.00	Normal
+a2b72693-6dd6	Delivered	2021-11-01 18:41:19	3 Portage Plaza,6042 Waubesa,Charleroi,BelgiumBelgium	jfrankling8@people.com.cn	2000.00	Normal
+489510f4-a7e3	Delivered	2021-11-01 18:41:19	1118 Roxbury Junction,6042 Lake View,Charleroi,Belgium	adaud9@biglobe.ne.jp	2000.00	Normal
+0b7deade-5fee	Delivered	2021-11-01 18:41:19	13 Moulton Lane,9404 Clyde Gallagher,Ninove,Belgium	tartza@ask.com	2000.00	Normal
+08772404-bc1b	Delivered	2021-11-01 18:41:19	DN21\tRidgeway\t09 Porter Trail,Upton,United Kingdom	sormrod9@tuttocitta.it	2000.00	Normal
+4abf8353-487f	Delivered	2021-11-01 18:41:19	9196 Hallows Terrace,6834 American,Brussels,Belgium	celliotb@columbia.edu	2000.00	Normal
+1f126c2d-7852	Delivered	2021-11-01 18:41:19	66799 Ridgeway Alley,70820\tCascada,Baton Rouge,United States	abundy0@patch.com	2000.00	Normal
+df13c18d-6e93	Delivered	2021-11-01 18:41:19	39452 4th Trail,4102\tBuena Vista,Carlifonia,United States	tmacgowan1@blogspot.com	2000.00	Normal
+6bdf82b2-7e6d	Delivered	2021-11-01 18:41:19	61702 Atwood Plaza,33175 High Crossing,Miami,United States	arosterne2@usa.gov	2000.00	Normal
+5ab6e3ca-f9c3	Delivered	2021-11-01 18:41:19	92153\tStraubel 58 Waxwing Place,San Diego,United States	ocubberley3@craigslist.org	2000.00	Normal
+3cc735c1-74d4	Delivered	2021-11-01 18:41:19	88541 Troy , 132 Banding Terrace,El Paso,United States	penoch4@illinois.edu	2000.00	Normal
+004e1dcf-7178	Delivered	2021-11-01 18:41:19	55564 Judy, 8335 Duke Avenue,Carlifonia,United States	rsahlstrom5@bigcartel.com	2000.00	Normal
+b30f3919-7595	Delivered	2021-11-01 18:41:19	23272\tKings, 8683 Golden Leaf Point,Carlifonia,United States	dlapthorn6@phoca.cz	2000.00	Normal
+0563a725-73da	Delivered	2021-11-01 18:41:19	90398\tGreen Ridge,\t5036 Esch Park,Inglewood,United States	jbidnall7@shinystat.com	2000.00	Normal
+f1cb31a1-7912	Delivered	2021-11-01 18:41:19	63126 Ronald Regan, 39352 Armistice Street,Saint Louis,United States	wmalzard8@nps.gov	2000.00	Normal
+7cf5ca33-0ec3	Delivered	2021-11-01 18:41:19	10469\tSpringview\t0820 Moose Junction,,United States	jdomegan9@opera.com	2000.00	Normal
+eb258842-6691	Delivered	2021-11-01 18:41:19	G4\tVillage Green, 44011 Pearson Hill,Glasgow,United Kingdom	bcasillis0@dropbox.com	2000.00	Normal
+d4f8f116-d586	Delivered	2021-11-01 18:41:19	LN6\tPorter\t37 Logan Junction,London,United Kingdom	jbowlas1@sciencedirect.com	2000.00	Normal
+5ae48ea0-8dff	Delivered	2021-11-01 18:41:19	SN13\tTruax\t8649 Warner Hill,London,United Kingdom	tarrell2@shareasale.com	2000.00	Normal
+05ab0cd0-ab45	Delivered	2021-11-01 18:41:19	L74\t3rd\t0 Susan Hill,Liverpool,United Kingdom	rthurley3@amazon.co.jp	2000.00	Normal
+42f3c02a-ec14	Delivered	2021-11-01 18:41:19	BT2\tMagdeline\t99 Carberry Plaza,Belfast,United Kingdom	hjeannard4@yellowpages.com	2000.00	Normal
+7b87e34a-0191	Delivered	2021-11-01 18:41:19	RH5\tGolf Course\t87 Mandrake Junction,,United Kingdom	glibbis5@ycombinator.com	2000.00	Normal
+949b0b3d-f6b9	Delivered	2021-11-01 18:41:19	SN1\tDerek\t6 Vernon Pass,London,United Kingdom	cbradbeer6@hao123.com	2000.00	Normal
+9b029c2f-0f52	Delivered	2021-11-01 18:41:19	BD23\tHudson\t98 Anzinger Place,London,United Kingdom	esealey7@samsung.com	2000.00	Normal
+b0bf1fcf-295d	Delivered	2021-11-01 18:41:19	CT16\tThompson\t3 Carioca Plaza,London,United Kingdom	jlong8@usatoday.com	2000.00	Normal
 \.
 
 
@@ -972,21 +972,21 @@ ALTER TABLE ONLY public.cart
 
 
 --
--- TOC entry 2958 (class 2606 OID 74870)
+-- TOC entry 2959 (class 2606 OID 75003)
 -- Name: order deliveryKind_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public."order"
-    ADD CONSTRAINT "deliveryKind_fkey" FOREIGN KEY ("deliveryService") REFERENCES public.delivery_services_type(delivery_kind) NOT VALID;
+    ADD CONSTRAINT "deliveryKind_fkey" FOREIGN KEY ("deliveryService") REFERENCES public.delivery_services_type(delivery_kind) ON UPDATE CASCADE NOT VALID;
 
 
 --
--- TOC entry 2948 (class 2606 OID 74859)
+-- TOC entry 2948 (class 2606 OID 74998)
 -- Name: customers_information delivery_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.customers_information
-    ADD CONSTRAINT delivery_fkey FOREIGN KEY (delivery_kind) REFERENCES public.delivery_services_type(delivery_kind) NOT VALID;
+    ADD CONSTRAINT delivery_fkey FOREIGN KEY (delivery_kind) REFERENCES public.delivery_services_type(delivery_kind) ON UPDATE CASCADE NOT VALID;
 
 
 --
@@ -999,7 +999,7 @@ ALTER TABLE ONLY public.customers_addresses
 
 
 --
--- TOC entry 2959 (class 2606 OID 74875)
+-- TOC entry 2958 (class 2606 OID 74875)
 -- Name: order orderStatus_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1052,7 +1052,7 @@ ALTER TABLE ONLY public.product
     ADD CONSTRAINT supplier_fkey FOREIGN KEY (supplier_seller) REFERENCES public.supplier(bce) NOT VALID;
 
 
--- Completed on 2021-12-22 18:02:37
+-- Completed on 2021-12-23 03:48:02
 
 --
 -- PostgreSQL database dump complete
