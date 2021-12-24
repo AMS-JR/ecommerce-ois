@@ -5,7 +5,7 @@
 -- Dumped from database version 13.4
 -- Dumped by pg_dump version 13.4
 
--- Started on 2021-12-23 03:47:59
+-- Started on 2021-12-23 15:34:02
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -27,7 +27,7 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp" WITH SCHEMA public;
 
 
 --
--- TOC entry 3112 (class 0 OID 0)
+-- TOC entry 3113 (class 0 OID 0)
 -- Dependencies: 2
 -- Name: EXTENSION "uuid-ossp"; Type: COMMENT; Schema: -; Owner: 
 --
@@ -54,7 +54,7 @@ CREATE TABLE public.admin (
 ALTER TABLE public.admin OWNER TO postgres;
 
 --
--- TOC entry 3113 (class 0 OID 0)
+-- TOC entry 3114 (class 0 OID 0)
 -- Dependencies: 203
 -- Name: TABLE admin; Type: COMMENT; Schema: public; Owner: postgres
 --
@@ -75,7 +75,7 @@ CREATE TABLE public.brand (
 ALTER TABLE public.brand OWNER TO postgres;
 
 --
--- TOC entry 3114 (class 0 OID 0)
+-- TOC entry 3115 (class 0 OID 0)
 -- Dependencies: 204
 -- Name: TABLE brand; Type: COMMENT; Schema: public; Owner: postgres
 --
@@ -89,16 +89,16 @@ COMMENT ON TABLE public.brand IS 'Contains the product brands';
 --
 
 CREATE TABLE public.cart (
-    "customerEmail" character varying(256) NOT NULL,
+    customer_email character varying(256) NOT NULL,
     product character varying(30) NOT NULL,
-    "dateAdded" timestamp without time zone
+    date_added timestamp without time zone
 );
 
 
 ALTER TABLE public.cart OWNER TO postgres;
 
 --
--- TOC entry 3115 (class 0 OID 0)
+-- TOC entry 3116 (class 0 OID 0)
 -- Dependencies: 209
 -- Name: TABLE cart; Type: COMMENT; Schema: public; Owner: postgres
 --
@@ -120,7 +120,7 @@ CREATE TABLE public.category (
 ALTER TABLE public.category OWNER TO postgres;
 
 --
--- TOC entry 3116 (class 0 OID 0)
+-- TOC entry 3117 (class 0 OID 0)
 -- Dependencies: 205
 -- Name: TABLE category; Type: COMMENT; Schema: public; Owner: postgres
 --
@@ -161,7 +161,7 @@ CREATE TABLE public.customers_information (
 ALTER TABLE public.customers_information OWNER TO postgres;
 
 --
--- TOC entry 3117 (class 0 OID 0)
+-- TOC entry 3118 (class 0 OID 0)
 -- Dependencies: 201
 -- Name: TABLE customers_information; Type: COMMENT; Schema: public; Owner: postgres
 --
@@ -197,33 +197,6 @@ CREATE TABLE public.delivery_status_description (
 ALTER TABLE public.delivery_status_description OWNER TO postgres;
 
 --
--- TOC entry 210 (class 1259 OID 41173)
--- Name: order; Type: TABLE; Schema: public; Owner: postgres
---
-
-CREATE TABLE public."order" (
-    "orderID" character varying(15) NOT NULL,
-    "orderStatus" character varying(128) NOT NULL,
-    "orderDate" timestamp without time zone NOT NULL,
-    "customerAddress" character varying(512) NOT NULL,
-    "customerEmail" character varying(256) NOT NULL,
-    "orderAmount" numeric(10,2) NOT NULL,
-    "deliveryService" character varying(128) NOT NULL
-);
-
-
-ALTER TABLE public."order" OWNER TO postgres;
-
---
--- TOC entry 3118 (class 0 OID 0)
--- Dependencies: 210
--- Name: TABLE "order"; Type: COMMENT; Schema: public; Owner: postgres
---
-
-COMMENT ON TABLE public."order" IS 'Contains the orders on the platform';
-
-
---
 -- TOC entry 211 (class 1259 OID 41190)
 -- Name: order_description; Type: TABLE; Schema: public; Owner: postgres
 --
@@ -232,7 +205,7 @@ CREATE TABLE public.order_description (
     "order" character varying(15) NOT NULL,
     product character varying(30) NOT NULL,
     quantity integer NOT NULL,
-    "dateCreated" timestamp without time zone NOT NULL
+    date_created timestamp without time zone NOT NULL
 );
 
 
@@ -248,6 +221,33 @@ COMMENT ON TABLE public.order_description IS 'Contains the oder details. Join of
 
 
 --
+-- TOC entry 210 (class 1259 OID 41173)
+-- Name: orders; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.orders (
+    order_id character varying(15) NOT NULL,
+    order_status character varying(128) NOT NULL,
+    order_date timestamp without time zone NOT NULL,
+    customer_address character varying(512) NOT NULL,
+    customer_email character varying(256) NOT NULL,
+    order_amount numeric(10,2) NOT NULL,
+    delivery_service character varying(128) NOT NULL
+);
+
+
+ALTER TABLE public.orders OWNER TO postgres;
+
+--
+-- TOC entry 3120 (class 0 OID 0)
+-- Dependencies: 210
+-- Name: TABLE orders; Type: COMMENT; Schema: public; Owner: postgres
+--
+
+COMMENT ON TABLE public.orders IS 'Contains the orders on the platform';
+
+
+--
 -- TOC entry 206 (class 1259 OID 40998)
 -- Name: product; Type: TABLE; Schema: public; Owner: postgres
 --
@@ -256,11 +256,11 @@ CREATE TABLE public.product (
     name character varying(200) NOT NULL,
     color character varying(20),
     model character varying(50),
-    "itemCondition" character varying(20) NOT NULL,
+    item_condition character varying(20) NOT NULL,
     description character varying(512),
-    "stockQuantity" integer NOT NULL,
+    stock_quantity integer NOT NULL,
     location character varying(50) NOT NULL,
-    "dateAdded" timestamp without time zone NOT NULL,
+    date_added timestamp without time zone NOT NULL,
     brand character varying(30),
     category character varying(30),
     admin_seller character varying(30),
@@ -273,7 +273,7 @@ CREATE TABLE public.product (
 ALTER TABLE public.product OWNER TO postgres;
 
 --
--- TOC entry 3120 (class 0 OID 0)
+-- TOC entry 3121 (class 0 OID 0)
 -- Dependencies: 206
 -- Name: TABLE product; Type: COMMENT; Schema: public; Owner: postgres
 --
@@ -283,16 +283,16 @@ COMMENT ON TABLE public.product IS 'Contains the products of the platform';
 
 --
 -- TOC entry 207 (class 1259 OID 41036)
--- Name: product_images ; Type: TABLE; Schema: public; Owner: postgres
+-- Name: product_images; Type: TABLE; Schema: public; Owner: postgres
 --
 
-CREATE TABLE public."product_images " (
+CREATE TABLE public.product_images (
     product character varying(30) NOT NULL,
-    "imageUrl" character varying NOT NULL
+    image_url character varying NOT NULL
 );
 
 
-ALTER TABLE public."product_images " OWNER TO postgres;
+ALTER TABLE public.product_images OWNER TO postgres;
 
 --
 -- TOC entry 208 (class 1259 OID 41090)
@@ -302,17 +302,17 @@ ALTER TABLE public."product_images " OWNER TO postgres;
 CREATE TABLE public.reviews (
     author character varying(256) NOT NULL,
     about character varying(30) NOT NULL,
-    "reviewBody" text NOT NULL,
-    "reviewRatingValue" bigint NOT NULL,
-    "dateCreated" timestamp without time zone NOT NULL,
-    "dateModified" timestamp without time zone NOT NULL
+    review_body text NOT NULL,
+    review_rating_value bigint NOT NULL,
+    date_created timestamp without time zone NOT NULL,
+    date_modified timestamp without time zone NOT NULL
 );
 
 
 ALTER TABLE public.reviews OWNER TO postgres;
 
 --
--- TOC entry 3121 (class 0 OID 0)
+-- TOC entry 3122 (class 0 OID 0)
 -- Dependencies: 208
 -- Name: TABLE reviews; Type: COMMENT; Schema: public; Owner: postgres
 --
@@ -326,23 +326,23 @@ COMMENT ON TABLE public.reviews IS 'Contains the reviews on the platform';
 --
 
 CREATE TABLE public.supplier (
-    "companyName" character varying(100) NOT NULL,
+    company_name character varying(100) NOT NULL,
     email character varying(250) NOT NULL,
     telephone character varying(30) NOT NULL,
     bce character varying(10) NOT NULL,
     url character varying(150),
-    "addressCountry" character varying(30) NOT NULL,
-    "addressCity" character varying(50) NOT NULL,
-    "postalCode" character varying(25) NOT NULL,
-    "addressLocality" character varying(50) NOT NULL,
-    "streetAddress" character varying(250) NOT NULL
+    address_country character varying(30) NOT NULL,
+    address_city character varying(50) NOT NULL,
+    postal_code character varying(25) NOT NULL,
+    address_locality character varying(50) NOT NULL,
+    street_address character varying(250) NOT NULL
 );
 
 
 ALTER TABLE public.supplier OWNER TO postgres;
 
 --
--- TOC entry 3122 (class 0 OID 0)
+-- TOC entry 3123 (class 0 OID 0)
 -- Dependencies: 202
 -- Name: TABLE supplier; Type: COMMENT; Schema: public; Owner: postgres
 --
@@ -351,7 +351,7 @@ COMMENT ON TABLE public.supplier IS 'Contains the suppliers of the platform';
 
 
 --
--- TOC entry 3095 (class 0 OID 40980)
+-- TOC entry 3096 (class 0 OID 40980)
 -- Dependencies: 203
 -- Data for Name: admin; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -364,7 +364,7 @@ Martha Brna	+32466251959	martin.brna@soko.com
 
 
 --
--- TOC entry 3096 (class 0 OID 40985)
+-- TOC entry 3097 (class 0 OID 40985)
 -- Dependencies: 204
 -- Data for Name: brand; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -378,12 +378,12 @@ Redmi
 
 
 --
--- TOC entry 3101 (class 0 OID 41117)
+-- TOC entry 3102 (class 0 OID 41117)
 -- Dependencies: 209
 -- Data for Name: cart; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.cart ("customerEmail", product, "dateAdded") FROM stdin;
+COPY public.cart (customer_email, product, date_added) FROM stdin;
 bhoggan0@eepurl.com	51235f3d-4fbe-402b-9bbc	2021-10-14 18:41:19
 bhoggan0@eepurl.com	161ef15e-5908-45fa-b3d3	2021-10-14 18:41:19
 bhoggan0@eepurl.com	e4f7d42f-2232-422d-91f1	2021-10-14 18:41:19
@@ -413,7 +413,7 @@ kklehn3@liveinternet.ru	97e94d6a-aea2-4695-9722	2021-10-14 18:41:19
 
 
 --
--- TOC entry 3097 (class 0 OID 40990)
+-- TOC entry 3098 (class 0 OID 40990)
 -- Dependencies: 205
 -- Data for Name: category; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -434,7 +434,7 @@ Mobiles	Mobile devices, earphones, mobile accessories...
 
 
 --
--- TOC entry 3104 (class 0 OID 74824)
+-- TOC entry 3105 (class 0 OID 74824)
 -- Dependencies: 212
 -- Data for Name: customers_addresses; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -504,7 +504,7 @@ glandy4@google.co.uk	Belgium	Brussels	25700 Oakridge Center,1170 Hooker,Brussels
 
 
 --
--- TOC entry 3093 (class 0 OID 40970)
+-- TOC entry 3094 (class 0 OID 40970)
 -- Dependencies: 201
 -- Data for Name: customers_information; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -574,7 +574,7 @@ Bartram	bbriddenj@jiathis.com	+44 179 960 8621	Bridden	Normal	1996-07-27
 
 
 --
--- TOC entry 3105 (class 0 OID 74848)
+-- TOC entry 3106 (class 0 OID 74848)
 -- Dependencies: 213
 -- Data for Name: delivery_services_type; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -586,7 +586,7 @@ Premium	13	3
 
 
 --
--- TOC entry 3106 (class 0 OID 74851)
+-- TOC entry 3107 (class 0 OID 74851)
 -- Dependencies: 214
 -- Data for Name: delivery_status_description; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -598,52 +598,12 @@ notDelivered	lorem ipsum si dolor
 
 
 --
--- TOC entry 3102 (class 0 OID 41173)
--- Dependencies: 210
--- Data for Name: order; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-COPY public."order" ("orderID", "orderStatus", "orderDate", "customerAddress", "customerEmail", "orderAmount", "deliveryService") FROM stdin;
-ade78110-04f3	Delivered	2021-11-01 18:41:19	85 Macpherson Way,6834\tService, Brussels,Belgium	lperkins2@imdb.com	2000.00	Normal
-3e176920-b166	Delivered	2021-11-01 18:41:19	933 Bluestem Avenue,9404 Northport,Ninove,Belgium	ydoswell1@soundcloud.com	2000.00	Normal
-095da47b-c203	Delivered	2021-11-01 18:41:19	456 Drewry Center, 2170 Shelley, Antwerpen, Belgium	bhoggan0@eepurl.com	2000.00	Normal
-124d210e-a5d7	Delivered	2021-11-01 18:41:19	4 Sunbrook Way,7823 Sage,Brussels,Belgium	kklehn3@liveinternet.ru	2000.00	Normal
-81dfc1d4-5078	Delivered	2021-11-01 18:41:19	25700 Oakridge Center,1170 Hooker,Brussels,Belgium	glandy4@google.co.uk	2000.00	Normal
-7add4332-46b3	Delivered	2021-11-01 18:41:19	0 Hermina Street,9052 Eggendart,Gent,BelgiumBelgium	ostockford7@liveinternet.ru	2000.00	Normal
-a2b72693-6dd6	Delivered	2021-11-01 18:41:19	3 Portage Plaza,6042 Waubesa,Charleroi,BelgiumBelgium	jfrankling8@people.com.cn	2000.00	Normal
-489510f4-a7e3	Delivered	2021-11-01 18:41:19	1118 Roxbury Junction,6042 Lake View,Charleroi,Belgium	adaud9@biglobe.ne.jp	2000.00	Normal
-0b7deade-5fee	Delivered	2021-11-01 18:41:19	13 Moulton Lane,9404 Clyde Gallagher,Ninove,Belgium	tartza@ask.com	2000.00	Normal
-08772404-bc1b	Delivered	2021-11-01 18:41:19	DN21\tRidgeway\t09 Porter Trail,Upton,United Kingdom	sormrod9@tuttocitta.it	2000.00	Normal
-4abf8353-487f	Delivered	2021-11-01 18:41:19	9196 Hallows Terrace,6834 American,Brussels,Belgium	celliotb@columbia.edu	2000.00	Normal
-1f126c2d-7852	Delivered	2021-11-01 18:41:19	66799 Ridgeway Alley,70820\tCascada,Baton Rouge,United States	abundy0@patch.com	2000.00	Normal
-df13c18d-6e93	Delivered	2021-11-01 18:41:19	39452 4th Trail,4102\tBuena Vista,Carlifonia,United States	tmacgowan1@blogspot.com	2000.00	Normal
-6bdf82b2-7e6d	Delivered	2021-11-01 18:41:19	61702 Atwood Plaza,33175 High Crossing,Miami,United States	arosterne2@usa.gov	2000.00	Normal
-5ab6e3ca-f9c3	Delivered	2021-11-01 18:41:19	92153\tStraubel 58 Waxwing Place,San Diego,United States	ocubberley3@craigslist.org	2000.00	Normal
-3cc735c1-74d4	Delivered	2021-11-01 18:41:19	88541 Troy , 132 Banding Terrace,El Paso,United States	penoch4@illinois.edu	2000.00	Normal
-004e1dcf-7178	Delivered	2021-11-01 18:41:19	55564 Judy, 8335 Duke Avenue,Carlifonia,United States	rsahlstrom5@bigcartel.com	2000.00	Normal
-b30f3919-7595	Delivered	2021-11-01 18:41:19	23272\tKings, 8683 Golden Leaf Point,Carlifonia,United States	dlapthorn6@phoca.cz	2000.00	Normal
-0563a725-73da	Delivered	2021-11-01 18:41:19	90398\tGreen Ridge,\t5036 Esch Park,Inglewood,United States	jbidnall7@shinystat.com	2000.00	Normal
-f1cb31a1-7912	Delivered	2021-11-01 18:41:19	63126 Ronald Regan, 39352 Armistice Street,Saint Louis,United States	wmalzard8@nps.gov	2000.00	Normal
-7cf5ca33-0ec3	Delivered	2021-11-01 18:41:19	10469\tSpringview\t0820 Moose Junction,,United States	jdomegan9@opera.com	2000.00	Normal
-eb258842-6691	Delivered	2021-11-01 18:41:19	G4\tVillage Green, 44011 Pearson Hill,Glasgow,United Kingdom	bcasillis0@dropbox.com	2000.00	Normal
-d4f8f116-d586	Delivered	2021-11-01 18:41:19	LN6\tPorter\t37 Logan Junction,London,United Kingdom	jbowlas1@sciencedirect.com	2000.00	Normal
-5ae48ea0-8dff	Delivered	2021-11-01 18:41:19	SN13\tTruax\t8649 Warner Hill,London,United Kingdom	tarrell2@shareasale.com	2000.00	Normal
-05ab0cd0-ab45	Delivered	2021-11-01 18:41:19	L74\t3rd\t0 Susan Hill,Liverpool,United Kingdom	rthurley3@amazon.co.jp	2000.00	Normal
-42f3c02a-ec14	Delivered	2021-11-01 18:41:19	BT2\tMagdeline\t99 Carberry Plaza,Belfast,United Kingdom	hjeannard4@yellowpages.com	2000.00	Normal
-7b87e34a-0191	Delivered	2021-11-01 18:41:19	RH5\tGolf Course\t87 Mandrake Junction,,United Kingdom	glibbis5@ycombinator.com	2000.00	Normal
-949b0b3d-f6b9	Delivered	2021-11-01 18:41:19	SN1\tDerek\t6 Vernon Pass,London,United Kingdom	cbradbeer6@hao123.com	2000.00	Normal
-9b029c2f-0f52	Delivered	2021-11-01 18:41:19	BD23\tHudson\t98 Anzinger Place,London,United Kingdom	esealey7@samsung.com	2000.00	Normal
-b0bf1fcf-295d	Delivered	2021-11-01 18:41:19	CT16\tThompson\t3 Carioca Plaza,London,United Kingdom	jlong8@usatoday.com	2000.00	Normal
-\.
-
-
---
--- TOC entry 3103 (class 0 OID 41190)
+-- TOC entry 3104 (class 0 OID 41190)
 -- Dependencies: 211
 -- Data for Name: order_description; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.order_description ("order", product, quantity, "dateCreated") FROM stdin;
+COPY public.order_description ("order", product, quantity, date_created) FROM stdin;
 ade78110-04f3	51235f3d-4fbe-402b-9bbc	1	2021-11-01 18:41:19
 ade78110-04f3	b362f9f0-1f0d-4b2e-8e1d	1	2021-11-01 18:41:19
 3e176920-b166	d695052e-d926-4d01-bb3b	1	2021-11-01 18:41:19
@@ -686,12 +646,52 @@ f1cb31a1-7912	97e94d6a-aea2-4695-9722	1	2021-11-01 18:41:19
 
 
 --
--- TOC entry 3098 (class 0 OID 40998)
+-- TOC entry 3103 (class 0 OID 41173)
+-- Dependencies: 210
+-- Data for Name: orders; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.orders (order_id, order_status, order_date, customer_address, customer_email, order_amount, delivery_service) FROM stdin;
+ade78110-04f3	Delivered	2021-11-01 18:41:19	85 Macpherson Way,6834\tService, Brussels,Belgium	lperkins2@imdb.com	2000.00	Normal
+3e176920-b166	Delivered	2021-11-01 18:41:19	933 Bluestem Avenue,9404 Northport,Ninove,Belgium	ydoswell1@soundcloud.com	2000.00	Normal
+095da47b-c203	Delivered	2021-11-01 18:41:19	456 Drewry Center, 2170 Shelley, Antwerpen, Belgium	bhoggan0@eepurl.com	2000.00	Normal
+124d210e-a5d7	Delivered	2021-11-01 18:41:19	4 Sunbrook Way,7823 Sage,Brussels,Belgium	kklehn3@liveinternet.ru	2000.00	Normal
+81dfc1d4-5078	Delivered	2021-11-01 18:41:19	25700 Oakridge Center,1170 Hooker,Brussels,Belgium	glandy4@google.co.uk	2000.00	Normal
+7add4332-46b3	Delivered	2021-11-01 18:41:19	0 Hermina Street,9052 Eggendart,Gent,BelgiumBelgium	ostockford7@liveinternet.ru	2000.00	Normal
+a2b72693-6dd6	Delivered	2021-11-01 18:41:19	3 Portage Plaza,6042 Waubesa,Charleroi,BelgiumBelgium	jfrankling8@people.com.cn	2000.00	Normal
+489510f4-a7e3	Delivered	2021-11-01 18:41:19	1118 Roxbury Junction,6042 Lake View,Charleroi,Belgium	adaud9@biglobe.ne.jp	2000.00	Normal
+0b7deade-5fee	Delivered	2021-11-01 18:41:19	13 Moulton Lane,9404 Clyde Gallagher,Ninove,Belgium	tartza@ask.com	2000.00	Normal
+08772404-bc1b	Delivered	2021-11-01 18:41:19	DN21\tRidgeway\t09 Porter Trail,Upton,United Kingdom	sormrod9@tuttocitta.it	2000.00	Normal
+4abf8353-487f	Delivered	2021-11-01 18:41:19	9196 Hallows Terrace,6834 American,Brussels,Belgium	celliotb@columbia.edu	2000.00	Normal
+1f126c2d-7852	Delivered	2021-11-01 18:41:19	66799 Ridgeway Alley,70820\tCascada,Baton Rouge,United States	abundy0@patch.com	2000.00	Normal
+df13c18d-6e93	Delivered	2021-11-01 18:41:19	39452 4th Trail,4102\tBuena Vista,Carlifonia,United States	tmacgowan1@blogspot.com	2000.00	Normal
+6bdf82b2-7e6d	Delivered	2021-11-01 18:41:19	61702 Atwood Plaza,33175 High Crossing,Miami,United States	arosterne2@usa.gov	2000.00	Normal
+5ab6e3ca-f9c3	Delivered	2021-11-01 18:41:19	92153\tStraubel 58 Waxwing Place,San Diego,United States	ocubberley3@craigslist.org	2000.00	Normal
+3cc735c1-74d4	Delivered	2021-11-01 18:41:19	88541 Troy , 132 Banding Terrace,El Paso,United States	penoch4@illinois.edu	2000.00	Normal
+004e1dcf-7178	Delivered	2021-11-01 18:41:19	55564 Judy, 8335 Duke Avenue,Carlifonia,United States	rsahlstrom5@bigcartel.com	2000.00	Normal
+b30f3919-7595	Delivered	2021-11-01 18:41:19	23272\tKings, 8683 Golden Leaf Point,Carlifonia,United States	dlapthorn6@phoca.cz	2000.00	Normal
+0563a725-73da	Delivered	2021-11-01 18:41:19	90398\tGreen Ridge,\t5036 Esch Park,Inglewood,United States	jbidnall7@shinystat.com	2000.00	Normal
+f1cb31a1-7912	Delivered	2021-11-01 18:41:19	63126 Ronald Regan, 39352 Armistice Street,Saint Louis,United States	wmalzard8@nps.gov	2000.00	Normal
+7cf5ca33-0ec3	Delivered	2021-11-01 18:41:19	10469\tSpringview\t0820 Moose Junction,,United States	jdomegan9@opera.com	2000.00	Normal
+eb258842-6691	Delivered	2021-11-01 18:41:19	G4\tVillage Green, 44011 Pearson Hill,Glasgow,United Kingdom	bcasillis0@dropbox.com	2000.00	Normal
+d4f8f116-d586	Delivered	2021-11-01 18:41:19	LN6\tPorter\t37 Logan Junction,London,United Kingdom	jbowlas1@sciencedirect.com	2000.00	Normal
+5ae48ea0-8dff	Delivered	2021-11-01 18:41:19	SN13\tTruax\t8649 Warner Hill,London,United Kingdom	tarrell2@shareasale.com	2000.00	Normal
+05ab0cd0-ab45	Delivered	2021-11-01 18:41:19	L74\t3rd\t0 Susan Hill,Liverpool,United Kingdom	rthurley3@amazon.co.jp	2000.00	Normal
+42f3c02a-ec14	Delivered	2021-11-01 18:41:19	BT2\tMagdeline\t99 Carberry Plaza,Belfast,United Kingdom	hjeannard4@yellowpages.com	2000.00	Normal
+7b87e34a-0191	Delivered	2021-11-01 18:41:19	RH5\tGolf Course\t87 Mandrake Junction,,United Kingdom	glibbis5@ycombinator.com	2000.00	Normal
+949b0b3d-f6b9	Delivered	2021-11-01 18:41:19	SN1\tDerek\t6 Vernon Pass,London,United Kingdom	cbradbeer6@hao123.com	2000.00	Normal
+9b029c2f-0f52	Delivered	2021-11-01 18:41:19	BD23\tHudson\t98 Anzinger Place,London,United Kingdom	esealey7@samsung.com	2000.00	Normal
+b0bf1fcf-295d	Delivered	2021-11-01 18:41:19	CT16\tThompson\t3 Carioca Plaza,London,United Kingdom	jlong8@usatoday.com	2000.00	Normal
+\.
+
+
+--
+-- TOC entry 3099 (class 0 OID 40998)
 -- Dependencies: 206
 -- Data for Name: product; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.product (name, color, model, "itemCondition", description, "stockQuantity", location, "dateAdded", brand, category, admin_seller, supplier_seller, price, sku) FROM stdin;
+COPY public.product (name, color, model, item_condition, description, stock_quantity, location, date_added, brand, category, admin_seller, supplier_seller, price, sku) FROM stdin;
 ASUS VivoBook 14 (2021)	Transparent Silver	VivoBook 14 (2021)	New	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros.	154	Brussels	2021-10-06 18:41:19	Asus	Computers	\N	7946128330	700.00	fc07b915-5f56-4e50-8600
 ASUS ROG Strix G17 (2021) 17.3-inch	Eclipse Gray	ROG Strix G17 (2021)	New	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros.	104	Brussels	2021-07-16 18:41:19	Asus	Computers	\N	7946128330	700.00	d695052e-d926-4d01-bb3b
 Apple iPhone 11 (64GB) - White	White	IPhone 11	New	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros.	85	Brussels	2021-09-19 16:51:12	Apple	Mobiles	amadou.sarjo.jallow@soko.com	\N	450.00	2c5311ac-aea1-443e-b15e
@@ -720,22 +720,22 @@ Samsung Galaxy Note 20 Ultra 5G with Snapdragon 865+	Mystic Black	Samsung Galaxy
 
 
 --
--- TOC entry 3099 (class 0 OID 41036)
+-- TOC entry 3100 (class 0 OID 41036)
 -- Dependencies: 207
--- Data for Name: product_images ; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: product_images; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public."product_images " (product, "imageUrl") FROM stdin;
+COPY public.product_images (product, image_url) FROM stdin;
 \.
 
 
 --
--- TOC entry 3100 (class 0 OID 41090)
+-- TOC entry 3101 (class 0 OID 41090)
 -- Dependencies: 208
 -- Data for Name: reviews; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.reviews (author, about, "reviewBody", "reviewRatingValue", "dateCreated", "dateModified") FROM stdin;
+COPY public.reviews (author, about, review_body, review_rating_value, date_created, date_modified) FROM stdin;
 lperkins2@imdb.com	51235f3d-4fbe-402b-9bbc	Lorem ipsum dolor sit amet	4	2021-11-01 18:41:19	2021-11-01 18:41:19
 lperkins2@imdb.com	b362f9f0-1f0d-4b2e-8e1d	Lorem ipsum dolor sit amet	5	2021-11-01 18:41:19	2021-11-01 18:41:19
 ydoswell1@soundcloud.com	d695052e-d926-4d01-bb3b	Lorem ipsum dolor sit amet	4	2021-11-01 18:41:19	2021-11-01 18:41:19
@@ -778,12 +778,12 @@ jdomegan9@opera.com	97e94d6a-aea2-4695-9722	Lorem ipsum dolor sit amet	3	2021-11
 
 
 --
--- TOC entry 3094 (class 0 OID 40975)
+-- TOC entry 3095 (class 0 OID 40975)
 -- Dependencies: 202
 -- Data for Name: supplier; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.supplier ("companyName", email, telephone, bce, url, "addressCountry", "addressCity", "postalCode", "addressLocality", "streetAddress") FROM stdin;
+COPY public.supplier (company_name, email, telephone, bce, url, address_country, address_city, postal_code, address_locality, street_address) FROM stdin;
 Apple Inc.	business@apple.com	+19654892330	4946126393	apple.com	USA	California	8007	Silicon valley	Twin Pines Circle
 Asus Inc.	business@asus.com	+329654892330	7946128330	asus.be	BEL	Brussels	1500	Ixelles	Boulevar General Jacques
 Samsung Inc.	business@samsung.com	+459654892330	8146196691	samsung.skr	SKR	Seol	1831	Suwon-si	Geneva Building, Leonardo da Vincilaan 19
@@ -820,20 +820,20 @@ ALTER TABLE ONLY public.category
 
 --
 -- TOC entry 2939 (class 2606 OID 74901)
--- Name: order Order_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: orders Order_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public."order"
-    ADD CONSTRAINT "Order_pkey" PRIMARY KEY ("orderID");
+ALTER TABLE ONLY public.orders
+    ADD CONSTRAINT "Order_pkey" PRIMARY KEY (order_id);
 
 
 --
 -- TOC entry 2933 (class 2606 OID 74781)
--- Name: product_images  ProductImages _pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: product_images ProductImages _pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public."product_images "
-    ADD CONSTRAINT "ProductImages _pkey" PRIMARY KEY (product, "imageUrl");
+ALTER TABLE ONLY public.product_images
+    ADD CONSTRAINT "ProductImages _pkey" PRIMARY KEY (product, image_url);
 
 
 --
@@ -860,7 +860,7 @@ ALTER TABLE ONLY public.supplier
 --
 
 ALTER TABLE ONLY public.cart
-    ADD CONSTRAINT cart_pkey PRIMARY KEY ("customerEmail", product);
+    ADD CONSTRAINT cart_pkey PRIMARY KEY (customer_email, product);
 
 
 --
@@ -968,16 +968,16 @@ ALTER TABLE ONLY public.product
 --
 
 ALTER TABLE ONLY public.cart
-    ADD CONSTRAINT customer_fkey FOREIGN KEY ("customerEmail") REFERENCES public.customers_information(email) NOT VALID;
+    ADD CONSTRAINT customer_fkey FOREIGN KEY (customer_email) REFERENCES public.customers_information(email) NOT VALID;
 
 
 --
--- TOC entry 2959 (class 2606 OID 75003)
--- Name: order deliveryKind_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- TOC entry 2958 (class 2606 OID 75008)
+-- Name: orders customeremail_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public."order"
-    ADD CONSTRAINT "deliveryKind_fkey" FOREIGN KEY ("deliveryService") REFERENCES public.delivery_services_type(delivery_kind) ON UPDATE CASCADE NOT VALID;
+ALTER TABLE ONLY public.orders
+    ADD CONSTRAINT customeremail_fkey FOREIGN KEY (customer_email) REFERENCES public.customers_information(email) NOT VALID;
 
 
 --
@@ -990,7 +990,16 @@ ALTER TABLE ONLY public.customers_information
 
 
 --
--- TOC entry 2962 (class 2606 OID 74839)
+-- TOC entry 2959 (class 2606 OID 75003)
+-- Name: orders deliverykind_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.orders
+    ADD CONSTRAINT deliverykind_fkey FOREIGN KEY (delivery_service) REFERENCES public.delivery_services_type(delivery_kind) ON UPDATE CASCADE NOT VALID;
+
+
+--
+-- TOC entry 2963 (class 2606 OID 74839)
 -- Name: customers_addresses email_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -999,34 +1008,34 @@ ALTER TABLE ONLY public.customers_addresses
 
 
 --
--- TOC entry 2958 (class 2606 OID 74875)
--- Name: order orderStatus_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
---
-
-ALTER TABLE ONLY public."order"
-    ADD CONSTRAINT "orderStatus_fkey" FOREIGN KEY ("orderStatus") REFERENCES public.delivery_status_description(delivery_status) NOT VALID;
-
-
---
--- TOC entry 2960 (class 2606 OID 74939)
+-- TOC entry 2961 (class 2606 OID 74939)
 -- Name: order_description order_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.order_description
-    ADD CONSTRAINT order_fkey FOREIGN KEY ("order") REFERENCES public."order"("orderID") NOT VALID;
+    ADD CONSTRAINT order_fkey FOREIGN KEY ("order") REFERENCES public.orders(order_id) NOT VALID;
+
+
+--
+-- TOC entry 2960 (class 2606 OID 74875)
+-- Name: orders orderstatus_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.orders
+    ADD CONSTRAINT orderstatus_fkey FOREIGN KEY (order_status) REFERENCES public.delivery_status_description(delivery_status) NOT VALID;
 
 
 --
 -- TOC entry 2953 (class 2606 OID 74782)
--- Name: product_images  product_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: product_images product_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public."product_images "
+ALTER TABLE ONLY public.product_images
     ADD CONSTRAINT product_fkey FOREIGN KEY (product) REFERENCES public.product(sku) NOT VALID;
 
 
 --
--- TOC entry 2961 (class 2606 OID 74944)
+-- TOC entry 2962 (class 2606 OID 74944)
 -- Name: order_description product_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1052,7 +1061,7 @@ ALTER TABLE ONLY public.product
     ADD CONSTRAINT supplier_fkey FOREIGN KEY (supplier_seller) REFERENCES public.supplier(bce) NOT VALID;
 
 
--- Completed on 2021-12-23 03:48:02
+-- Completed on 2021-12-23 15:34:10
 
 --
 -- PostgreSQL database dump complete
