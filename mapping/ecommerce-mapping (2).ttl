@@ -1330,7 +1330,6 @@ rr:objectMap[
 ]
 ].
 
-#not working don't know why, I change it several times, it gives error on the database
 #3
 <#Supplier04>
 a rr:TriplesMap ;
@@ -1450,8 +1449,6 @@ rr:template "http://data.ecommerce/delivery_kind/Normal" ;
 rr:class ecommerce:Normal ;
 ].
 
-
-#has no logical table delivery_service_type, delivery_status_description
 <#delivery_services_type02>
 a rr:TriplesMap ;
 rr:logicalTable [ rr:tableName "ecommerce.pdelivery_services_type" ] ;
