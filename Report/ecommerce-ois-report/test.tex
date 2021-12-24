@@ -19,7 +19,7 @@
 \subtitle{Open Information Systems}
 \author{Ardavan Khalij, Amadou Sarjo Jallow, Brenda Ordoñez Lujan, Florent Nicolas J Grimau, and Milan Pavle Ilic}
 \faculty{1st master computer science}
-\promotors{Academic year: 2021 - 2022\\ Student number: Milan 0545802\\ VUB-email-address: milan.pavle.ili@vub.be}
+\promotors{Academic year: 2021 - 2022\\ Student number: Brenda 0571129, Milan 0545802\\ VUB-email-address: brenda.ordonez.lujan@vub.be,\\ milan.pavle.ili@vub.be}
 \pretitle{}
 \date{26 December 2021}
 
@@ -31,9 +31,33 @@
 \tableofcontents
 \newpage
 \section{Introduction}
-The goal of this project is to design and implement an e-commerce platform. The backbone of this platform is an information system. This system consists out of 5 modules: Products, Warehouses, Costumers, Suppliers and Delivery Services.
+The goal of this project is to design and implement an e-commerce platform. The backbone of this platform is an information system. This system consists out of 5 modules: Products, Warehouses, Costumers, Suppliers and Delivery Services. \\
 
-In the beginning, each person was assigned to one module. Firstly we started thinking about the information needs of the database users by creating features and an ER diagram(Entity-Relation diagram) for a module. Once this was achieved, each person created a database with queries, based on the created ER diagram, in standard SQL. We then created one information system by combining the SQL databases. After that, everyone created an ontology and mapping for their module.
+Each person was assigned to one module. Firstly we started thinking about the information needs of the database users by creating features and an ER diagram\footnote{Entity-Relation diagram} for a module. Once this was achieved, each person created a database with queries, based on the created ER diagram, in standard SQL\footnote{Structured Query Language}. We then created one information system by combining the SQL databases. After that, everyone created an ontology, using Protoge, for their module. Then we combined the ontologies to create one information system. Then everyone created a mapping using the R2RML\footnote{RDB to RDF Mapping Language} mapping language. Again, we combined our mappings to generate one mapping that represented the whole system. Finally everyone created one SPARQL\footnote{SPARQL Protocol and RDF Query Language} query, based on one of their features. This SPARQL query was tested using the Ontop system. Ontop translates SPARQL queries into SQL queries, and relies on R2RML mappings \cite{OntopVK}.
+
+\subsection{Modules}
+
+\subsection{Features}
+
+\subsection{Data}
+
+
+\subsection{Work division}
+Ardavan Khalij: Costumer database and queries, Costumer ontology, Costumer mapping, SPARQL query, ...
+\\
+
+\noindent Amadou Sarjo Jallow: Product database and queries, Product ontology, Product mapping, SPARQL query, ...
+\\
+
+\noindent Brenda Ordoñez Lujan: Supplier database and queries, Supplier ontology, Supplier mapping, SPARQL query, ...
+\\
+
+\noindent Florent Nicolas J Grimau: Delivery service database and queries, Delivery service ontology, Delivery service mapping, SPARQL query, ...
+\\
+
+\noindent Milan Pavle Ilic: Warehouses database and queries, Warehouse ontology, Warehouse mapping, SPARQL query, Report introduction and template.
+
+
 
 \section{Ontology}
 
@@ -47,7 +71,17 @@ In the beginning, each person was assigned to one module. Firstly we started thi
 \section{Discussion}
 
 
-\section{References}
+
+\begin{thebibliography}{99}
+\bibitem{OntopVK}
+Guohui Xiao, Davide Lanti, Roman Kontchakov, Sarah Komla-Ebri, Elem Güzel-Kalayci, Linfang Ding, Julien Corman, Benjamin Cogrel, Diego Calvanese, and Elena Botoeva. (2020) \emph{The Virtual Knowledge Graph System Ontop}, International Semantic Web Conference.
+\bibitem{OntopSPARQL}
+Diego Calvanese, Benjamin Cogrel, Sarah Komla-Ebri, Roman Kontchakov, Davide Lanti, Martin Rezk, Mariano Rodriguez-Muro, and Guohui Xiao. (2017) \emph{Ontop: Answering SPARQL Queries over Relational Databases}, Semantic Web Journal 8.3, pp. 471–487.
+\end{thebibliography}
+
+
+
+
 
 
 \end{document}
