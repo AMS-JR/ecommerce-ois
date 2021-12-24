@@ -17,7 +17,7 @@
 
 \title{e-commerce Project}
 \subtitle{Open Information Systems}
-\author{Ardavan Khalij, Amadou Sarjo Jallow, Brenda Ordoñez Lujan, Florent Nicolas J Grimau, and Milan Pavle Ilic}
+\author{Ardavan Khalij, Amadou Sarjo Jallow, Brenda Ordoñez Lujan, Florent Nicolas J Grimau, and Milan Pavle Ili\'c}
 \faculty{1st master computer science}
 \promotors{Academic year: 2021 - 2022\\ Student number: Brenda 0571129, Milan 0545802\\ VUB-email-address: brenda.ordonez.lujan@vub.be,\\ milan.pavle.ili@vub.be}
 \pretitle{}
@@ -36,8 +36,59 @@ The goal of this project is to design and implement an e-commerce platform. The 
 Each person was assigned to one module. Firstly we started thinking about the information needs of the database users by creating features and an ER diagram\footnote{Entity-Relation diagram} for a module. Once this was achieved, each person created a database with queries, based on the created ER diagram, in standard SQL\footnote{Structured Query Language}. We then created one information system by combining the SQL databases. After that, everyone created an ontology, using Protoge, for their module. Then we combined the ontologies to create one information system. Then everyone created a mapping using the R2RML\footnote{RDB to RDF Mapping Language} mapping language. Again, we combined our mappings to generate one mapping that represented the whole system. Finally everyone created one SPARQL\footnote{SPARQL Protocol and RDF Query Language} query, based on one of their features. This SPARQL query was tested using the Ontop system. Ontop translates SPARQL queries into SQL queries, and relies on R2RML mappings \cite{OntopVK}.
 
 \subsection{Modules}
+As metioned before, this project consists of 5 modules:
+\begin{enumerate}
+  \item The module Product is about the physical product itself and the properties it has.
+
+  \item The module Warehouses is primarily about the management of an inventory.
+
+  \item The module Costumers is concerned with reviews, payments, and other things regarding an online costumer.
+
+  \item The module Suppliers is primarily about a supplier that supplies to a warehouse.
+
+  \item The module Delivery services is about delivering the product from a warehouse to a costumer.
+\end{enumerate}
 
 \subsection{Features}
+
+Product features:
+\begin{enumerate}
+  \item
+\end{enumerate}
+
+\noindent Warehouses features:
+\begin{enumerate}
+  \item Product quantity: An employee of the inventory management wants to find out how much of a certain product there is left in stock. An online costumer wants to know if the product is available for purchase.
+  \item Warehouse shipments: An employee wants to know how many shipments will arrive/departure on a certain day. An accountant wants to keep track of all the arriving and departing products.
+  \item Shipment products: A warehouse employee checks if an outgoing/incoming shipment has all the packages. A
+  costumer wants to check if his product has already left the warehouse.
+  \item Shipment delivery time: The employee of a warehouse wants to know when a shipment arrives. A costumer wants to know how long it will take for his package to arrive.
+  \item Business information: An employee of a certain business wants to contact another business. A business needs to deliver to another business.
+\end{enumerate}
+
+\noindent Costumers features:
+\begin{enumerate}
+  \item
+\end{enumerate}
+
+\noindent Suppliers features:
+\begin{enumerate}
+  \item Response time per supplier: An employee of the logistics area needs the average response time of an order to know when he needs to fill his stock if required. A manager of the logistics area needs it to know the performance of the supplier and to be able to follow up on it.
+  \item The supplier that gives more facilities: A manager of the logistics area needs it to make the decision to reduce costs if it’s possible or choose between suppliers in the future.
+  \item Maximum payment flexibility: An employee of the logistics area needs it to make budget plans. A manager of the logistics area needs it to make decisions such as changing the payday if necessary or choose between suppliers in the future.
+  \item Minimum cost of the most product requested: An employee of the logistics area needs it to calculate the necessary budget and predict the days that needs to place orders. A manager of the logistics area needs it to compare with other prices on the market and make decisions between new suppliers.
+  \item Higher and lower delivery costs per supplier: An employee in the logistics area can reduce transportation costs from that value. Analyze whether it is convenient to have a transportation service and present it to the manager as an alternative in the future. It is also an important factor in choosing between providers.
+\end{enumerate}
+
+\noindent Delivery services features:
+\begin{enumerate}
+  \item Real-time package Tracking: A costumer wants to track their order in real time.
+  \item Delivery Time Estimation by packet: A delivery service wants to give the costumer an idea when the package will arive.
+  \item Delivery Price Estimation: Delivery service wants to request an extra fee to the costumer.
+  \item Average amount of delivery trip made by each delivery companies in all the warehouses: A delivery service wants to track with which companies it is worth having delivery contracts, based on the amount of delivery trips they make for the company.
+  \item Average Packet loss during delivery trips sorted by company: A delivery service wants to increase its trust.
+\end{enumerate}
+
 
 \subsection{Data}
 
