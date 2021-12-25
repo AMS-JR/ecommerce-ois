@@ -346,6 +346,66 @@
 <http://data.ecommerce/order#4> <http://data.ecommerce#Address_address> "Vermont Street 123                                " .
 <http://data.ecommerce/order#2> <http://data.ecommerce#Address_address> "Vermont Street 123                                " .
 <http://data.ecommerce/order#1> <http://data.ecommerce#Address_address> "Vermont Street 123                                " .
+<http://data.ecommerce/address#SN13%9Truax%98649%20Warner%20Hill%2CLondon%2CUnited%20Kingdom> <http://data.ecommerce#Address_address> """SN13	Truax	8649 Warner Hill,London,United Kingdom""" .
+<http://data.ecommerce/address#GL54%9Oneill%91817%20Eagan%20Center%2CLondon%2CUnited%20Kingdom> <http://data.ecommerce#Address_address> """GL54	Oneill	1817 Eagan Center,London,United Kingdom""" .
+<http://data.ecommerce/address#4%20Sunbrook%20Way%2C7823%20Sage%2CBrussels%2CBelgium> <http://data.ecommerce#Address_address> "4 Sunbrook Way,7823 Sage,Brussels,Belgium" .
+<http://data.ecommerce/address#DN21%9Ridgeway%909%20Porter%20Trail%2CUpton%2CUnited%20Kingdom> <http://data.ecommerce#Address_address> """DN21	Ridgeway	09 Porter Trail,Upton,United Kingdom""" .
+<http://data.ecommerce/address#AB55%9Chinook%9318%205th%20Drive%2CLondon%2CUnited%20Kingdom> <http://data.ecommerce#Address_address> """AB55	Chinook	318 5th Drive,London,United Kingdom""" .
+<http://data.ecommerce/address#CT16%9Thompson%93%20Carioca%20Plaza%2CLondon%2CUnited%20Kingdom> <http://data.ecommerce#Address_address> """CT16	Thompson	3 Carioca Plaza,London,United Kingdom""" .
+<http://data.ecommerce/address#9732%20Manitowish%20Terrace%2C7536%9Oxford%2CBrussels%2CBelgium> <http://data.ecommerce#Address_address> """9732 Manitowish Terrace,7536	Oxford,Brussels,Belgium""" .
+<http://data.ecommerce/address#07195%9Sunbrook%2C%20856%20Tennessee%20Street%2CCarlifonia%2CUnited%20States> <http://data.ecommerce#Address_address> """07195	Sunbrook, 856 Tennessee Street,Carlifonia,United States""" .
+<http://data.ecommerce/address#23272%9Kings%2C%208683%20Golden%20Leaf%20Point%2CCarlifonia%2CUnited%20States> <http://data.ecommerce#Address_address> """23272	Kings, 8683 Golden Leaf Point,Carlifonia,United States""" .
+<http://data.ecommerce/address#3%20Portage%20Plaza%2C6042%20Waubesa%2CCharleroi%2CBelgiumBelgium> <http://data.ecommerce#Address_address> "3 Portage Plaza,6042 Waubesa,Charleroi,BelgiumBelgium" .
+<http://data.ecommerce/address#933%20Bluestem%20Avenue%2C9404%20Northport%2CNinove%2CBelgium> <http://data.ecommerce#Address_address> "933 Bluestem Avenue,9404 Northport,Ninove,Belgium" .
+<http://data.ecommerce/address#46202%9Basil%98%20Fair%20Oaks%20Pass%2CCarlifonia%2CUnited%20States> <http://data.ecommerce#Address_address> """46202	Basil	8 Fair Oaks Pass,Carlifonia,United States""" .
+<http://data.ecommerce/address#92153%9Straubel%2058%20Waxwing%20Place%2CSan%20Diego%2CUnited%20States> <http://data.ecommerce#Address_address> """92153	Straubel 58 Waxwing Place,San Diego,United States""" .
+<http://data.ecommerce/address#RH5%9Golf%20Course%987%20Mandrake%20Junction%2C%2CUnited%20Kingdom> <http://data.ecommerce#Address_address> """RH5	Golf Course	87 Mandrake Junction,,United Kingdom""" .
+<http://data.ecommerce/address#32542%20Fieldstone%20Point%2C6834%9Dexter%2CBrussels%2CBelgium> <http://data.ecommerce#Address_address> """32542 Fieldstone Point,6834	Dexter,Brussels,Belgium""" .
+<http://data.ecommerce/address#88541%20Troy%20%2C%20132%20Banding%20Terrace%2CEl%20Paso%2CUnited%20States> <http://data.ecommerce#Address_address> "88541 Troy , 132 Banding Terrace,El Paso,United States" .
+<http://data.ecommerce/address#6%20Sunnyside%20Court%2C7032%9Loftsgordon%2CMons%2CBelgium> <http://data.ecommerce#Address_address> """6 Sunnyside Court,7032	Loftsgordon,Mons,Belgium""" .
+<http://data.ecommerce/address#BT2%9Anniversary%91964%20Beilfuss%20Avenue%2CBelfast%2CUnited%20Kingdom> <http://data.ecommerce#Address_address> """BT2	Anniversary	1964 Beilfuss Avenue,Belfast,United Kingdom""" .
+<http://data.ecommerce/address#B40%9Hauk%948067%20Oak%20Park%2CBirmingham%2CUnited%20Kingdom> <http://data.ecommerce#Address_address> """B40	Hauk	48067 Oak Park,Birmingham,United Kingdom""" .
+<http://data.ecommerce/address#66799%20Ridgeway%20Alley%2C70820%9Cascada%2CBaton%20Rouge%2CUnited%20States> <http://data.ecommerce#Address_address> """66799 Ridgeway Alley,70820	Cascada,Baton Rouge,United States""" .
+<http://data.ecommerce/address#1118%20Roxbury%20Junction%2C6042%20Lake%20View%2CCharleroi%2CBelgium> <http://data.ecommerce#Address_address> "1118 Roxbury Junction,6042 Lake View,Charleroi,Belgium" .
+<http://data.ecommerce/address#L74%93rd%90%20Susan%20Hill%2CLiverpool%2CUnited%20Kingdom> <http://data.ecommerce#Address_address> """L74	3rd	0 Susan Hill,Liverpool,United Kingdom""" .
+<http://data.ecommerce/address#0%20Hermina%20Street%2C9052%20Eggendart%2CGent%2CBelgiumBelgium> <http://data.ecommerce#Address_address> "0 Hermina Street,9052 Eggendart,Gent,BelgiumBelgium" .
+<http://data.ecommerce/address#6600%20Buhler%20Park%2C2170%20Sunfield%2CAntwerpen%2CBelgium> <http://data.ecommerce#Address_address> "6600 Buhler Park,2170 Sunfield,Antwerpen,Belgium" .
+<http://data.ecommerce/address#BT66%9Schlimgen%9275%20Stuart%20Trail%2CLondon%2CUnited%20Kingdom> <http://data.ecommerce#Address_address> """BT66	Schlimgen	275 Stuart Trail,London,United Kingdom""" .
+<http://data.ecommerce/address#34282%9Havey%97%20Corry%20Circle%2CCarlifonia%2CUnited%20States> <http://data.ecommerce#Address_address> """34282	Havey	7 Corry Circle,Carlifonia,United States""" .
+<http://data.ecommerce/address#6%20Dorton%20Center%2C6042%20Holmberg%2CCharleroi%2CBelgium> <http://data.ecommerce#Address_address> "6 Dorton Center,6042 Holmberg,Charleroi,Belgium" .
+<http://data.ecommerce/address#BT2%9Magdeline%999%20Carberry%20Plaza%2CBelfast%2CUnited%20Kingdom> <http://data.ecommerce#Address_address> """BT2	Magdeline	99 Carberry Plaza,Belfast,United Kingdom""" .
+<http://data.ecommerce/address#85072%9Holy%20Cross%996165%20Bashford%20Pass%2CPhoenix%2CUnited%20States> <http://data.ecommerce#Address_address> """85072	Holy Cross	96165 Bashford Pass,Phoenix,United States""" .
+<http://data.ecommerce/address#13%20Moulton%20Lane%2C9404%20Clyde%20Gallagher%2CNinove%2CBelgium> <http://data.ecommerce#Address_address> "13 Moulton Lane,9404 Clyde Gallagher,Ninove,Belgium" .
+<http://data.ecommerce/address#9196%20Hallows%20Terrace%2C6834%20American%2CBrussels%2CBelgium> <http://data.ecommerce#Address_address> "9196 Hallows Terrace,6834 American,Brussels,Belgium" .
+<http://data.ecommerce/address#53710%9Pine%20View%901778%20Heffernan%20Trail%2CCarlifonia%2CUnited%20States> <http://data.ecommerce#Address_address> """53710	Pine View	01778 Heffernan Trail,Carlifonia,United States""" .
+<http://data.ecommerce/address#BD23%9Hudson%998%20Anzinger%20Place%2CLondon%2CUnited%20Kingdom> <http://data.ecommerce#Address_address> """BD23	Hudson	98 Anzinger Place,London,United Kingdom""" .
+<http://data.ecommerce/address#39014%20Magdeline%20Lane%2C%2CUnited%20Kingdom> <http://data.ecommerce#Address_address> "39014 Magdeline Lane,,United Kingdom" .
+<http://data.ecommerce/address#19125%9Towne%994810%20Anthes%20Junction%2CPhiladelphia%2CUnited%20States> <http://data.ecommerce#Address_address> """19125	Towne	94810 Anthes Junction,Philadelphia,United States""" .
+<http://data.ecommerce/address#456%20Drewry%20Center%2C%202170%20Shelley%2C%20Antwerpen%2C%20Belgium> <http://data.ecommerce#Address_address> "456 Drewry Center, 2170 Shelley, Antwerpen, Belgium" .
+<http://data.ecommerce/address#63180%9Oak%989173%20Hudson%20Circle%2CCarlifonia%2CUnited%20States> <http://data.ecommerce#Address_address> """63180	Oak	89173 Hudson Circle,Carlifonia,United States""" .
+<http://data.ecommerce/address#SY4%9Dakota%9338%20Lake%20View%20Crossing%2CLondon%2CUnited%20Kingdom> <http://data.ecommerce#Address_address> """SY4	Dakota	338 Lake View Crossing,London,United Kingdom""" .
+<http://data.ecommerce/address#58106%20Hallows%20Way%2C9404%9Memorial%2CNinove%2CBelgium> <http://data.ecommerce#Address_address> """58106 Hallows Way,9404	Memorial,Ninove,Belgium""" .
+<http://data.ecommerce/address#CB4%9Farmco%98983%20Granby%20Alley%2CLondon%2CUnited%20Kingdom> <http://data.ecommerce#Address_address> """CB4	Farmco	8983 Granby Alley,London,United Kingdom""" .
+<http://data.ecommerce/address#25700%20Oakridge%20Center%2C1170%20Hooker%2CBrussels%2CBelgium> <http://data.ecommerce#Address_address> "25700 Oakridge Center,1170 Hooker,Brussels,Belgium" .
+<http://data.ecommerce/address#SN1%9Derek%96%20Vernon%20Pass%2CLondon%2CUnited%20Kingdom> <http://data.ecommerce#Address_address> """SN1	Derek	6 Vernon Pass,London,United Kingdom""" .
+<http://data.ecommerce/address#63126%20Ronald%20Regan%2C%2039352%20Armistice%20Street%2CSaint%20Louis%2CUnited%20States> <http://data.ecommerce#Address_address> "63126 Ronald Regan, 39352 Armistice Street,Saint Louis,United States" .
+<http://data.ecommerce/address#31%20Clemons%20Center%2C6594%9Welch%2CBrussels%2CBelgium> <http://data.ecommerce#Address_address> """31 Clemons Center,6594	Welch,Brussels,Belgium""" .
+<http://data.ecommerce/address#85%20Macpherson%20Way%2C6834%9Service%2C%20Brussels%2CBelgium> <http://data.ecommerce#Address_address> """85 Macpherson Way,6834	Service, Brussels,Belgium""" .
+<http://data.ecommerce/address#45228%9Pankratz%9082%20Golf%20Drive%2CCincinnati%2CUnited%20States> <http://data.ecommerce#Address_address> """45228	Pankratz	082 Golf Drive,Cincinnati,United States""" .
+<http://data.ecommerce/address#61702%20Atwood%20Plaza%2C33175%20High%20Crossing%2CMiami%2CUnited%20States> <http://data.ecommerce#Address_address> "61702 Atwood Plaza,33175 High Crossing,Miami,United States" .
+<http://data.ecommerce/address#456%20Drewry%20Center%2C2170%9Shelley%2C%20Antwerpen%2C%20Belgium%9> <http://data.ecommerce#Address_address> """456 Drewry Center,2170	Shelley, Antwerpen, Belgium	""" .
+<http://data.ecommerce/address#G4%9Village%20Green%2C%2044011%20Pearson%20Hill%2CGlasgow%2CUnited%20Kingdom> <http://data.ecommerce#Address_address> """G4	Village Green, 44011 Pearson Hill,Glasgow,United Kingdom""" .
+<http://data.ecommerce/address#AB56%9Eagle%20Crest%94%20Dottie%20Way%2CMilton%2CUnited%20Kingdom> <http://data.ecommerce#Address_address> """AB56	Eagle Crest	4 Dottie Way,Milton,United Kingdom""" .
+<http://data.ecommerce/address#10469%9Springview%2C%200820%20Moose%20Junction%2C%2CUnited%20States> <http://data.ecommerce#Address_address> """10469	Springview, 0820 Moose Junction,,United States""" .
+<http://data.ecommerce/address#LN6%9Porter%937%20Logan%20Junction%2CLondon%2CUnited%20Kingdom> <http://data.ecommerce#Address_address> """LN6	Porter	37 Logan Junction,London,United Kingdom""" .
+<http://data.ecommerce/address#07%20Trailsway%20Parkway%2C6834%9Dixon%2CBrussels%2CBelgium> <http://data.ecommerce#Address_address> """07 Trailsway Parkway,6834	Dixon,Brussels,Belgium""" .
+<http://data.ecommerce/address#77281%9Anniversary%928%20Columbus%20Point%2CHouston%2CUnited%20States> <http://data.ecommerce#Address_address> """77281	Anniversary	28 Columbus Point,Houston,United States""" .
+<http://data.ecommerce/address#55564%20Judy%2C%208335%20Duke%20Avenue%2CCarlifonia%2CUnited%20States> <http://data.ecommerce#Address_address> "55564 Judy, 8335 Duke Avenue,Carlifonia,United States" .
+<http://data.ecommerce/address#80%20Brickson%20Park%20Alley%2C7604%20Katie%2CBrussels%2CBelgiumBelgium> <http://data.ecommerce#Address_address> "80 Brickson Park Alley,7604 Katie,Brussels,BelgiumBelgium" .
+<http://data.ecommerce/address#90398%9Green%20Ridge%2C%95036%20Esch%20Park%2CInglewood%2CUnited%20States> <http://data.ecommerce#Address_address> """90398	Green Ridge,	5036 Esch Park,Inglewood,United States""" .
+<http://data.ecommerce/address#39452%204th%20Trail%2C4102%9Buena%20Vista%2CCarlifonia%2CUnited%20States> <http://data.ecommerce#Address_address> """39452 4th Trail,4102	Buena Vista,Carlifonia,United States""" .
+<http://data.ecommerce/address#WF9%9Crownhardt%939%20Kensington%20Plaza%2CUpton%2CUnited%20Kingdom> <http://data.ecommerce#Address_address> """WF9	Crownhardt	39 Kensington Plaza,Upton,United Kingdom""" .
+<http://data.ecommerce/address#36689%9Sunnyside%922183%20Algoma%20Avenue%2CCarlifonia%2CUnited%20States> <http://data.ecommerce#Address_address> """36689	Sunnyside	22183 Algoma Avenue,Carlifonia,United States""" .
 <http://data.ecommerce/customers_addresses#ted.mosby%40gmail.com_USA_New%20York_Manhattan%2C%20180%2C%2044> <http://data.ecommerce#Address_address> "Manhattan, 180, 44" .
 <http://data.ecommerce/customers_addresses#harry.potter%40hogwarts.uk_UK_London_Privet%20Drive%204> <http://data.ecommerce#Address_address> "Privet Drive 4" .
 <http://data.ecommerce/customers_addresses#tonystark%40gmail.com_USA_New%20York_Manhattan%2C%20Stark%20Tower> <http://data.ecommerce#Address_address> "Manhattan, Stark Tower" .
@@ -3180,6 +3240,66 @@
 <http://data.ecommerce/goods_in_receipt#1_4> <http://data.ecommerce#numberof> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <http://data.ecommerce/goods_in_receipt#1_2> <http://data.ecommerce#numberof> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <http://data.ecommerce/goods_in_receipt#3_2> <http://data.ecommerce#numberof> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://data.ecommerce/address#SN13%9Truax%98649%20Warner%20Hill%2CLondon%2CUnited%20Kingdom> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#GL54%9Oneill%91817%20Eagan%20Center%2CLondon%2CUnited%20Kingdom> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#4%20Sunbrook%20Way%2C7823%20Sage%2CBrussels%2CBelgium> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#DN21%9Ridgeway%909%20Porter%20Trail%2CUpton%2CUnited%20Kingdom> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#AB55%9Chinook%9318%205th%20Drive%2CLondon%2CUnited%20Kingdom> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#CT16%9Thompson%93%20Carioca%20Plaza%2CLondon%2CUnited%20Kingdom> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#9732%20Manitowish%20Terrace%2C7536%9Oxford%2CBrussels%2CBelgium> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#07195%9Sunbrook%2C%20856%20Tennessee%20Street%2CCarlifonia%2CUnited%20States> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#23272%9Kings%2C%208683%20Golden%20Leaf%20Point%2CCarlifonia%2CUnited%20States> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#3%20Portage%20Plaza%2C6042%20Waubesa%2CCharleroi%2CBelgiumBelgium> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#933%20Bluestem%20Avenue%2C9404%20Northport%2CNinove%2CBelgium> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#46202%9Basil%98%20Fair%20Oaks%20Pass%2CCarlifonia%2CUnited%20States> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#92153%9Straubel%2058%20Waxwing%20Place%2CSan%20Diego%2CUnited%20States> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#RH5%9Golf%20Course%987%20Mandrake%20Junction%2C%2CUnited%20Kingdom> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#32542%20Fieldstone%20Point%2C6834%9Dexter%2CBrussels%2CBelgium> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#88541%20Troy%20%2C%20132%20Banding%20Terrace%2CEl%20Paso%2CUnited%20States> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#6%20Sunnyside%20Court%2C7032%9Loftsgordon%2CMons%2CBelgium> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#BT2%9Anniversary%91964%20Beilfuss%20Avenue%2CBelfast%2CUnited%20Kingdom> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#B40%9Hauk%948067%20Oak%20Park%2CBirmingham%2CUnited%20Kingdom> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#66799%20Ridgeway%20Alley%2C70820%9Cascada%2CBaton%20Rouge%2CUnited%20States> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#1118%20Roxbury%20Junction%2C6042%20Lake%20View%2CCharleroi%2CBelgium> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#L74%93rd%90%20Susan%20Hill%2CLiverpool%2CUnited%20Kingdom> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#0%20Hermina%20Street%2C9052%20Eggendart%2CGent%2CBelgiumBelgium> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#6600%20Buhler%20Park%2C2170%20Sunfield%2CAntwerpen%2CBelgium> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#BT66%9Schlimgen%9275%20Stuart%20Trail%2CLondon%2CUnited%20Kingdom> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#34282%9Havey%97%20Corry%20Circle%2CCarlifonia%2CUnited%20States> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#6%20Dorton%20Center%2C6042%20Holmberg%2CCharleroi%2CBelgium> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#BT2%9Magdeline%999%20Carberry%20Plaza%2CBelfast%2CUnited%20Kingdom> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#85072%9Holy%20Cross%996165%20Bashford%20Pass%2CPhoenix%2CUnited%20States> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#13%20Moulton%20Lane%2C9404%20Clyde%20Gallagher%2CNinove%2CBelgium> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#9196%20Hallows%20Terrace%2C6834%20American%2CBrussels%2CBelgium> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#53710%9Pine%20View%901778%20Heffernan%20Trail%2CCarlifonia%2CUnited%20States> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#BD23%9Hudson%998%20Anzinger%20Place%2CLondon%2CUnited%20Kingdom> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#39014%20Magdeline%20Lane%2C%2CUnited%20Kingdom> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#19125%9Towne%994810%20Anthes%20Junction%2CPhiladelphia%2CUnited%20States> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#456%20Drewry%20Center%2C%202170%20Shelley%2C%20Antwerpen%2C%20Belgium> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#63180%9Oak%989173%20Hudson%20Circle%2CCarlifonia%2CUnited%20States> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#SY4%9Dakota%9338%20Lake%20View%20Crossing%2CLondon%2CUnited%20Kingdom> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#58106%20Hallows%20Way%2C9404%9Memorial%2CNinove%2CBelgium> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#CB4%9Farmco%98983%20Granby%20Alley%2CLondon%2CUnited%20Kingdom> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#25700%20Oakridge%20Center%2C1170%20Hooker%2CBrussels%2CBelgium> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#SN1%9Derek%96%20Vernon%20Pass%2CLondon%2CUnited%20Kingdom> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#63126%20Ronald%20Regan%2C%2039352%20Armistice%20Street%2CSaint%20Louis%2CUnited%20States> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#31%20Clemons%20Center%2C6594%9Welch%2CBrussels%2CBelgium> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#85%20Macpherson%20Way%2C6834%9Service%2C%20Brussels%2CBelgium> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#45228%9Pankratz%9082%20Golf%20Drive%2CCincinnati%2CUnited%20States> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#61702%20Atwood%20Plaza%2C33175%20High%20Crossing%2CMiami%2CUnited%20States> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#456%20Drewry%20Center%2C2170%9Shelley%2C%20Antwerpen%2C%20Belgium%9> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#G4%9Village%20Green%2C%2044011%20Pearson%20Hill%2CGlasgow%2CUnited%20Kingdom> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#AB56%9Eagle%20Crest%94%20Dottie%20Way%2CMilton%2CUnited%20Kingdom> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#10469%9Springview%2C%200820%20Moose%20Junction%2C%2CUnited%20States> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#LN6%9Porter%937%20Logan%20Junction%2CLondon%2CUnited%20Kingdom> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#07%20Trailsway%20Parkway%2C6834%9Dixon%2CBrussels%2CBelgium> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#77281%9Anniversary%928%20Columbus%20Point%2CHouston%2CUnited%20States> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#55564%20Judy%2C%208335%20Duke%20Avenue%2CCarlifonia%2CUnited%20States> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#80%20Brickson%20Park%20Alley%2C7604%20Katie%2CBrussels%2CBelgiumBelgium> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#90398%9Green%20Ridge%2C%95036%20Esch%20Park%2CInglewood%2CUnited%20States> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#39452%204th%20Trail%2C4102%9Buena%20Vista%2CCarlifonia%2CUnited%20States> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#WF9%9Crownhardt%939%20Kensington%20Plaza%2CUpton%2CUnited%20Kingdom> a <http://data.ecommerce#Address> .
+<http://data.ecommerce/address#36689%9Sunnyside%922183%20Algoma%20Avenue%2CCarlifonia%2CUnited%20States> a <http://data.ecommerce#Address> .
 <http://data.ecommerce/customers_addresses#ardavan.khalij%40vub.be_Iran_Tehran_Dibaji%2010> a <http://data.ecommerce#Address> .
 <http://data.ecommerce/customers_addresses#ross.geller%40gmail.com_USA_New%20York_Manhattan%2C%20233%2C%2023> a <http://data.ecommerce#Address> .
 <http://data.ecommerce/customers_addresses#ted.mosby%40gmail.com_USA_New%20York_Manhattan%2C%20180%2C%2044> a <http://data.ecommerce#Address> .
