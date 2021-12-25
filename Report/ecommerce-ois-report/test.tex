@@ -50,8 +50,7 @@ As metioned before, this project consists of 5 modules:
 \end{enumerate}
 
 \subsection{Features and data}
-
-Product features:
+\subsubsection{Products}
 \begin{enumerate}
   \item Orders placed: An admin might want to know how many orders have been made on the platform up till date, they may want to know those that were successfully Fulfilled, the number of orders that were cancelled and by which customers etc. A costumer might want to have a history of their orders including the amount spent on each order, the total orders they have placed, basically their order statistics. A supplier might want to know their highest selling products, the amount they have made so far on the platform, their average orders per month and other similar metrics etc. \underline{Data used:} product/products name or information an order is placed on, the time the order was placed, the order status, the order amount, the delivery service, information about the customer who placed the order and the order state i.e., if the order has been cancelled or not etc.
   \item Customer cart: An admin will want to send reminders to customers about the products in their shopping cart so that they can purchase them before they are no longer in stock, they may also want to keep a record of the products customers are mostly interested in or at least adding to their shopping carts etc. A costumer adds products they want to buy in their shopping cart for later purchase, after browsing through different products or when they have enough money. They may also want to view the items in their shopping cart. A supplier might want to know their highest selling products, the amount they have made so far on the platform, their average orders per month etc. \underline{Data used:} product or products added to a cart, the time the products were added, the cost of each product etc.
@@ -60,7 +59,7 @@ Product features:
   \item Stock quantity: A supplier might want to know the number of items they have in stock for a particular product or if they no longer have a product in stock to increase its quantity. They may also be interested in knowing how fast a particular product is selling. An admin similarly, may also be interested in knowing the number of items they have in stock for a particular product or if they no longer have a product in stock to increase its quantity. They may also be interested in knowing how fast a particular product is selling. \underline{Data used:} product name or information, stock quantity value, date added.
 \end{enumerate}
 
-\noindent Warehouses features:
+\subsubsection{Warehouses}
 \begin{enumerate}
   \item Product quantity: An employee of the inventory management wants to find out how much of a certain product there is left in stock. An online costumer wants to know if the product is available for purchase.
   \underline{Data used:} amount of stock of a certain product.
@@ -73,12 +72,12 @@ Product features:
   \underline{Data used:} information about a warehouse, delivery service and supplier.
 \end{enumerate}
 
-\noindent Costumers features:
+\subsubsection{Costumers}
 \begin{enumerate}
   \item
 \end{enumerate}
 
-\noindent Suppliers features:
+\subsubsection{Suppliers}
 \begin{enumerate}
   \item Response time per supplier: An employee of the logistics area needs the average response time of an order to know when he needs to fill his stock if required. A manager of the logistics area needs it to know the performance of the supplier and to be able to follow up on it. \underline{Data used:} Expressed in days and hours, it is calculated with the following operation. Date the order was placed - Date the order was delivered.
   \item The supplier that gives more facilities: A manager of the logistics area needs it to make the decision to reduce costs if it’s possible or choose between suppliers in the future. \underline{Data used:} For this feature, the count number and the average of the discount for prompt payment per supplier is needed as a field expressed in percentages, the discount is entered when the order is being placed, if the supplier offers it.
@@ -87,7 +86,7 @@ Product features:
   \item Higher and lower delivery costs per supplier: An employee in the logistics area can reduce transportation costs from that value. Analyze whether it is convenient to have a transportation service and present it to the manager as an alternative in the future. It is also an important factor in choosing between providers. \underline{Data used:} Expressed in euros, it is maximum cost of the delivery cost per supplier.
 \end{enumerate}
 
-\noindent Delivery services features:
+\subsubsection{Delivery services}
 \begin{enumerate}
   \item Real-time package Tracking: A costumer wants to track their order in real time. \underline{Data used:} The API key linked to the transport company handling the package the user wants to track.
   \item Delivery Time Estimation by packet: A delivery service wants to give the costumer an idea when the package will arive. \underline{Data used:} The address registered in the packet’s order, the packet’s weight and size, the amount of trucks available in the company able to deliver a packet to the given address with the given weight and size and the location of the warehouse where the packet is gathered.

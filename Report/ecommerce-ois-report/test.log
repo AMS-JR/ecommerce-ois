@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.12.17)  25 DEC 2021 22:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.12.17)  25 DEC 2021 22:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -950,58 +950,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--35
  []
 
 [2] [3] [4]
-Overfull \hbox (7.41385pt too wide) in paragraph at lines 101--103
+Overfull \hbox (7.41385pt too wide) in paragraph at lines 100--102
 \OT1/cmr/m/n/10 Ardavan Khalij: Cos-tumer database and queries, Cos-tumer on-to
 l-ogy, Cos-tumer map-ping, SPARQL
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--103
+Underfull \hbox (badness 10000) in paragraph at lines 100--102
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--106
+Underfull \hbox (badness 10000) in paragraph at lines 103--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--109
+Underfull \hbox (badness 10000) in paragraph at lines 106--108
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--112
+Underfull \hbox (badness 10000) in paragraph at lines 109--111
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--166
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
@@ -1009,7 +1009,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--168
 Here is how much of TeX's memory you used:
  28463 strings out of 481252
  700512 string characters out of 5915887
- 1132753 words of memory out of 5000000
+ 1133753 words of memory out of 5000000
  44938 multiletter control sequences out of 15000+600000
  432302 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -1024,7 +1024,7 @@ e1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qagb.pfb></usr
 /share/texmf/fonts/type1/public/tex-gyre/qagr.pfb>
-Output written on test.pdf (9 pages, 217794 bytes).
+Output written on test.pdf (9 pages, 219201 bytes).
 PDF statistics:
  83 PDF objects out of 1000 (max. 8388607)
  59 compressed objects within 1 object stream
