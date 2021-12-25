@@ -53,11 +53,11 @@ As metioned before, this project consists of 5 modules:
 
 Product features:
 \begin{enumerate}
-  \item All orders: An employee wants to see all the orders placed on the platform and the corresponding customers who place them. \underline{Data used:} information about the products and orders.
-  \item Orders for specific product: An employee wants to see the amount of orders placed on each product so far. \underline{Data used:} information about the products and orders.
-  \item Customer filters through Mobiles category according to ratings in descending order and location: A customer in brussels searches for the higest rated mobile phones in brussels in descending order. \underline{Data used:} information about the products and orders.
-  \item Low rated products: An admin filters through all products to find those with lower ratings. \underline{Data used:} product ratings and list of products.
-  \item Profitable locations: A company wants to know the locations with most orders. \underline{Data used:} information about companies and orders.
+  \item Orders placed: An admin might want to know how many orders have been made on the platform up till date, they may want to know those that were successfully Fulfilled, the number of orders that were cancelled and by which customers etc. A costumer might want to have a history of their orders including the amount spent on each order, the total orders they have placed, basically their order statistics. A supplier might want to know their highest selling products, the amount they have made so far on the platform, their average orders per month and other similar metrics etc. \underline{Data used:} product/products name or information an order is placed on, the time the order was placed, the order status, the order amount, the delivery service, information about the customer who placed the order and the order state i.e., if the order has been cancelled or not etc.
+  \item Customer cart: An admin will want to send reminders to customers about the products in their shopping cart so that they can purchase them before they are no longer in stock, they may also want to keep a record of the products customers are mostly interested in or at least adding to their shopping carts etc. A costumer adds products they want to buy in their shopping cart for later purchase, after browsing through different products or when they have enough money. They may also want to view the items in their shopping cart. A supplier might want to know their highest selling products, the amount they have made so far on the platform, their average orders per month etc. \underline{Data used:} product or products added to a cart, the time the products were added, the cost of each product etc.
+  \item Profitable locations: An admin might want to know which locations are the highest selling so that more products will be moved to the warehouses or fulfillment centers in those locations and minimize moving products to least selling locations. \underline{Data used:} products or product names, product locations, the number of orders that were placed on those products.
+  \item Rated products: A costumer wants to know which products are highly rated to help them in their purchase decisions and avoid those products from suppliers with low ratings or bad reviews. An admin wants to know the highest rated products to recommend to other customers and to find the suppliers with lowly rated products and bad reviews to help filter out suppliers abusing the platform and as such, help retain and attract more customers on the platform.  \underline{Data used:} product name or information, Supplier information, rating values to help find the average rating.
+  \item Stock quantity: A supplier might want to know the number of items they have in stock for a particular product or if they no longer have a product in stock to increase its quantity. They may also be interested in knowing how fast a particular product is selling. An admin similarly, may also be interested in knowing the number of items they have in stock for a particular product or if they no longer have a product in stock to increase its quantity. They may also be interested in knowing how fast a particular product is selling. \underline{Data used:} product name or information, stock quantity value, date added.
 \end{enumerate}
 
 \noindent Warehouses features:
@@ -115,7 +115,63 @@ Ardavan Khalij: Costumer database and queries, Costumer ontology, Costumer mappi
 
 
 \section{Ontology}
+In this project, we used Protege for making our ontology. The main reason was that it was easy to work with.
 
+
+\subsection{Product}
+\subsubsection{Naming differences}
+\subsubsection{Design and structure differences}
+
+
+
+\subsection{Warehouses}
+The original tables of the warehouse module were a little complicated. Therefore, we reduced the initial warehouses' idea to be more minimalist because it was easier to be compatible with the other modules. Tables warehouse and delivery service were both a business via a relation, a business with email address name, etc. For example, a table employee, an employee works for a business. The employee has attributes, profession name, surname, etc. Then a table shipment, a shipment has a destination address and shipmentid(pk). A shipment contains products. Then a table Delivery service (as mentioned before, this is a business). A delivery service is responsible for the delivery of a shipment. So We change them to a simpler version. Warehouse is a table it has all the attributes you would expect from a company like an email, company name, etc. First, it has a primary key warehouse code. Then the second table is inventory. An inventory has attributes quantity, \texttt{warehousecode\_fk}, and \texttt{productskU\_fk} (the FK stands for foreign keys, two foreign keys, and primary keys of warehouse and product). Relation between these two tables is \texttt{warhouse\_has} because a warehouse has an inventory for every product. And then an \texttt{inventory\_has} relation between inventory and product because an inventory has a product.
+
+\subsubsection{Naming differences}
+
+
+
+\subsubsection{Design and structure differences}
+
+
+
+\subsection{Costumers}
+The customer module has information about customers, such as payment cards, addresses, and other information. It also has a part for saving the orders of the customers. Each order has an order description that lists the products in an order. There are also a delivery kind table and delivery status in this part that has the information about the delivery types and delivery status. Each customer has addresses and payment cards, which are connectedwith \texttt{Has\_Address} and \texttt{Has\_Payment\_Card} object properties in the ontology. Also, each customer has some orders, and each order has an order description available in ontology by \texttt{places\_order} and \texttt{Has\_Order\_Description} object properties. Orders also have a delivery type available in ontology with the \texttt{Has\_The\_Delivery\_Type} object property. There were some different opinions and differences in the databases' design and choosing the names for designing the ontology.
+
+\subsubsection{Naming differences}
+The main difference was about the name of the classes. We changed the name of the class receipt to understand ontology better. Also, \texttt{goods\_in\_receipt} changed to order description.
+
+\subsubsection{Design and structure differences}
+The first difference was the receipt in the customer database and order in the product database. The concept of order and cart was merged in the customer database, but there were differences in the product database, so we decided to use the separate concept instead. Moreover, as a result, the payment status column has been deleted from the receipt information table. The second issue was the customer's payment information. So we added the payment information of customers as well. Also, we deleted to column price from the order description because it already existed in the product.
+
+
+\subsection{Suppliers}
+This module allows storing information of the suppliers that use the e-commerce platform as a service to advertise their products. The elements that were considered most important are the company's registration number (bce), name, url, telephone, postal code, mail and address. Each supplier sends its products to a warehouse to be registered within the platform. This property is identified as "supplies" and \texttt{is\_stored\_in} within the ontology. \texttt{supplies\_has} was developed so that a supplier can ship more than one product. These features allow us to take advantage of the track of businesses between a supplier and its products.
+\subsubsection{Naming differences}
+At the beginning, the purchase orders to suppliers was considered as a company that develop the product and put it on sale. But for the ontology this property was not considered since it was coordinated that the platform will only be an intermediary service between the supplier and the client; so the table of purchase orders developed became a table of supplies. The difference is that order dates, invoices, payments, among other aspects, are no longer considered. Only the date on which the product arrives at the warehouse, the quantity and the price of the product are considered. \\
+
+Also the supplier contact table was not considered, it was summarized in a phone field within the supplier table. This agreement was reached because we were only interested in contacting the supplier and not in knowing how the supplier was contacted.
+
+\subsubsection{Design and structure differences}
+To adapt it to the ontology, a product code field was added to the product table, since initially there was a natural key with two attributes: category and name. To adapt it to the product code, both attributes were combined without considering spaces up to 30 characters. \\
+
+The major change was to adapt the order table to be a supplies table. To do this, two views were created considering only the necessary data (date of entry, quantity, price and product), there were no problems to reconstruct the information.
+
+\subsection{Delivery services}
+The delivery Services modules holds information about the delivery services such as the transport vehicles, transport companies, and delivery trips. \\
+
+The transport companies represent the available companies for transportation. They have informations such as their name, prices, the zones they are able to deliver, and an API key, that could be used to retreive information such as the position of each vehicle, and data about the price for a hypotetical delivery. \\
+
+The transport vehicles represents vehicles owned by a certain company, and their position. This last field is to be seen as a cache, to avoid calling the API of the company numerous amount of times (As the API may not be free). It is linked to delivery trips, and thus, allow us to potentially compute the total load of the vehicle. \\
+
+The deliery trip represent the trip of multiple orders. It holds information about the starting time of the trip and the end time, to allow the computation of the total time of the trip, and help estimate the future duration of trips. It is linked to the orders it transports, and the warehouse it starts from. This last link could be used to find a route, and thus a duration, for the truck. \\
+
+\subsubsection{Naming Difference}
+The naming differences are mainly found in the attributes of each class, for a better understanding of
+the ontology. The final database use the names that are in the initial ERD.
+
+\subsubsection{Design and structure differences}
+The new design of the database remove the Package class, as it was redudant with the order in itself. The idea at the start was to use the Package class to retain information about what could be just a part of the total order, that could be shipped independently from the rest of the order. It was decided to simplify this part, and we chose that an order should be sent in a single delivery. The status attribute of the Package class was moved to the order class.
 
 \section{Mapping}
 
