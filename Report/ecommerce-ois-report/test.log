@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.12.17)  25 DEC 2021 09:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.12.17)  25 DEC 2021 10:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -929,11 +929,16 @@ LaTeX Font Info:    Trying to load font information for T1+qag on input line 30
 .
 (/usr/share/texmf/tex/latex/tex-gyre/t1qag.fd
 File: t1qag.fd 2009/09/25 v1.2 font definition file for T1/qag
-) [1
+)
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+\T1/qag/m/n/10 VUB-email-address: Ar-da-van.khalij@vub.be,
+ []
+
+[1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./vub_logo_cmyk.pdf>] (./t
-est.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./vub_logo_cmyk.pdf>]
+(./test.toc)
 \tf@toc=\write4
 \openout4 = `test.toc'.
 
@@ -944,35 +949,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
-
-Overfull \hbox (9.16368pt too wide) in paragraph at lines 63--65
-[]\OT1/cmr/m/n/10 Warehouse ship-ments: An em-ployee wants to know how many shi
-p-ments will ar-rive/departure
- []
-
 [2] [3]
-Overfull \hbox (7.41385pt too wide) in paragraph at lines 98--100
+Overfull \hbox (7.41385pt too wide) in paragraph at lines 97--99
 \OT1/cmr/m/n/10 Ardavan Khalij: Cos-tumer database and queries, Cos-tumer on-to
 l-ogy, Cos-tumer map-ping, SPARQL
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--100
+Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--103
+Underfull \hbox (badness 10000) in paragraph at lines 100--102
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--106
+Underfull \hbox (badness 10000) in paragraph at lines 103--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--109
+Underfull \hbox (badness 10000) in paragraph at lines 106--108
 
  []
 
@@ -994,7 +993,7 @@ onts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qagb.pfb
 ></usr/share/texmf/fonts/type1/public/tex-gyre/qagr.pfb>
-Output written on test.pdf (6 pages, 192174 bytes).
+Output written on test.pdf (6 pages, 192225 bytes).
 PDF statistics:
  68 PDF objects out of 1000 (max. 8388607)
  48 compressed objects within 1 object stream
