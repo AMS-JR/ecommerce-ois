@@ -97,7 +97,9 @@ As metioned before, this project consists of 5 modules:
 
 
 \subsection{Work division}
-Ardavan Khalij: Costumer database and queries, Costumer ontology, Costumer mapping, SPARQL query, ...
+We always started by letting everyone implement their own module and after that a person combined the impementations to make one information system. This was also true for the report, where everyone wrote the parts which had to do with their module.  \\
+
+\noindent Ardavan Khalij: Costumer database and queries, Costumer ontology, Costumer mapping, SPARQL query, ...
 \\
 
 \noindent Amadou Sarjo Jallow: Product database and queries, Product ontology, Product mapping, SPARQL query, ...
@@ -109,7 +111,7 @@ Ardavan Khalij: Costumer database and queries, Costumer ontology, Costumer mappi
 \noindent Florent Nicolas J Grimau: Delivery service database and queries, Delivery service ontology, Delivery service mapping, SPARQL query, ...
 \\
 
-\noindent Milan Pavle Ilic: Warehouses database and queries, Warehouse ontology, Warehouse mapping, SPARQL query, Report introduction and template.
+\noindent Milan Pavle Ilic: Warehouses database and queries, Warehouse ontology, Warehouse mapping, SPARQL query, Report introduction and making the \LaTeX document.
 
 
 
@@ -117,21 +119,22 @@ Ardavan Khalij: Costumer database and queries, Costumer ontology, Costumer mappi
 In this project, we used Protege for making our ontology. The main reason was that it was easy to work with.
 
 
-\subsection{Product}
+\subsection{Products}
 \subsubsection{Naming differences}
 \subsubsection{Design and structure differences}
 
 
 
 \subsection{Warehouses}
-The original tables of the warehouse module were a little complicated. Therefore, we reduced the initial warehouses' idea to be more minimalist because it was easier to be compatible with the other modules. Tables warehouse and delivery service were both a business via a relation, a business with email address name, etc. For example, a table employee, an employee works for a business. The employee has attributes, profession name, surname, etc. Then a table shipment, a shipment has a destination address and shipmentid(pk). A shipment contains products. Then a table Delivery service (as mentioned before, this is a business). A delivery service is responsible for the delivery of a shipment. So We change them to a simpler version. Warehouse is a table it has all the attributes you would expect from a company like an email, company name, etc. First, it has a primary key warehouse code. Then the second table is inventory. An inventory has attributes quantity, \texttt{warehousecode\_fk}, and \texttt{productskU\_fk} (the FK stands for foreign keys, two foreign keys, and primary keys of warehouse and product). Relation between these two tables is \texttt{warhouse\_has} because a warehouse has an inventory for every product. And then an \texttt{inventory\_has} relation between inventory and product because an inventory has a product.
+This module describes a warehouse with attributes such as: companyname, warehousecode, email, etc. A warehouse has an object property \texttt{warehouse\_has}. This means that a warehouse has multiple inventories. An inventory contains a product, a quantity and the warehousecode corresponding to the warehouse it belongs to. To achieve this, an inventory has an object property \texttt{inventory\_has}.
+
 
 \subsubsection{Naming differences}
-
+Amount in stock was renamed to quantity. Product id was renamed to productsku. Telephone number was renamed to simply telephone because it was clear enough. Name was changed to companyname to make it more clear that it is the name of a company.
 
 
 \subsubsection{Design and structure differences}
-
+The original tables of the warehouse module were a little complicated. Therefore, we reduced the initial warehouses' idea to be more minimalist because it was easier to be compatible with the other modules. The ISA business relation was removed because it would overcomplicate the database. Employee was removed because it was not needed. Delivery service and shipment were removed because these were implemented in a better way by the delivery services module. Product was also removed because implemented in a more accurate way in the product module. Inventory was added to keep track of how many products a warehouse has in store. Finally, a couple of attributes are added to the warehouse to make it more complete.
 
 
 \subsection{Costumers}
@@ -166,11 +169,10 @@ The transport vehicles represents vehicles owned by a certain company, and their
 The deliery trip represent the trip of multiple orders. It holds information about the starting time of the trip and the end time, to allow the computation of the total time of the trip, and help estimate the future duration of trips. It is linked to the orders it transports, and the warehouse it starts from. This last link could be used to find a route, and thus a duration, for the truck. \\
 
 \subsubsection{Naming Difference}
-The naming differences are mainly found in the attributes of each class, for a better understanding of
-the ontology. The final database use the names that are in the initial ERD.
+The naming differences are mainly found in the attributes of each class, for a better understanding of the ontology. The final database use the names that are in the initial ERD.
 
 \subsubsection{Design and structure differences}
-The new design of the database remove the Package class, as it was redudant with the order in itself. The idea at the start was to use the Package class to retain information about what could be just a part of the total order, that could be shipped independently from the rest of the order. It was decided to simplify this part, and we chose that an order should be sent in a single delivery. The status attribute of the Package class was moved to the order class.
+In the new design of the database, we removed the Package class, as it was redudant with the order in itself. The idea at the start was to use the Package class to retain information about what could be just a part of the total order, that could be shipped independently from the rest of the order. It was decided to simplify this part, and we chose that an order should be sent in a single delivery. The status attribute of the Package class was moved to the order class.
 
 \section{Mapping}
 
