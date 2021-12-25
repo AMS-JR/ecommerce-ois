@@ -1,10 +1,9 @@
 \babel@toc {english}{}
 \contentsline {section}{\numberline {1}Introduction}{2}{}%
 \contentsline {subsection}{\numberline {1.1}Modules}{2}{}%
-\contentsline {subsection}{\numberline {1.2}Features}{2}{}%
-\contentsline {subsection}{\numberline {1.3}Data}{4}{}%
-\contentsline {subsection}{\numberline {1.4}Work division}{4}{}%
-\contentsline {section}{\numberline {2}Ontology}{4}{}%
-\contentsline {section}{\numberline {3}Mapping}{4}{}%
-\contentsline {section}{\numberline {4}Queries}{4}{}%
-\contentsline {section}{\numberline {5}Discussion}{4}{}%
+\contentsline {subsection}{\numberline {1.2}Features and data}{2}{}%
+\contentsline {subsection}{\numberline {1.3}Work division}{4}{}%
+\contentsline {section}{\numberline {2}Ontology}{5}{}%
+\contentsline {section}{\numberline {3}Mapping}{5}{}%
+\contentsline {section}{\numberline {4}Queries}{5}{}%
+\contentsline {section}{\numberline {5}Discussion}{5}{}%
