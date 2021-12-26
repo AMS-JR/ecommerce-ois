@@ -24,13 +24,14 @@
 \contentsline {subsection}{\numberline {2.5}Delivery services}{8}{}%
 \contentsline {subsubsection}{\numberline {2.5.1}Naming Difference}{8}{}%
 \contentsline {subsubsection}{\numberline {2.5.2}Design and structure differences}{9}{}%
+\contentsline {subsection}{\numberline {2.6}Representation of the ontology}{9}{}%
 \contentsline {section}{\numberline {3}Mapping}{9}{}%
-\contentsline {subsection}{\numberline {3.1}Design decisions}{9}{}%
-\contentsline {subsection}{\numberline {3.2}Complications}{9}{}%
-\contentsline {section}{\numberline {4}Queries}{10}{}%
-\contentsline {subsection}{\numberline {4.1}Products: Product information}{10}{}%
-\contentsline {subsection}{\numberline {4.2}Warehouses: Stock quantity sorted with extra information}{11}{}%
-\contentsline {subsection}{\numberline {4.3}Costumers: Users with at least one complete address}{12}{}%
-\contentsline {subsection}{\numberline {4.4}Costumers: Customers with orders and the total amount of their orders}{13}{}%
-\contentsline {subsection}{\numberline {4.5}Suppliers: Products with higher profit margin}{14}{}%
-\contentsline {section}{\numberline {5}Discussion}{15}{}%
+\contentsline {subsection}{\numberline {3.1}Design decisions}{10}{}%
+\contentsline {subsection}{\numberline {3.2}Complications}{10}{}%
+\contentsline {section}{\numberline {4}Queries}{11}{}%
+\contentsline {subsection}{\numberline {4.1}Products: Product information}{11}{}%
+\contentsline {subsection}{\numberline {4.2}Warehouses: Stock quantity sorted with extra information}{12}{}%
+\contentsline {subsection}{\numberline {4.3}Costumers: Users with at least one complete address}{13}{}%
+\contentsline {subsection}{\numberline {4.4}Costumers: Customers with orders and the total amount of their orders}{14}{}%
+\contentsline {subsection}{\numberline {4.5}Suppliers: Products with higher profit margin}{15}{}%
+\contentsline {section}{\numberline {5}Discussion}{16}{}%

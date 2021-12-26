@@ -182,6 +182,13 @@ The naming differences are mainly found in the attributes of each class, for a b
 \subsubsection{Design and structure differences}
 In the new design of the database, we removed the Package class, as it was redudant with the order in itself. The idea at the start was to use the Package class to retain information about what could be just a part of the total order, that could be shipped independently from the rest of the order. It was decided to simplify this part, and we chose that an order should be sent in a single delivery. The status attribute of the Package class was moved to the order class.
 
+\subsection{Representation of the ontology}
+\begin{center}
+   \includegraphics[scale=0.45]{ontology-summary.jpg}
+   \captionof{figure}{Representation of the ontology using OntoGraf - Protege}
+\end{center}
+
+
 \section{Mapping}
 The tools used to convert data from different databases to a single RDF document are:
 \begin{enumerate}
@@ -214,15 +221,12 @@ To overcome the process of having data linking to each other in the different da
 \end{enumerate}
 
 
-
-
-
-
 \newpage
-
 
 \section{Queries}
 We came up with 5 SPARQL queries that query data across our modules.
+
+
 
 \subsection{Products: Product information}
 A query to retreive the products and relevant information and ordering them according to their price in ascending order. This is a useful query for customers when shopping to help filter through cheap products and also for admins when recommending cheap products to customers.
@@ -284,7 +288,7 @@ In a platform such as e-commerce, the admin should check and control customers' 
 \begin{lstlisting}[breaklines, frame=single]
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX ecommerce: http://data.ecommerce#
+PREFIX ecommerce: <http://data.ecommerce#>
 SELECT ?first_name ?last_name ?cityaddress ?city ?country WHERE{
 	?customer ecommerce:first_name ?first_name;
 			   ecommerce:last_name ?last_name;
@@ -360,7 +364,7 @@ SELECT ?bce_company ?company ?product_code ?product_description (AVG(?price2) - 
 
 
 \section{Discussion}
-
+Overall, there were some problems and challenges in communication between the teammates, especially with the COVID-19 situation. Also the unavailability of some of the teammates didn't help in this situation. Still, with the hard work of everyone in the group, it became possible to finish this project. The main challenge of the project was merging the databases and making them into a single database in Dremio. In addition, there were some problems in installing and using Dremio, Ontop and Oxigraph for most of the group. As a result, testing the SPARQL queries was very hard and frustrating.
 
 
 \begin{thebibliography}{99}
