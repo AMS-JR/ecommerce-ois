@@ -224,8 +224,28 @@ To overcome the process of having data linking to each other in the different da
 \section{Queries}
 We came up with 5 SPARQL queries that query data across our modules.
 
-\subsection{Products}
+\subsection{Products: Product information}
+A query to retreive the products and relevant information and ordering them according to their price in ascending order. This is a useful query for customers when shopping to help filter through cheap products and also for admins when recommending cheap products to customers.
 
+\begin{lstlisting}[breaklines, frame=single]
+PREFIX ecom: <http://data.ecommerce#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?product ?price ?quantity ?color ?model ?product_location ?date_added ?description WHERE {
+?product a ecom:Product .
+?product ecom:Product_price ?price.
+?product ecom:Product_date_added ?date_added.
+  OPTIONAL {?product ecom:model ?model}.
+  OPTIONAL {?product ecom:location ?product_location}.
+  OPTIONAL {?product ecom:color ?color}.
+  OPTIONAL {?product ecom:stockQuantity ?quantity}.
+?product ecom:Product_description ?description
+} ORDER BY ?price
+\end{lstlisting}
+
+\begin{center}
+   \includegraphics[scale=1.05]{OISreport-product-query.png}
+   \captionof{figure}{Query output}
+\end{center}
 
 
 
@@ -303,7 +323,7 @@ SELECT ?first_name ?last_name ?email ?TotalAmount WHERE{
 \end{center}
 
 
-\subsection{Supplier: Products with higher profit margin}
+\subsection{Suppliers: Products with higher profit margin}
 A platform such as e-commerce charges a percentage to a supplier for providing its service, in this case as an intermediary between its product and the customer. But the profit per product will depend on the price that the supplier sets. That is why it is necessary to know which products provide more profit to the platform to be able to make disguised biased advertising. As the price per product is not fixed, due to seasonal discounts that may exist, the average profit per product is disclosed, in this case the top 10 products with the highest profit margin. This decision may help the platform to have higher incomes. \\
 
 \begin{lstlisting}[breaklines, frame=single]

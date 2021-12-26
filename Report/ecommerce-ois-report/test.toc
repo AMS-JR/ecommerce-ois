@@ -28,10 +28,10 @@
 \contentsline {subsection}{\numberline {3.1}Design decisions}{9}{}%
 \contentsline {subsection}{\numberline {3.2}Complications}{9}{}%
 \contentsline {section}{\numberline {4}Queries}{9}{}%
-\contentsline {subsection}{\numberline {4.1}Products}{10}{}%
+\contentsline {subsection}{\numberline {4.1}Products: Product information}{10}{}%
 \contentsline {subsection}{\numberline {4.2}Warehouses: Stock quantity sorted with extra information}{10}{}%
-\contentsline {subsection}{\numberline {4.3}Costumers: Users with at least one complete address}{10}{}%
-\contentsline {subsection}{\numberline {4.4}Costumers: Customers with orders and the total amount of their orders}{11}{}%
-\contentsline {subsection}{\numberline {4.5}Supplier: Products with higher profit margin}{12}{}%
-\contentsline {subsection}{\numberline {4.6}Delivery services}{13}{}%
-\contentsline {section}{\numberline {5}Discussion}{13}{}%
+\contentsline {subsection}{\numberline {4.3}Costumers: Users with at least one complete address}{11}{}%
+\contentsline {subsection}{\numberline {4.4}Costumers: Customers with orders and the total amount of their orders}{12}{}%
+\contentsline {subsection}{\numberline {4.5}Suppliers: Products with higher profit margin}{13}{}%
+\contentsline {subsection}{\numberline {4.6}Delivery services}{14}{}%
+\contentsline {section}{\numberline {5}Discussion}{14}{}%
