@@ -26,9 +26,9 @@
 \contentsline {subsubsection}{\numberline {2.5.2}Design and structure differences}{8}{}%
 \contentsline {section}{\numberline {3}Mapping}{8}{}%
 \contentsline {section}{\numberline {4}Queries}{8}{}%
-\contentsline {subsection}{\numberline {4.1}Products}{8}{}%
-\contentsline {subsection}{\numberline {4.2}Warehouses}{8}{}%
-\contentsline {subsection}{\numberline {4.3}Costumers}{9}{}%
-\contentsline {subsection}{\numberline {4.4}Suppliers}{10}{}%
-\contentsline {subsection}{\numberline {4.5}Delivery services}{10}{}%
-\contentsline {section}{\numberline {5}Discussion}{10}{}%
+\contentsline {subsection}{\numberline {4.1}Warehouses: Stock quantity sorted with extra information}{8}{}%
+\contentsline {subsection}{\numberline {4.2}Costumers: Products with higher profit margin}{9}{}%
+\contentsline {subsection}{\numberline {4.3}Costumers: Users with at least one complete address}{10}{}%
+\contentsline {subsection}{\numberline {4.4}Suppliers}{11}{}%
+\contentsline {subsection}{\numberline {4.5}Delivery services}{11}{}%
+\contentsline {section}{\numberline {5}Discussion}{11}{}%

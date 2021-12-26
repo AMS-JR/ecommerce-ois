@@ -103,7 +103,7 @@ As metioned before, this project consists of 5 modules:
 \subsection{Work division}
 We always started by letting everyone implement their own module and after that a person combined the impementations to make one information system. This was also true for the report, where everyone wrote the parts which had to do with their module.  \\
 
-\noindent Ardavan Khalij: Costumer database and queries, Costumer ontology, Costumer mapping, SPARQL query, ...
+\noindent Ardavan Khalij: Costumer database and queries, Costumer ontology, Costumer mapping, 2 costumer SPARQL queries, ...
 \\
 
 \noindent Amadou Sarjo Jallow: Product database and queries, Product ontology, Product mapping, SPARQL query, ...
@@ -115,7 +115,7 @@ We always started by letting everyone implement their own module and after that 
 \noindent Florent Nicolas J Grimau: Delivery service database and queries, Delivery service ontology, Delivery service mapping, SPARQL query, ...
 \\
 
-\noindent Milan Pavle Ilic: Warehouses database and queries, Warehouse ontology, Warehouse mapping, SPARQL query, Report introduction and making the \LaTeX document.
+\noindent Milan Pavle Ilic: Warehouses database and queries, Warehouse ontology, Warehouse mapping, 1 warehouse SPARQL query, Report introduction and making the \LaTeX document.
 
 
 
@@ -182,14 +182,14 @@ In the new design of the database, we removed the Package class, as it was redud
 
 
 \section{Queries}
+We came up with 5 SPARQL queries that query data across our modules.
+
+%\subsection{Products}
 
 
-\subsection{Products}
 
 
-
-
-\subsection{Warehouses}
+\subsection{Warehouses: Stock quantity sorted with extra information}
 A warehouse has multiple products, all with a quantity. One might want to see the products in the warehouse ordered by ascending order, to see which products are low in stock, or even out of stock. To make it more readable for a human, we also display the name of the product. Suppose that we need information about the `DHLCONSOLIC' warehouse in this SPARQL query.
 
 \begin{lstlisting}[breaklines, frame=single]
@@ -213,12 +213,12 @@ SELECT ?quantity ?productname ?productsku ?warehousename WHERE{
 
 \begin{center}
    \includegraphics[scale=0.5]{OISreport-warehouse-query.png}
-   \captionof{figure}{Warehouse query output}
+   \captionof{figure}{Query output}
 \end{center}
 
 
 
-\subsection{Costumers}
+\subsection{Costumers: Products with higher profit margin}
 A platform such as e-commerce charges a percentage to a supplier for providing its service, in this case as an intermediary between its product and the customer. But the profit per product will depend on the price that the supplier sets. That is why it is necessary to know which products provide more profit to the platform to be able to make disguised biased advertising. As the price per product is not fixed, due to seasonal discounts that may exist, the average profit per product is disclosed, in this case the top 10 products with the highest profit margin. This decision may help the platform to have higher incomes. \\
 
 \begin{lstlisting}[breaklines, frame=single]
@@ -240,7 +240,31 @@ SELECT ?bce_company ?company ?product_code ?product_description (AVG(?price2) - 
 
 \begin{center}
    \includegraphics[scale=0.25]{OISreport-costumer-query.png}
-   \captionof{figure}{Costumers query output}
+   \captionof{figure}{Query output}
+\end{center}
+
+
+\subsection{Costumers: Users with at least one complete address}
+In a platform such as e-commerce, the admin should check and control customers' data. For handling this information, a query is available that gives the admin all the customers with at least one complete address. This can prevent errors such as a customer placing an order but doesn't have an address. This can also help the admin to manage the customers. This SPARQL query uses customers' information and their addresses. And it is also ordered by the first name of the customers. So the result contains the first name, last name, city address, city, and country of the customer.
+
+\begin{lstlisting}[breaklines, frame=single]
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ecommerce: http://data.ecommerce#
+SELECT ?first_name ?last_name ?cityaddress ?city ?country WHERE{
+	?customer ecommerce:first_name ?first_name;
+			   ecommerce:last_name ?last_name;
+			   ecommerce:Customer_email ?email.
+	?address ecommerce:Customer_email ?email;
+			ecommerce:Address_address ?cityaddress;
+			ecommerce:Address_country ?city;
+			ecommerce:Address_city ?country.
+ } Order by ?first_name
+\end{lstlisting}
+
+\begin{center}
+   \includegraphics[scale=0.6]{OISreport-costumer-query2.png}
+   \captionof{figure}{Query output}
 \end{center}
 
 
