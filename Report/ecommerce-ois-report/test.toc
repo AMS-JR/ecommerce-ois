@@ -27,8 +27,8 @@
 \contentsline {section}{\numberline {3}Mapping}{8}{}%
 \contentsline {section}{\numberline {4}Queries}{8}{}%
 \contentsline {subsection}{\numberline {4.1}Warehouses: Stock quantity sorted with extra information}{8}{}%
-\contentsline {subsection}{\numberline {4.2}Costumers: Products with higher profit margin}{9}{}%
-\contentsline {subsection}{\numberline {4.3}Costumers: Users with at least one complete address}{10}{}%
-\contentsline {subsection}{\numberline {4.4}Suppliers}{11}{}%
-\contentsline {subsection}{\numberline {4.5}Delivery services}{11}{}%
-\contentsline {section}{\numberline {5}Discussion}{11}{}%
+\contentsline {subsection}{\numberline {4.2}Costumers: Users with at least one complete address}{9}{}%
+\contentsline {subsection}{\numberline {4.3}Costumers: Customers with orders and the total amount of their orders}{10}{}%
+\contentsline {subsection}{\numberline {4.4}Supplier: Products with higher profit margin}{11}{}%
+\contentsline {subsection}{\numberline {4.5}Delivery services}{12}{}%
+\contentsline {section}{\numberline {5}Discussion}{12}{}%

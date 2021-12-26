@@ -218,7 +218,52 @@ SELECT ?quantity ?productname ?productsku ?warehousename WHERE{
 
 
 
-\subsection{Costumers: Products with higher profit margin}
+\subsection{Costumers: Users with at least one complete address}
+In a platform such as e-commerce, the admin should check and control customers' data. For handling this information, a query is available that gives the admin all the customers with at least one complete address. This can prevent errors such as a customer placing an order but doesn't have an address. This can also help the admin to manage the customers. This SPARQL query uses customers' information and their addresses. And it is also ordered by the first name of the customers. So the result contains the first name, last name, city address, city, and country of the customer.
+
+\begin{lstlisting}[breaklines, frame=single]
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ecommerce: http://data.ecommerce#
+SELECT ?first_name ?last_name ?cityaddress ?city ?country WHERE{
+	?customer ecommerce:first_name ?first_name;
+			   ecommerce:last_name ?last_name;
+			   ecommerce:Customer_email ?email.
+	?address ecommerce:Customer_email ?email;
+			ecommerce:Address_address ?cityaddress;
+			ecommerce:Address_country ?city;
+			ecommerce:Address_city ?country.
+ } Order by ?first_name
+\end{lstlisting}
+
+\begin{center}
+   \includegraphics[scale=0.6]{OISreport-costumer-query.png}
+   \captionof{figure}{Query output}
+\end{center}
+
+\subsection{Costumers: Customers with orders and the total amount of their orders}
+In a platform such as e-commerce, the admin should be able to access all the order prices. This can help the admin to understand the income of the company. Customers also can access their orders to see the history of their purchases. This can always allow the customers to see what they have bought and re-order the products they want. This SPARQL uses the customers' information and the order information. And the result is also ordered by the total amount of each order. This can help the admin see which customers or customers with which home countries have the most considerable purchase amount per order. The result contains first name, last name, email, and the total amount of an order of the customer.
+
+\begin{lstlisting}[breaklines, frame=single]
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ecommerce: <http://data.ecommerce#>
+SELECT ?first_name ?last_name ?email ?TotalAmount WHERE{
+	?customer ecommerce:places_order ?order.
+	?customer ecommerce:first_name ?first_name;
+			  ecommerce:last_name ?last_name;
+			  ecommerce:Customer_email ?email.
+	?order ecommerce:orderAmount ?TotalAmount.
+} ORDER BY ?TotalAmount
+\end{lstlisting}
+
+\begin{center}
+   \includegraphics[scale=0.6]{OISreport-costumer-query2.png}
+   \captionof{figure}{Query output}
+\end{center}
+
+
+\subsection{Supplier: Products with higher profit margin}
 A platform such as e-commerce charges a percentage to a supplier for providing its service, in this case as an intermediary between its product and the customer. But the profit per product will depend on the price that the supplier sets. That is why it is necessary to know which products provide more profit to the platform to be able to make disguised biased advertising. As the price per product is not fixed, due to seasonal discounts that may exist, the average profit per product is disclosed, in this case the top 10 products with the highest profit margin. This decision may help the platform to have higher incomes. \\
 
 \begin{lstlisting}[breaklines, frame=single]
@@ -239,38 +284,9 @@ SELECT ?bce_company ?company ?product_code ?product_description (AVG(?price2) - 
 \end{lstlisting}
 
 \begin{center}
-   \includegraphics[scale=0.25]{OISreport-costumer-query.png}
+   \includegraphics[scale=0.25]{OISreport-supplier-query.png}
    \captionof{figure}{Query output}
 \end{center}
-
-
-\subsection{Costumers: Users with at least one complete address}
-In a platform such as e-commerce, the admin should check and control customers' data. For handling this information, a query is available that gives the admin all the customers with at least one complete address. This can prevent errors such as a customer placing an order but doesn't have an address. This can also help the admin to manage the customers. This SPARQL query uses customers' information and their addresses. And it is also ordered by the first name of the customers. So the result contains the first name, last name, city address, city, and country of the customer.
-
-\begin{lstlisting}[breaklines, frame=single]
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX ecommerce: http://data.ecommerce#
-SELECT ?first_name ?last_name ?cityaddress ?city ?country WHERE{
-	?customer ecommerce:first_name ?first_name;
-			   ecommerce:last_name ?last_name;
-			   ecommerce:Customer_email ?email.
-	?address ecommerce:Customer_email ?email;
-			ecommerce:Address_address ?cityaddress;
-			ecommerce:Address_country ?city;
-			ecommerce:Address_city ?country.
- } Order by ?first_name
-\end{lstlisting}
-
-\begin{center}
-   \includegraphics[scale=0.6]{OISreport-costumer-query2.png}
-   \captionof{figure}{Query output}
-\end{center}
-
-
-
-\subsection{Suppliers}
-
 
 
 
