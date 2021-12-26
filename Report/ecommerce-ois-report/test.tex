@@ -13,6 +13,7 @@
 \usepackage{pgfplots}
 \usepackage{float}
 \usepackage{tikz}
+\usepackage{listings}
 \usetikzlibrary{shapes.geometric, arrows}
 
 \title{e-commerce Project}
@@ -189,11 +190,59 @@ In the new design of the database, we removed the Package class, as it was redud
 
 
 \subsection{Warehouses}
+A warehouse has multiple products, all with a quantity. One might want to see the products in the warehouse ordered by ascending order, to see which products are low in stock, or even out of stock. To make it more readable for a human, we also display the name of the product. Suppose that we need information about the `DHLCONSOLIC' warehouse in this SPARQL query.
+
+\begin{lstlisting}[breaklines, frame=single]
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ecommerce: <http://data.ecommerce#>
+
+SELECT ?quantity ?productname ?productsku ?warehousename WHERE{
+  ?warehouse a ecommerce:Warehouse.
+  ?warehouse ecommerce:warehouse_has ?inventory.
+  ?warehouse ecommerce:Warehouse_companyName ?warehousename.
+  ?inventory a ecommerce:inventory.
+  ?inventory ecommerce:InventoryQuantity ?quantity.
+  ?inventory ecommerce:productsku_fk ?productsku.
+  ?inventory ecommerce:inventory_has ?product.
+  ?product a ecommerce:Product.
+  ?product ecommerce:Product_description ?productname.
+  FILTER langMatches(?warehousename, "DHLCONSOLIC").
+} ORDER BY ?quantity
+\end{lstlisting}
+
+\begin{center}
+   \includegraphics[scale=0.5]{OISreport-warehouse-query.png}
+   \captionof{figure}{Warehouse query output}
+\end{center}
 
 
 
 \subsection{Costumers}
-A platform such as e-commerce charges a percentage to a supplier for providing its service, in this case as an intermediary between its product and the customer. But the profit per product will depend on the price that the supplier sets. That is why it is necessary to know which products provide more profit to the platform to be able to make disguised biased advertising. As the price per product is not fixed, due to seasonal discounts that may exist, the average profit per product is disclosed, in this case the top 10 products with the highest profit margin. This decision may help the platform to have higher incomes.
+A platform such as e-commerce charges a percentage to a supplier for providing its service, in this case as an intermediary between its product and the customer. But the profit per product will depend on the price that the supplier sets. That is why it is necessary to know which products provide more profit to the platform to be able to make disguised biased advertising. As the price per product is not fixed, due to seasonal discounts that may exist, the average profit per product is disclosed, in this case the top 10 products with the highest profit margin. This decision may help the platform to have higher incomes. \\
+
+\begin{lstlisting}[breaklines, frame=single]
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ecommerce: <http://data.ecommerce#>
+SELECT ?bce_company ?company ?product_code ?product_description (AVG(?price2) - AVG(?price1) AS ?profit)                              WHERE {
+  ?supplier ecommerce:supplies ?supplies .
+  ?supplier ecommerce:Supplierbce ?bce_company ;
+           ecommerce:Supplier_companyName ?company .
+  ?supplies ecommerce:supplies_has ?supply_stock .
+  ?supply_stock ecommerce:has_contains ?product .
+  ?supply_stock ecommerce:suppliesOrderPrice ?price1 .
+  ?product ecommerce:sku ?product_code ;
+           ecommerce:Product_description ?product_description ;
+           ecommerce:price ?price2.
+} GROUP BY ?bce_company ?company ?product_code ?product_description ORDER BY DESC(?profit) LIMIT 10
+\end{lstlisting}
+
+\begin{center}
+   \includegraphics[scale=0.25]{OISreport-costumer-query.png}
+   \captionof{figure}{Costumers query output}
+\end{center}
+
 
 
 \subsection{Suppliers}

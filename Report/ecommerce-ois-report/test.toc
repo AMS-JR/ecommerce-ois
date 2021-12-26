@@ -28,7 +28,7 @@
 \contentsline {section}{\numberline {4}Queries}{8}{}%
 \contentsline {subsection}{\numberline {4.1}Products}{8}{}%
 \contentsline {subsection}{\numberline {4.2}Warehouses}{8}{}%
-\contentsline {subsection}{\numberline {4.3}Costumers}{8}{}%
-\contentsline {subsection}{\numberline {4.4}Suppliers}{9}{}%
-\contentsline {subsection}{\numberline {4.5}Delivery services}{9}{}%
-\contentsline {section}{\numberline {5}Discussion}{9}{}%
+\contentsline {subsection}{\numberline {4.3}Costumers}{9}{}%
+\contentsline {subsection}{\numberline {4.4}Suppliers}{10}{}%
+\contentsline {subsection}{\numberline {4.5}Delivery services}{10}{}%
+\contentsline {section}{\numberline {5}Discussion}{10}{}%
