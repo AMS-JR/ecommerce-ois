@@ -25,10 +25,12 @@
 \contentsline {subsubsection}{\numberline {2.5.1}Naming Difference}{8}{}%
 \contentsline {subsubsection}{\numberline {2.5.2}Design and structure differences}{8}{}%
 \contentsline {section}{\numberline {3}Mapping}{8}{}%
-\contentsline {section}{\numberline {4}Queries}{8}{}%
-\contentsline {subsection}{\numberline {4.1}Warehouses: Stock quantity sorted with extra information}{8}{}%
-\contentsline {subsection}{\numberline {4.2}Costumers: Users with at least one complete address}{9}{}%
-\contentsline {subsection}{\numberline {4.3}Costumers: Customers with orders and the total amount of their orders}{10}{}%
+\contentsline {subsection}{\numberline {3.1}Design decisions}{8}{}%
+\contentsline {subsection}{\numberline {3.2}Complications}{9}{}%
+\contentsline {section}{\numberline {4}Queries}{9}{}%
+\contentsline {subsection}{\numberline {4.1}Warehouses: Stock quantity sorted with extra information}{9}{}%
+\contentsline {subsection}{\numberline {4.2}Costumers: Users with at least one complete address}{10}{}%
+\contentsline {subsection}{\numberline {4.3}Costumers: Customers with orders and the total amount of their orders}{11}{}%
 \contentsline {subsection}{\numberline {4.4}Supplier: Products with higher profit margin}{11}{}%
 \contentsline {subsection}{\numberline {4.5}Delivery services}{12}{}%
 \contentsline {section}{\numberline {5}Discussion}{12}{}%
