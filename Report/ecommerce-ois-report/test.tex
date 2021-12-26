@@ -20,7 +20,7 @@
 \subtitle{Open Information Systems}
 \author{Ardavan Khalij, Amadou Sarjo Jallow, Brenda Ordoñez Lujan, Florent Nicolas J Grimau, and Milan Pavle Ili\'c}
 \faculty{1st master computer science}
-\promotors{Academic year: 2021 - 2022\\ Student numbers: Ardavan 05857061, Amadou 0532989, Brenda 0571129, Florent 0591865,\\ Milan 0545802\\ Email-addresses: ardavan.khalij@vub.be, amadou.sarjo.jallow@vub.be, brenda.ordonez.lujan@vub.be, florent.nicolas.j.grimau@vub.be,\\ milan.pavle.ili@vub.be}
+\promotors{Academic year: 2021 - 2022\\ Student numbers: Ardavan 05857061, Amadou 0532989, Brenda 0571129, Florent 0591865, Milan 0545802\\ Email-addresses: ardavan.khalij@vub.be, amadou.sarjo.jallow@vub.be, brenda.ordonez.lujan@vub.be, florent.nicolas.j.grimau@vub.be,\\ milan.pavle.ili@vub.be}
 \pretitle{}
 \date{26 December 2021}
 
@@ -124,9 +124,13 @@ In this project, we used Protege for making our ontology. The main reason was th
 
 
 \subsection{Products}
-\subsubsection{Naming differences}
-\subsubsection{Design and structure differences}
+This modules decribes the products that are advertised on the platform and all the relevant information about the product including it's category, brand etc. It is the central aspect of the platform and as such, it connects to other modules. It is connected with the customers module through the cart, reviews and orders modules. It is connected with the warehouse module through the outbound inventory. A customer carts a product through an object property carts. the object relation Belongs\_To has domain product and range category. The Admin\_advertises and Supplier\_advertises object properties connect a product with a seller, which can be the platfom itself, in this case call admin or a supplier who just wants to advertise on our platform.
 
+\subsubsection{Naming differences}
+There were little naming difference made to the product and related modules. The primary key of product was changed to sku for better representation and meaning. Apart from that, all other connected modules remain the same with few field deletions which made little or no difference at all. orders and order\_description tables are same as the receipt\_information and goods\_in\_receipt relations.
+
+\subsubsection{Design and structure differences}
+The products module and its connected modules remain fairly the same. An address field is added to the orders modules to reference the delivery address of the customer. Also the primary key of the admin relation was changed from name field to email field. Also orders, cart and reviews had foreign keys pointing to the email of the customer rather than a unique uuid to reflect what is used in the customers module.
 
 
 \subsection{Warehouses}
@@ -220,7 +224,7 @@ To overcome the process of having data linking to each other in the different da
 \section{Queries}
 We came up with 5 SPARQL queries that query data across our modules.
 
-%\subsection{Products}
+\subsection{Products}
 
 
 
