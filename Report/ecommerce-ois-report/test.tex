@@ -61,8 +61,7 @@ As metioned before, this project consists of 5 modules:
 
 \subsubsection{Warehouses}
 \begin{enumerate}
-  \item Product quantity: An employee of the inventory management wants to find out how much of a certain product there is left in stock. An online costumer wants to know if the product is available for purchase.
-  \underline{Data used:} amount of stock of a certain product.
+  \item Product quantity: An employee of the inventory management wants to find out how much of a certain product there is left in stock. An online costumer wants to know if the product is available for purchase. \underline{Data used:} amount of stock of a certain product.
   \item Warehouse incomming and outgoing products: An employee wants to know how many products will arrive/departure on a certain day. An accountant wants to keep track of all the arriving and departing products.\underline{Data used:} all the incomming products from the supplier and all the outgoing products of the delivery service.
   \item Delivery service delivery time: An employee from costumer service is asked if the product has already left the warehouse. A costumer wants to know how long it will take for his package to arrive.
   \underline{Data used:} details about the delivery service.
@@ -74,7 +73,11 @@ As metioned before, this project consists of 5 modules:
 
 \subsubsection{Costumers}
 \begin{enumerate}
-  \item
+  \item Total price of each receipt of the user plus cost of delivery: I should mention that the field of price has been deleted from the Order description by the team, so the product also needs to be in the data. Users can see all of their orders the total price of each purchase. \underline{Data used:} information about customers, orders, order descriptions, delivery services, and products.
+  \item Delivery date of all receipts for a user: I should mention that the original feature was the delivery date of all paid receipts for a user, but we deleted the payment status of the orders as a team. Each user can see the date of each of their purchases. \underline{Data used:} information about customers, orders, and delivery services.
+  \item See the not delivered orders: Each user can see their not delivered orders. \underline{Data used:} information about customers and orders.
+  \item Edit customer information: I should mention that customers' payment cards have been added to the tables by the group, so the payment table is also in this feature. Customers can edit their information at any time. \underline{Data used:} information about customers, customer's addresses, and customer's payment cards.
+  \item Showing all the users' personal information: I should mention that customers' payment cards have been added to the tables by the group, so the payment table is also in this feature. Customers can have access to their information at any time. \underline{Data used:} information about customers, customer's addresses, and customer's payment cards.
 \end{enumerate}
 
 \subsubsection{Suppliers}
@@ -178,6 +181,30 @@ In the new design of the database, we removed the Package class, as it was redud
 
 
 \section{Queries}
+
+
+\subsection{Products}
+
+
+
+
+\subsection{Warehouses}
+
+
+
+\subsection{Costumers}
+A platform such as e-commerce charges a percentage to a supplier for providing its service, in this case as an intermediary between its product and the customer. But the profit per product will depend on the price that the supplier sets. That is why it is necessary to know which products provide more profit to the platform to be able to make disguised biased advertising. As the price per product is not fixed, due to seasonal discounts that may exist, the average profit per product is disclosed, in this case the top 10 products with the highest profit margin. This decision may help the platform to have higher incomes.
+
+
+\subsection{Suppliers}
+
+
+
+
+\subsection{Delivery services}
+
+
+
 
 
 \section{Discussion}
