@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.12.17)  26 DEC 2021 13:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.12.17)  26 DEC 2021 14:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -997,22 +997,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--117
  []
 
 [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
@@ -1026,97 +1016,133 @@ Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
+
+ []
+
+[8]
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 1
-96.
-(/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
+95.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 196.
- [8]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 2
-00.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 195.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+Overfull \hbox (15.38605pt too wide) in paragraph at lines 195--196
+\OT1/cmr/m/n/10 The names-pace pre-fix that links to our on-tol-ogy is: @pre-fi
+x ecom-merce: \OML/cmm/m/it/10 <\OT1/cmr/m/n/10 http://data.ecommerce#\OML/cmm/
+m/it/10 > 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--201
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--204
+
+ []
+
+[9]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 2
+40.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 200.
-<OISreport-warehouse-query.png, id=50, 966.61125pt x 218.8175pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 240.
+<OISreport-warehouse-query.png, id=51, 966.61125pt x 218.8175pt>
 File: OISreport-warehouse-query.png Graphic file (type png)
 <use OISreport-warehouse-query.png>
-Package pdftex.def Info: OISreport-warehouse-query.png  used on input line 215.
+Package pdftex.def Info: OISreport-warehouse-query.png  used on input line 255.
 
 (pdftex.def)             Requested size: 483.30444pt x 109.40848pt.
 
-Overfull \hbox (65.05077pt too wide) in paragraph at lines 215--216
+Overfull \hbox (65.05077pt too wide) in paragraph at lines 255--256
  [] 
  []
 
-<OISreport-costumer-query.png, id=52, 792.9625pt x 171.64125pt>
+[10 <./OISreport-warehouse-query.png>]
+<OISreport-costumer-query.png, id=59, 792.9625pt x 171.64125pt>
 File: OISreport-costumer-query.png Graphic file (type png)
 <use OISreport-costumer-query.png>
-Package pdftex.def Info: OISreport-costumer-query.png  used on input line 240.
+Package pdftex.def Info: OISreport-costumer-query.png  used on input line 280.
 (pdftex.def)             Requested size: 475.78116pt x 102.98552pt.
 
-Overfull \hbox (57.52748pt too wide) in paragraph at lines 240--241
+Overfull \hbox (57.52748pt too wide) in paragraph at lines 280--281
  [] 
  []
 
-[9 <./OISreport-warehouse-query.png>]
-<OISreport-costumer-query2.png, id=58, 795.97375pt x 172.645pt>
+<OISreport-costumer-query2.png, id=60, 795.97375pt x 172.645pt>
 File: OISreport-costumer-query2.png Graphic file (type png)
 <use OISreport-costumer-query2.png>
-Package pdftex.def Info: OISreport-costumer-query2.png  used on input line 261.
+Package pdftex.def Info: OISreport-costumer-query2.png  used on input line 301.
 
 (pdftex.def)             Requested size: 477.58794pt x 103.58778pt.
 
-Overfull \hbox (59.33426pt too wide) in paragraph at lines 261--262
+Overfull \hbox (59.33426pt too wide) in paragraph at lines 301--302
  [] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 267--268
+[11 <./OISreport-costumer-query.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
 
  []
 
-[10 <./OISreport-costumer-query.png> <./OISreport-costumer-query2.png>]
-<OISreport-supplier-query.png, id=64, 1900.09875pt x 494.84875pt>
+<OISreport-supplier-query.png, id=65, 1900.09875pt x 494.84875pt>
 File: OISreport-supplier-query.png Graphic file (type png)
 <use OISreport-supplier-query.png>
-Package pdftex.def Info: OISreport-supplier-query.png  used on input line 287.
+Package pdftex.def Info: OISreport-supplier-query.png  used on input line 327.
 (pdftex.def)             Requested size: 475.02353pt x 123.71188pt.
 
-Overfull \hbox (56.76985pt too wide) in paragraph at lines 287--288
+Overfull \hbox (56.76985pt too wide) in paragraph at lines 327--328
  [] 
  []
 
-[11 <./OISreport-supplier-query.png>] [12] (./test.aux) ) 
+[12 <./OISreport-costumer-query2.png>] [13 <./OISreport-supplier-query.png>]
+(./test.aux) ) 
 Here is how much of TeX's memory you used:
- 30130 strings out of 481252
- 723078 string characters out of 5915887
- 1299753 words of memory out of 5000000
- 46581 multiletter control sequences out of 15000+600000
- 432637 words of font info for 54 fonts, out of 8000000 for 9000
+ 30127 strings out of 481252
+ 723048 string characters out of 5915887
+ 1272753 words of memory out of 5000000
+ 46579 multiletter control sequences out of 15000+600000
+ 432469 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  128i,8n,130p,1067b,1614s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/milan/.texlive
-2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk>{/usr/share/texmf/fon
-ts/enc/dvips/tex-gyre/q-ec.enc}</usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public
-/tex-gyre/qagb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qagr.pfb>
-Output written on test.pdf (13 pages, 775128 bytes).
+ </home/milan/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/
+tcrm1000.600pk>{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
+0.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qagb.pfb></usr/share/texmf/
+fonts/type1/public/tex-gyre/qagr.pfb>
+Output written on test.pdf (14 pages, 765905 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 79 compressed objects within 1 object stream
+ 117 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  38 words of extra memory for PDF output out of 10000 (max. 10000000)
 

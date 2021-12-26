@@ -15,20 +15,23 @@
 \contentsline {subsection}{\numberline {2.2}Warehouses}{6}{}%
 \contentsline {subsubsection}{\numberline {2.2.1}Naming differences}{6}{}%
 \contentsline {subsubsection}{\numberline {2.2.2}Design and structure differences}{6}{}%
-\contentsline {subsection}{\numberline {2.3}Costumers}{6}{}%
+\contentsline {subsection}{\numberline {2.3}Costumers}{7}{}%
 \contentsline {subsubsection}{\numberline {2.3.1}Naming differences}{7}{}%
 \contentsline {subsubsection}{\numberline {2.3.2}Design and structure differences}{7}{}%
 \contentsline {subsection}{\numberline {2.4}Suppliers}{7}{}%
 \contentsline {subsubsection}{\numberline {2.4.1}Naming differences}{7}{}%
-\contentsline {subsubsection}{\numberline {2.4.2}Design and structure differences}{7}{}%
+\contentsline {subsubsection}{\numberline {2.4.2}Design and structure differences}{8}{}%
 \contentsline {subsection}{\numberline {2.5}Delivery services}{8}{}%
 \contentsline {subsubsection}{\numberline {2.5.1}Naming Difference}{8}{}%
 \contentsline {subsubsection}{\numberline {2.5.2}Design and structure differences}{8}{}%
-\contentsline {section}{\numberline {3}Mapping}{8}{}%
-\contentsline {section}{\numberline {4}Queries}{8}{}%
-\contentsline {subsection}{\numberline {4.1}Warehouses: Stock quantity sorted with extra information}{8}{}%
-\contentsline {subsection}{\numberline {4.2}Costumers: Users with at least one complete address}{9}{}%
-\contentsline {subsection}{\numberline {4.3}Costumers: Customers with orders and the total amount of their orders}{10}{}%
-\contentsline {subsection}{\numberline {4.4}Supplier: Products with higher profit margin}{11}{}%
-\contentsline {subsection}{\numberline {4.5}Delivery services}{12}{}%
-\contentsline {section}{\numberline {5}Discussion}{12}{}%
+\contentsline {section}{\numberline {3}Mapping}{9}{}%
+\contentsline {subsection}{\numberline {3.1}Design decisions}{9}{}%
+\contentsline {subsection}{\numberline {3.2}Complications}{9}{}%
+\contentsline {section}{\numberline {4}Queries}{9}{}%
+\contentsline {subsection}{\numberline {4.1}Products}{10}{}%
+\contentsline {subsection}{\numberline {4.2}Warehouses: Stock quantity sorted with extra information}{10}{}%
+\contentsline {subsection}{\numberline {4.3}Costumers: Users with at least one complete address}{10}{}%
+\contentsline {subsection}{\numberline {4.4}Costumers: Customers with orders and the total amount of their orders}{11}{}%
+\contentsline {subsection}{\numberline {4.5}Supplier: Products with higher profit margin}{12}{}%
+\contentsline {subsection}{\numberline {4.6}Delivery services}{13}{}%
+\contentsline {section}{\numberline {5}Discussion}{13}{}%

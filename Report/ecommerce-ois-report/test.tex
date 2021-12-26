@@ -20,7 +20,7 @@
 \subtitle{Open Information Systems}
 \author{Ardavan Khalij, Amadou Sarjo Jallow, Brenda Ordoñez Lujan, Florent Nicolas J Grimau, and Milan Pavle Ili\'c}
 \faculty{1st master computer science}
-\promotors{Academic year: 2021 - 2022\\ Student numbers: Ardavan 05857061, Brenda 0571129, Florent 0591865,\\ Milan 0545802\\ Email-addresses: ardavan.khalij@vub.be, amadou.sarjo.jallow@vub.be, brenda.ordonez.lujan@vub.be, florent.nicolas.j.grimau@vub.be,\\ milan.pavle.ili@vub.be}
+\promotors{Academic year: 2021 - 2022\\ Student numbers: Ardavan 05857061, Amadou 0532989, Brenda 0571129, Florent 0591865, Milan 0545802\\ Email-addresses: ardavan.khalij@vub.be, amadou.sarjo.jallow@vub.be, brenda.ordonez.lujan@vub.be, florent.nicolas.j.grimau@vub.be,\\ milan.pavle.ili@vub.be}
 \pretitle{}
 \date{26 December 2021}
 
@@ -124,13 +124,17 @@ In this project, we used Protege for making our ontology. The main reason was th
 
 
 \subsection{Products}
-\subsubsection{Naming differences}
-\subsubsection{Design and structure differences}
+This modules decribes the products that are advertised on the platform and all the relevant information about the product including it's category, brand etc. It is the central aspect of the platform and as such, it connects to other modules. It is connected with the customers module through the cart, reviews and orders modules. It is connected with the warehouse module through the outbound inventory. A customer carts a product through an object property carts. the object relation Belongs\_To has domain product and range category. The Admin\_advertises and Supplier\_advertises object properties connect a product with a seller, which can be the platfom itself, in this case call admin or a supplier who just wants to advertise on our platform.
 
+\subsubsection{Naming differences}
+There were little naming difference made to the product and related modules. The primary key of product was changed to sku for better representation and meaning. Apart from that, all other connected modules remain the same with few field deletions which made little or no difference at all. orders and order\_description tables are same as the receipt\_information and goods\_in\_receipt relations.
+
+\subsubsection{Design and structure differences}
+The products module and its connected modules remain fairly the same. An address field is added to the orders modules to reference the delivery address of the customer. Also the primary key of the admin relation was changed from name field to email field. Also orders, cart and reviews had foreign keys pointing to the email of the customer rather than a unique uuid to reflect what is used in the customers module.
 
 
 \subsection{Warehouses}
-This module describes a warehouse with attributes such as: companyname, warehousecode, email, etc. A warehouse has an object property \texttt{warehouse\_has}. This means that a warehouse has multiple inventories. An inventory contains a product, a quantity and the warehousecode corresponding to the warehouse it belongs to. To achieve this, an inventory has an object property \texttt{inventory\_has}.
+This module describes a warehouse with attributes such as: companyname, warehousecode, email, etc. A warehouse has an object property warehouse\_has. This means that a warehouse has multiple inventories. An inventory contains a product, a quantity and the warehousecode corresponding to the warehouse it belongs to. To achieve this, an inventory has an object property inventory\_has.
 
 
 \subsubsection{Naming differences}
@@ -142,17 +146,17 @@ The original tables of the warehouse module were a little complicated. Therefore
 
 
 \subsection{Costumers}
-The customer module has information about customers, such as payment cards, addresses, and other information. It also has a part for saving the orders of the customers. Each order has an order description that lists the products in an order. There are also a delivery kind table and delivery status in this part that has the information about the delivery types and delivery status. Each customer has addresses and payment cards, which are connectedwith \texttt{Has\_Address} and \texttt{Has\_Payment\_Card} object properties in the ontology. Also, each customer has some orders, and each order has an order description available in ontology by \texttt{places\_order} and \texttt{Has\_Order\_Description} object properties. Orders also have a delivery type available in ontology with the \texttt{Has\_The\_Delivery\_Type} object property. There were some different opinions and differences in the databases' design and choosing the names for designing the ontology.
+The customer module has information about customers, such as payment cards, addresses, and other information. It also has a part for saving the orders of the customers. Each order has an order description that lists the products in an order. There are also a delivery kind table and delivery status in this part that has the information about the delivery types and delivery status. Each customer has addresses and payment cards, which are connectedwith Has\_Address and Has\_Payment\_Card object properties in the ontology. Also, each customer has some orders, and each order has an order description available in ontology by places\_order and Has\_Order\_Description object properties. Orders also have a delivery type available in ontology with the Has\_The\_Delivery\_Type object property. There were some different opinions and differences in the databases' design and choosing the names for designing the ontology.
 
 \subsubsection{Naming differences}
-The main difference was about the name of the classes. We changed the name of the class receipt to understand ontology better. Also, \texttt{goods\_in\_receipt} changed to order description.
+The main difference was about the name of the classes. We changed the name of the class receipt to understand ontology better. Also, goods\_in\_receipt changed to order description.
 
 \subsubsection{Design and structure differences}
 The first difference was the receipt in the customer database and order in the product database. The concept of order and cart was merged in the customer database, but there were differences in the product database, so we decided to use the separate concept instead. Moreover, as a result, the payment status column has been deleted from the receipt information table. The second issue was the customer's payment information. So we added the payment information of customers as well. Also, we deleted to column price from the order description because it already existed in the product.
 
 
 \subsection{Suppliers}
-This module allows storing information of the suppliers that use the e-commerce platform as a service to advertise their products. The elements that were considered most important are the company's registration number (bce), name, url, telephone, postal code, mail and address. Each supplier sends its products to a warehouse to be registered within the platform. This property is identified as "supplies" and \texttt{is\_stored\_in} within the ontology. \texttt{supplies\_has} was developed so that a supplier can ship more than one product. These features allow us to take advantage of the track of businesses between a supplier and its products.
+This module allows storing information of the suppliers that use the e-commerce platform as a service to advertise their products. The elements that were considered most important are the company's registration number (bce), name, url, telephone, postal code, mail and address. Each supplier sends its products to a warehouse to be registered within the platform. This property is identified as "supplies" and is\_stored\_in within the ontology. supplies\_has was developed so that a supplier can ship more than one product. These features allow us to take advantage of the track of businesses between a supplier and its products.
 \subsubsection{Naming differences}
 At the beginning, the purchase orders to suppliers was considered as a company that develop the product and put it on sale. But for the ontology this property was not considered since it was coordinated that the platform will only be an intermediary service between the supplier and the client; so the table of purchase orders developed became a table of supplies. The difference is that order dates, invoices, payments, among other aspects, are no longer considered. Only the date on which the product arrives at the warehouse, the quantity and the price of the product are considered. \\
 
@@ -179,12 +183,48 @@ The naming differences are mainly found in the attributes of each class, for a b
 In the new design of the database, we removed the Package class, as it was redudant with the order in itself. The idea at the start was to use the Package class to retain information about what could be just a part of the total order, that could be shipped independently from the rest of the order. It was decided to simplify this part, and we chose that an order should be sent in a single delivery. The status attribute of the Package class was moved to the order class.
 
 \section{Mapping}
+The tools used to convert data from different databases to a single RDF document are:
+\begin{enumerate}
+  \item R2RML: the language used for mapping our datasets to RDF datasets.
+  \item Dremio: the platform used to unify the tables in a single space called ecommerce.
+  \item Ontop: the environment used for test SPARQL features.
+\end{enumerate}
+
+
+\subsection{Design decisions}
+The namespace prefix that links to our ontology is: @prefix ecommerce: \textless http://data.ecommerce\#\textgreater \\
+
+Each member generated their triple maps for R2RML mapping. All the tables were applicable. The same structure was used for the template, to make it easier to unify it into one. \\
+
+ The template structure used for the classes is the following: \\
+"http://data.ecommerce/[entityName]\#{dataProperty}". \\
+
+The template structure used for the objects properties is the following: \\
+"http://data.ecommerce[entityName]\#{dataProperty}\_{dataProperty}". \\
+
+To overcome the process of having data linking to each other in the different databases, it was decided to map all the tables that correspond to the ontology created. Products being the entity that had to be mapped from each database as it is one of the most important for this platform.
+
+
+
+\subsection{Complications}
+
+\begin{enumerate}
+  \item Because the "ID" data was repeated in different databases, there were issues with the "order" class. In this example, we only mapped from one database and made entries in that database for the other orders to ensure they had data that linked.
+  \item Not all object properties could be mapped. Ontop endpoint did not give errors but at the moment of materializing the triples, an error was generated by the SQL. All queries were always tested in pgadmin to reduce the error; but there was not much detail about the error. The affected object properties were: "Supplier\_advertises", "Admin\_advertises" and "places\_order" that correspond to the ontology.
+\end{enumerate}
+
+
+
+
+
+
+
 
 
 \section{Queries}
 We came up with 5 SPARQL queries that query data across our modules.
 
-%\subsection{Products}
+\subsection{Products}
 
 
 
