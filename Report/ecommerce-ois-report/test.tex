@@ -140,7 +140,7 @@ This module describes a warehouse with attributes such as: companyname, warehous
 \subsubsection{Naming differences}
 Amount in stock was renamed to quantity. Product id was renamed to productsku. Telephone number was renamed to simply telephone because it was clear enough. Name was changed to companyname to make it more clear that it is the name of a company.
 
-
+\newpage
 \subsubsection{Design and structure differences}
 The original tables of the warehouse module were a little complicated. Therefore, we reduced the initial warehouses' idea to be more minimalist because it was easier to be compatible with the other modules. The ISA business relation was removed because it would overcomplicate the database. Employee was removed because it was not needed. Delivery service and shipment were removed because these were implemented in a better way by the delivery services module. Product was also removed because implemented in a more accurate way in the product module. Inventory was added to keep track of how many products a warehouse has in store. Finally, a couple of attributes are added to the warehouse to make it more complete.
 
@@ -218,7 +218,7 @@ To overcome the process of having data linking to each other in the different da
 
 
 
-
+\newpage
 
 
 \section{Queries}
@@ -247,7 +247,7 @@ SELECT ?product ?price ?quantity ?color ?model ?product_location ?date_added ?de
    \captionof{figure}{Query output}
 \end{center}
 
-
+\newpage
 
 \subsection{Warehouses: Stock quantity sorted with extra information}
 A warehouse has multiple products, all with a quantity. One might want to see the products in the warehouse ordered by ascending order, to see which products are low in stock, or even out of stock. To make it more readable for a human, we also display the name of the product. Suppose that we need information about the `DHLCONSOLIC' warehouse in this SPARQL query.
@@ -276,7 +276,7 @@ SELECT ?quantity ?productname ?productsku ?warehousename WHERE{
    \captionof{figure}{Query output}
 \end{center}
 
-
+\newpage
 
 \subsection{Costumers: Users with at least one complete address}
 In a platform such as e-commerce, the admin should check and control customers' data. For handling this information, a query is available that gives the admin all the customers with at least one complete address. This can prevent errors such as a customer placing an order but doesn't have an address. This can also help the admin to manage the customers. This SPARQL query uses customers' information and their addresses. And it is also ordered by the first name of the customers. So the result contains the first name, last name, city address, city, and country of the customer.
@@ -301,6 +301,8 @@ SELECT ?first_name ?last_name ?cityaddress ?city ?country WHERE{
    \captionof{figure}{Query output}
 \end{center}
 
+\newpage
+
 \subsection{Costumers: Customers with orders and the total amount of their orders}
 In a platform such as e-commerce, the admin should be able to access all the order prices. This can help the admin to understand the income of the company. Customers also can access their orders to see the history of their purchases. This can always allow the customers to see what they have bought and re-order the products they want. This SPARQL uses the customers' information and the order information. And the result is also ordered by the total amount of each order. This can help the admin see which customers or customers with which home countries have the most considerable purchase amount per order. The result contains first name, last name, email, and the total amount of an order of the customer.
 
@@ -322,6 +324,7 @@ SELECT ?first_name ?last_name ?email ?TotalAmount WHERE{
    \captionof{figure}{Query output}
 \end{center}
 
+\newpage
 
 \subsection{Suppliers: Products with higher profit margin}
 A platform such as e-commerce charges a percentage to a supplier for providing its service, in this case as an intermediary between its product and the customer. But the profit per product will depend on the price that the supplier sets. That is why it is necessary to know which products provide more profit to the platform to be able to make disguised biased advertising. As the price per product is not fixed, due to seasonal discounts that may exist, the average profit per product is disclosed, in this case the top 10 products with the highest profit margin. This decision may help the platform to have higher incomes. \\
@@ -350,9 +353,9 @@ SELECT ?bce_company ?company ?product_code ?product_description (AVG(?price2) - 
 
 
 
-\subsection{Delivery services}
+%\subsection{Delivery services}
 
-
+\newpage
 
 
 

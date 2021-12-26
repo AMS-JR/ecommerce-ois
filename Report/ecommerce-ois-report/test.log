@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.12.17)  26 DEC 2021 15:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.12.17)  26 DEC 2021 16:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1091,7 +1091,8 @@ Overfull \hbox (65.05077pt too wide) in paragraph at lines 275--276
  [] 
  []
 
-<OISreport-costumer-query.png, id=60, 792.9625pt x 171.64125pt>
+[11 <./OISreport-warehouse-query.png>]
+<OISreport-costumer-query.png, id=64, 792.9625pt x 171.64125pt>
 File: OISreport-costumer-query.png Graphic file (type png)
 <use OISreport-costumer-query.png>
 Package pdftex.def Info: OISreport-costumer-query.png  used on input line 300.
@@ -1101,43 +1102,42 @@ Overfull \hbox (57.52748pt too wide) in paragraph at lines 300--301
  [] 
  []
 
-[11 <./OISreport-warehouse-query.png>]
-<OISreport-costumer-query2.png, id=65, 795.97375pt x 172.645pt>
+[12 <./OISreport-costumer-query.png>]
+<OISreport-costumer-query2.png, id=70, 795.97375pt x 172.645pt>
 File: OISreport-costumer-query2.png Graphic file (type png)
 <use OISreport-costumer-query2.png>
-Package pdftex.def Info: OISreport-costumer-query2.png  used on input line 321.
+Package pdftex.def Info: OISreport-costumer-query2.png  used on input line 323.
 
 (pdftex.def)             Requested size: 477.58794pt x 103.58778pt.
 
-Overfull \hbox (59.33426pt too wide) in paragraph at lines 321--322
+Overfull \hbox (59.33426pt too wide) in paragraph at lines 323--324
  [] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 327--328
+[13 <./OISreport-costumer-query2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 330--331
 
  []
 
-[12 <./OISreport-costumer-query.png> <./OISreport-costumer-query2.png>]
-<OISreport-supplier-query.png, id=72, 1900.09875pt x 494.84875pt>
+<OISreport-supplier-query.png, id=75, 1900.09875pt x 494.84875pt>
 File: OISreport-supplier-query.png Graphic file (type png)
 <use OISreport-supplier-query.png>
-Package pdftex.def Info: OISreport-supplier-query.png  used on input line 347.
+Package pdftex.def Info: OISreport-supplier-query.png  used on input line 350.
 (pdftex.def)             Requested size: 475.02353pt x 123.71188pt.
 
-Overfull \hbox (56.76985pt too wide) in paragraph at lines 347--348
+Overfull \hbox (56.76985pt too wide) in paragraph at lines 350--351
  [] 
  []
 
-[13 <./OISreport-supplier-query.png>] [14] (./test.aux) ) 
+[14 <./OISreport-supplier-query.png>] [15] (./test.aux) ) 
 Here is how much of TeX's memory you used:
  30133 strings out of 481252
  723229 string characters out of 5915887
- 1320753 words of memory out of 5000000
+ 1263753 words of memory out of 5000000
  46584 multiletter control sequences out of 15000+600000
  432469 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 128i,8n,130p,1067b,1616s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,8n,130p,1067b,1317s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/milan/.texlive
 2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk>{/usr/share/texmf/fon
 ts/enc/dvips/tex-gyre/q-ec.enc}</usr/share/texlive/texmf-dist/fonts/type1/publi
@@ -1151,10 +1151,10 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/
 public/tex-gyre/qagb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qagr.pfb
 >
-Output written on test.pdf (15 pages, 870035 bytes).
+Output written on test.pdf (16 pages, 870561 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
+ 125 PDF objects out of 1000 (max. 8388607)
+ 82 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
